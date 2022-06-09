@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4f05fbde-13e7-4226-9063-58f138c9fd55",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 224,
+  "height": 299,
+  "platformSettings": {},
+  "subMetas": {
+    "build_elixir_storage_lvl4_hd": {
+      "ver": "1.0.6",
+      "uuid": "08160857-d310-42cd-8870-0692a863a59d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4f05fbde-13e7-4226-9063-58f138c9fd55",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5,
+      "offsetY": 12.5,
+      "trimX": 45,
+      "trimY": 95,
+      "width": 124,
+      "height": 84,
+      "rawWidth": 224,
+      "rawHeight": 299,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

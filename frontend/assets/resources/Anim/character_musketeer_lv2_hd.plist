@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>character_musketeer_lv2_attack1_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {40, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {40, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 268}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 12}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{44, 2}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 269}, {34, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 12}</string>
+			<key>spriteSize</key>
+			<string>{34, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{84, 2}, {34, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 270}, {34, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 12}</string>
+			<key>spriteSize</key>
+			<string>{34, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{120, 2}, {34, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 269}, {36, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 12}</string>
+			<key>spriteSize</key>
+			<string>{36, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{156, 2}, {36, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 268}, {38, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 13}</string>
+			<key>spriteSize</key>
+			<string>{38, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{194, 2}, {38, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 267}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 13}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{234, 2}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 265}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{274, 2}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {40, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{316, 2}, {40, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 14}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{358, 2}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 264}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 13}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{396, 2}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 265}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 12}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{440, 2}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 265}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 12}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{482, 2}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{524, 2}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 13}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{566, 2}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {44, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 13}</string>
+			<key>spriteSize</key>
+			<string>{44, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{610, 2}, {44, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 262}, {42, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 14}</string>
+			<key>spriteSize</key>
+			<string>{42, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{656, 2}, {42, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 14}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{700, 2}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 267}, {32, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 14}</string>
+			<key>spriteSize</key>
+			<string>{32, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{738, 2}, {32, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 271}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 11}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{772, 2}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{804, 2}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{836, 2}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 269}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 12}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{868, 2}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 270}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 12}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{900, 2}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 270}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 12}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{932, 2}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{964, 2}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_attack1_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 267}, {32, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 14}</string>
+			<key>spriteSize</key>
+			<string>{32, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 52}, {32, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {40, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{40, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{36, 52}, {40, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 264}, {36, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 16}</string>
+			<key>spriteSize</key>
+			<string>{36, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{78, 52}, {36, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 262}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{116, 52}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 261}, {36, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 19}</string>
+			<key>spriteSize</key>
+			<string>{36, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{154, 52}, {36, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 262}, {36, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 19}</string>
+			<key>spriteSize</key>
+			<string>{36, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{192, 52}, {36, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 261}, {36, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{230, 52}, {36, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 259}, {36, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 19}</string>
+			<key>spriteSize</key>
+			<string>{36, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{268, 52}, {36, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 260}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 20}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{306, 52}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {40, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{40, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{346, 52}, {40, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 260}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{388, 52}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{432, 52}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 262}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{472, 52}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 260}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 19}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{510, 52}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 260}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 19}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 52}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 260}, {34, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 18}</string>
+			<key>spriteSize</key>
+			<string>{34, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{582, 52}, {34, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 259}, {38, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 18}</string>
+			<key>spriteSize</key>
+			<string>{38, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{618, 52}, {38, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 258}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 19}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{658, 52}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 260}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{700, 52}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 264}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 18}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{744, 52}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 265}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 17}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{776, 52}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 263}, {34, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 17}</string>
+			<key>spriteSize</key>
+			<string>{34, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{808, 52}, {34, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 262}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{844, 52}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 263}, {34, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 17}</string>
+			<key>spriteSize</key>
+			<string>{34, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{882, 52}, {34, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 262}, {34, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 18}</string>
+			<key>spriteSize</key>
+			<string>{34, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{918, 52}, {34, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 260}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 20}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{954, 52}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 261}, {34, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 19}</string>
+			<key>spriteSize</key>
+			<string>{34, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{986, 52}, {34, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_run_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 264}, {30, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 18}</string>
+			<key>spriteSize</key>
+			<string>{30, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 100}, {30, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 262}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{34, 100}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 261}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 16}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{76, 100}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 260}, {38, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{120, 100}, {38, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 259}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{160, 100}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 260}, {38, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{198, 100}, {38, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 261}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{238, 100}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {42, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 15}</string>
+			<key>spriteSize</key>
+			<string>{42, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{280, 100}, {42, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 266}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{324, 100}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 267}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{364, 100}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 265}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{404, 100}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 262}, {40, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{40, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{446, 100}, {40, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 260}, {34, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{34, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{488, 100}, {34, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 259}, {30, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{30, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{524, 100}, {30, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 259}, {24, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{24, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{556, 100}, {24, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 260}, {24, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{24, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{582, 100}, {24, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 260}, {28, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{28, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{608, 100}, {28, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 260}, {30, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 15}</string>
+			<key>spriteSize</key>
+			<string>{30, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{638, 100}, {30, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 260}, {38, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{670, 100}, {38, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {42, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{42, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{710, 100}, {42, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {42, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{42, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{754, 100}, {42, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 262}, {42, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 14}</string>
+			<key>spriteSize</key>
+			<string>{42, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{798, 100}, {42, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 260}, {34, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 15}</string>
+			<key>spriteSize</key>
+			<string>{34, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{842, 100}, {34, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 265}, {32, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 15}</string>
+			<key>spriteSize</key>
+			<string>{32, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{878, 100}, {32, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 264}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 15}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{912, 100}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 262}, {34, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{948, 100}, {34, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 262}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{984, 100}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 263}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 154}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 264}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 15}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{42, 154}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 267}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{80, 154}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{112, 154}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 269}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 12}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{144, 154}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 267}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{176, 154}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_specialstand_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 265}, {32, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 15}</string>
+			<key>spriteSize</key>
+			<string>{32, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{208, 154}, {32, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 265}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{242, 154}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 266}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 14}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 154}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 266}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 14}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{324, 154}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 265}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 14}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{364, 154}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{404, 154}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{444, 154}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{484, 154}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {40, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 15}</string>
+			<key>spriteSize</key>
+			<string>{40, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{524, 154}, {40, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 265}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 14}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{566, 154}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {32, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 13}</string>
+			<key>spriteSize</key>
+			<string>{32, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{608, 154}, {32, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {34, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 13}</string>
+			<key>spriteSize</key>
+			<string>{34, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{642, 154}, {34, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 264}, {34, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-13, 13}</string>
+			<key>spriteSize</key>
+			<string>{34, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{678, 154}, {34, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {34, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-13, 13}</string>
+			<key>spriteSize</key>
+			<string>{34, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{714, 154}, {34, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 13}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{750, 154}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 13}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{788, 154}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {34, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 14}</string>
+			<key>spriteSize</key>
+			<string>{34, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{826, 154}, {34, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {32, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 14}</string>
+			<key>spriteSize</key>
+			<string>{32, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{862, 154}, {32, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {32, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 13}</string>
+			<key>spriteSize</key>
+			<string>{32, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{896, 154}, {32, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{930, 154}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{962, 154}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 204}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 267}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{34, 204}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 265}, {30, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 14}</string>
+			<key>spriteSize</key>
+			<string>{30, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{66, 204}, {30, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 265}, {30, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 14}</string>
+			<key>spriteSize</key>
+			<string>{30, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{98, 204}, {30, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 265}, {30, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 14}</string>
+			<key>spriteSize</key>
+			<string>{30, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{130, 204}, {30, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 266}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 14}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{162, 204}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_stand_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {30, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{194, 204}, {30, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 255}, {32, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 20}</string>
+			<key>spriteSize</key>
+			<string>{32, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{226, 204}, {32, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 260}, {26, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 17}</string>
+			<key>spriteSize</key>
+			<string>{26, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{260, 204}, {26, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 263}, {24, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{24, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{288, 204}, {24, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 261}, {22, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{22, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{314, 204}, {22, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 256}, {26, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 20}</string>
+			<key>spriteSize</key>
+			<string>{26, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{338, 204}, {26, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 253}, {30, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 22}</string>
+			<key>spriteSize</key>
+			<string>{30, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{366, 204}, {30, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 256}, {34, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 20}</string>
+			<key>spriteSize</key>
+			<string>{34, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{398, 204}, {34, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 254}, {34, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 20}</string>
+			<key>spriteSize</key>
+			<string>{34, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{434, 204}, {34, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 255}, {32, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 20}</string>
+			<key>spriteSize</key>
+			<string>{32, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{470, 204}, {32, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 257}, {40, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 18}</string>
+			<key>spriteSize</key>
+			<string>{40, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{504, 204}, {40, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 259}, {40, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 17}</string>
+			<key>spriteSize</key>
+			<string>{40, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 204}, {40, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 261}, {34, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{588, 204}, {34, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 260}, {30, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{30, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{624, 204}, {30, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 254}, {34, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 21}</string>
+			<key>spriteSize</key>
+			<string>{34, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{656, 204}, {34, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 249}, {42, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 26}</string>
+			<key>spriteSize</key>
+			<string>{42, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{692, 204}, {42, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 249}, {38, 54}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 24}</string>
+			<key>spriteSize</key>
+			<string>{38, 54}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{736, 204}, {38, 54}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 252}, {38, 54}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 21}</string>
+			<key>spriteSize</key>
+			<string>{38, 54}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{776, 204}, {38, 54}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 257}, {40, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 18}</string>
+			<key>spriteSize</key>
+			<string>{40, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{816, 204}, {40, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 256}, {28, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 20}</string>
+			<key>spriteSize</key>
+			<string>{28, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{858, 204}, {28, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 261}, {28, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 18}</string>
+			<key>spriteSize</key>
+			<string>{28, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{888, 204}, {28, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 264}, {26, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 16}</string>
+			<key>spriteSize</key>
+			<string>{26, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{918, 204}, {26, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 262}, {28, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 17}</string>
+			<key>spriteSize</key>
+			<string>{28, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{946, 204}, {28, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 256}, {28, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 21}</string>
+			<key>spriteSize</key>
+			<string>{28, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{976, 204}, {28, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 251}, {26, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 23}</string>
+			<key>spriteSize</key>
+			<string>{26, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 260}, {26, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 255}, {32, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{32, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{30, 260}, {32, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 256}, {44, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 21}</string>
+			<key>spriteSize</key>
+			<string>{44, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{64, 260}, {44, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_musketeer_lv2_win_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 256}, {28, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 21}</string>
+			<key>spriteSize</key>
+			<string>{28, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{110, 260}, {28, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 512}</string>
+        <key>textureFileName</key>
+        <string>character_musketeer_lv2_hd.png</string>
+	</dict>
+</dict>
+</plist>

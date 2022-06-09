@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>character_big_strong_lv1_attack1_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 241}, {46, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 25}</string>
+			<key>spriteSize</key>
+			<string>{46, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{54, 2}, {46, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 241}, {52, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 25}</string>
+			<key>spriteSize</key>
+			<string>{52, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{102, 2}, {52, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 245}, {58, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 23}</string>
+			<key>spriteSize</key>
+			<string>{58, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{156, 2}, {58, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 250}, {62, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 20}</string>
+			<key>spriteSize</key>
+			<string>{62, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{216, 2}, {62, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 239}, {62, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 25}</string>
+			<key>spriteSize</key>
+			<string>{62, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{280, 2}, {62, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{320, 260}, {90, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 14}</string>
+			<key>spriteSize</key>
+			<string>{90, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{344, 2}, {90, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{317, 258}, {92, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-37, 16}</string>
+			<key>spriteSize</key>
+			<string>{92, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{436, 2}, {92, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{320, 256}, {90, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 16}</string>
+			<key>spriteSize</key>
+			<string>{90, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{530, 2}, {90, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{320, 257}, {90, 54}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 16}</string>
+			<key>spriteSize</key>
+			<string>{90, 54}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{622, 2}, {90, 54}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{320, 258}, {90, 54}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 15}</string>
+			<key>spriteSize</key>
+			<string>{90, 54}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{714, 2}, {90, 54}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{325, 258}, {88, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, 16}</string>
+			<key>spriteSize</key>
+			<string>{88, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{806, 2}, {88, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{331, 255}, {82, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-28, 17}</string>
+			<key>spriteSize</key>
+			<string>{82, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{896, 2}, {82, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{334, 254}, {78, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-27, 18}</string>
+			<key>spriteSize</key>
+			<string>{78, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 76}, {78, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 242}, {62, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{-19, 24}</string>
+			<key>spriteSize</key>
+			<string>{62, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{82, 76}, {62, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_left_0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{146, 76}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{198, 76}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 238}, {50, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{50, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{242, 76}, {50, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 238}, {54, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 27}</string>
+			<key>spriteSize</key>
+			<string>{54, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{294, 76}, {54, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 242}, {54, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 25}</string>
+			<key>spriteSize</key>
+			<string>{54, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{350, 76}, {54, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 246}, {54, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 23}</string>
+			<key>spriteSize</key>
+			<string>{54, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{406, 76}, {54, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 234}, {54, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 29}</string>
+			<key>spriteSize</key>
+			<string>{54, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{462, 76}, {54, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 267}, {66, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, -3}</string>
+			<key>spriteSize</key>
+			<string>{66, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{518, 76}, {66, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{348, 263}, {68, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-18, -0}</string>
+			<key>spriteSize</key>
+			<string>{68, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{586, 76}, {68, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 259}, {66, 80}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, 1}</string>
+			<key>spriteSize</key>
+			<string>{66, 80}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{656, 76}, {66, 80}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 260}, {66, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, 1}</string>
+			<key>spriteSize</key>
+			<string>{66, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{724, 76}, {66, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 262}, {66, 76}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, -0}</string>
+			<key>spriteSize</key>
+			<string>{66, 76}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{792, 76}, {66, 76}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{353, 262}, {64, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-15, 2}</string>
+			<key>spriteSize</key>
+			<string>{64, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{860, 76}, {64, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{356, 261}, {62, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-13, 4}</string>
+			<key>spriteSize</key>
+			<string>{62, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{926, 76}, {62, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{358, 259}, {60, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 6}</string>
+			<key>spriteSize</key>
+			<string>{60, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 158}, {60, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 251}, {42, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 21}</string>
+			<key>spriteSize</key>
+			<string>{42, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{64, 158}, {42, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_leftbottom_0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{108, 158}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{152, 158}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 250}, {56, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{210, 158}, {56, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 250}, {54, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{10, 21}</string>
+			<key>spriteSize</key>
+			<string>{54, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{268, 158}, {54, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 255}, {58, 54}}</string>
+			<key>spriteOffset</key>
+			<string>{11, 18}</string>
+			<key>spriteSize</key>
+			<string>{58, 54}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{324, 158}, {58, 54}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 259}, {64, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{12, 16}</string>
+			<key>spriteSize</key>
+			<string>{64, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{384, 158}, {64, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 251}, {60, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{12, 20}</string>
+			<key>spriteSize</key>
+			<string>{60, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{450, 158}, {60, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{331, 247}, {80, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-29, 23}</string>
+			<key>spriteSize</key>
+			<string>{80, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{512, 158}, {80, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{329, 244}, {94, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{-24, 24}</string>
+			<key>spriteSize</key>
+			<string>{94, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{594, 158}, {94, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{331, 247}, {94, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-22, 23}</string>
+			<key>spriteSize</key>
+			<string>{94, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{690, 158}, {94, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{331, 247}, {94, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-22, 23}</string>
+			<key>spriteSize</key>
+			<string>{94, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{786, 158}, {94, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{331, 247}, {92, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-23, 23}</string>
+			<key>spriteSize</key>
+			<string>{92, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{882, 158}, {92, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{336, 247}, {90, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-19, 22}</string>
+			<key>spriteSize</key>
+			<string>{90, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 230}, {90, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{342, 247}, {86, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-15, 22}</string>
+			<key>spriteSize</key>
+			<string>{86, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{94, 230}, {86, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{343, 247}, {82, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-16, 22}</string>
+			<key>spriteSize</key>
+			<string>{82, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{182, 230}, {82, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{347, 231}, {74, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-16, 30}</string>
+			<key>spriteSize</key>
+			<string>{74, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{266, 230}, {74, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_attack1_lefttop_0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{342, 230}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 238}, {44, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 28}</string>
+			<key>spriteSize</key>
+			<string>{44, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{400, 230}, {44, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 241}, {48, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 26}</string>
+			<key>spriteSize</key>
+			<string>{48, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{446, 230}, {48, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 239}, {48, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 26}</string>
+			<key>spriteSize</key>
+			<string>{48, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{496, 230}, {48, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 238}, {48, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 26}</string>
+			<key>spriteSize</key>
+			<string>{48, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 230}, {48, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 238}, {46, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 26}</string>
+			<key>spriteSize</key>
+			<string>{46, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{596, 230}, {46, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 240}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 25}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{644, 230}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 242}, {44, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 24}</string>
+			<key>spriteSize</key>
+			<string>{44, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{688, 230}, {44, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 239}, {46, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 25}</string>
+			<key>spriteSize</key>
+			<string>{46, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{734, 230}, {46, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 237}, {46, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 26}</string>
+			<key>spriteSize</key>
+			<string>{46, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{782, 230}, {46, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 237}, {46, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{46, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{830, 230}, {46, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 238}, {44, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 28}</string>
+			<key>spriteSize</key>
+			<string>{44, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{878, 230}, {44, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 235}, {44, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 29}</string>
+			<key>spriteSize</key>
+			<string>{44, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{924, 230}, {44, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 238}, {44, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 26}</string>
+			<key>spriteSize</key>
+			<string>{44, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{970, 230}, {44, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 237}, {44, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 27}</string>
+			<key>spriteSize</key>
+			<string>{44, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 310}, {44, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 236}, {40, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 27}</string>
+			<key>spriteSize</key>
+			<string>{40, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{48, 310}, {40, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 236}, {38, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{38, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{90, 310}, {38, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 237}, {38, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 28}</string>
+			<key>spriteSize</key>
+			<string>{38, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{130, 310}, {38, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 239}, {38, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 28}</string>
+			<key>spriteSize</key>
+			<string>{38, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{170, 310}, {38, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 238}, {40, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 28}</string>
+			<key>spriteSize</key>
+			<string>{40, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{210, 310}, {40, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 236}, {38, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 29}</string>
+			<key>spriteSize</key>
+			<string>{38, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{252, 310}, {38, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 235}, {40, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 28}</string>
+			<key>spriteSize</key>
+			<string>{40, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{292, 310}, {40, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 235}, {44, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 29}</string>
+			<key>spriteSize</key>
+			<string>{44, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{334, 310}, {44, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 245}, {56, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{56, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{380, 310}, {56, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{368, 247}, {56, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 24}</string>
+			<key>spriteSize</key>
+			<string>{56, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{438, 310}, {56, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{365, 243}, {56, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 26}</string>
+			<key>spriteSize</key>
+			<string>{56, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{496, 310}, {56, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 241}, {58, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 26}</string>
+			<key>spriteSize</key>
+			<string>{58, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{554, 310}, {58, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{364, 242}, {56, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 25}</string>
+			<key>spriteSize</key>
+			<string>{56, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{614, 310}, {56, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{365, 244}, {56, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 24}</string>
+			<key>spriteSize</key>
+			<string>{56, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{672, 310}, {56, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{364, 246}, {60, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 22}</string>
+			<key>spriteSize</key>
+			<string>{60, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{730, 310}, {60, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 242}, {60, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 24}</string>
+			<key>spriteSize</key>
+			<string>{60, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{792, 310}, {60, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{364, 240}, {56, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 25}</string>
+			<key>spriteSize</key>
+			<string>{56, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{854, 310}, {56, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{367, 242}, {56, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 27}</string>
+			<key>spriteSize</key>
+			<string>{56, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{912, 310}, {56, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_run_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 245}, {56, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{56, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 386}, {56, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{60, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{112, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 241}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 25}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{164, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 241}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 25}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{216, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 241}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 25}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{268, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 241}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 25}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{320, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{372, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{424, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{476, 386}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{528, 386}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 237}, {42, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{572, 386}, {42, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 237}, {42, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{616, 386}, {42, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 237}, {42, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{660, 386}, {42, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 237}, {42, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{704, 386}, {42, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 237}, {42, 72}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 72}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{748, 386}, {42, 72}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{792, 386}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{836, 386}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{880, 386}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{924, 386}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{60, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 248}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 22}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{118, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 248}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 22}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{176, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 248}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 22}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{234, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{292, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{350, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_stand_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{408, 460}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{466, 460}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 246}, {50, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 22}</string>
+			<key>spriteSize</key>
+			<string>{50, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{518, 460}, {50, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 243}, {48, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 24}</string>
+			<key>spriteSize</key>
+			<string>{48, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{570, 460}, {48, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 228}, {34, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 31}</string>
+			<key>spriteSize</key>
+			<string>{34, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{620, 460}, {34, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 227}, {32, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 32}</string>
+			<key>spriteSize</key>
+			<string>{32, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{656, 460}, {32, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 233}, {32, 76}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 29}</string>
+			<key>spriteSize</key>
+			<string>{32, 76}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{690, 460}, {32, 76}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 235}, {32, 74}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 28}</string>
+			<key>spriteSize</key>
+			<string>{32, 74}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{724, 460}, {32, 74}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 232}, {34, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 29}</string>
+			<key>spriteSize</key>
+			<string>{34, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{758, 460}, {34, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 228}, {34, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 31}</string>
+			<key>spriteSize</key>
+			<string>{34, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{794, 460}, {34, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 228}, {32, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 31}</string>
+			<key>spriteSize</key>
+			<string>{32, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{830, 460}, {32, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 242}, {50, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 24}</string>
+			<key>spriteSize</key>
+			<string>{50, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{864, 460}, {50, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{916, 460}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 240}, {48, 68}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 26}</string>
+			<key>spriteSize</key>
+			<string>{48, 68}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{960, 460}, {48, 68}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 239}, {48, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 26}</string>
+			<key>spriteSize</key>
+			<string>{48, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 544}, {48, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 230}, {46, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 31}</string>
+			<key>spriteSize</key>
+			<string>{46, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{52, 544}, {46, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 225}, {48, 84}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 33}</string>
+			<key>spriteSize</key>
+			<string>{48, 84}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{100, 544}, {48, 84}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 228}, {54, 80}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 32}</string>
+			<key>spriteSize</key>
+			<string>{54, 80}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{150, 544}, {54, 80}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 233}, {60, 76}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 29}</string>
+			<key>spriteSize</key>
+			<string>{60, 76}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{206, 544}, {60, 76}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 230}, {56, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 31}</string>
+			<key>spriteSize</key>
+			<string>{56, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{268, 544}, {56, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 227}, {56, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{7, 32}</string>
+			<key>spriteSize</key>
+			<string>{56, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{326, 544}, {56, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 229}, {42, 80}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 31}</string>
+			<key>spriteSize</key>
+			<string>{42, 80}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{384, 544}, {42, 80}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 238}, {42, 70}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 27}</string>
+			<key>spriteSize</key>
+			<string>{42, 70}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{428, 544}, {42, 70}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{472, 544}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 253}, {56, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 19}</string>
+			<key>spriteSize</key>
+			<string>{56, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{530, 544}, {56, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{368, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{588, 544}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{368, 226}, {52, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 33}</string>
+			<key>spriteSize</key>
+			<string>{52, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{646, 544}, {52, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 223}, {44, 84}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 35}</string>
+			<key>spriteSize</key>
+			<string>{44, 84}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{700, 544}, {44, 84}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 229}, {44, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 32}</string>
+			<key>spriteSize</key>
+			<string>{44, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{746, 544}, {44, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 232}, {44, 76}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 30}</string>
+			<key>spriteSize</key>
+			<string>{44, 76}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{792, 544}, {44, 76}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 229}, {46, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 32}</string>
+			<key>spriteSize</key>
+			<string>{46, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{838, 544}, {46, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 225}, {52, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 34}</string>
+			<key>spriteSize</key>
+			<string>{52, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{886, 544}, {52, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 223}, {50, 84}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 35}</string>
+			<key>spriteSize</key>
+			<string>{50, 84}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{940, 544}, {50, 84}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_big_strong_lv1_win_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 249}, {56, 60}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 21}</string>
+			<key>spriteSize</key>
+			<string>{56, 60}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 630}, {56, 60}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+        <key>textureFileName</key>
+        <string>character_big_strong_lv1_hd.png</string>
+	</dict>
+</dict>
+</plist>

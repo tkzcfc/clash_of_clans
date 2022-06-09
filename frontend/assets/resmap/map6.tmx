@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="45" height="45" tilewidth="32" tileheight="24">
+ <tileset firstgid="1" name="32x24" tilewidth="32" tileheight="24">
+  <image source="32x24.png" width="128" height="168"/>
+ </tileset>
+ <layer name="块层1" width="45" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6GzUf9Gp2I/SFg1VVVVVVVVVfX9AenexcI=
+  </data>
+ </layer>
+ <objectgroup name="对象层1" width="45" height="45">
+  <object gid="5" x="288" y="288">
+   <properties>
+    <property name="BuildID" value="11001"/>
+    <property name="BuildX" value="11"/>
+    <property name="BuildY" value="11"/>
+   </properties>
+  </object>
+  <object gid="6" x="288" y="528">
+   <properties>
+    <property name="BuildID" value="23001"/>
+    <property name="BuildX" value="11"/>
+    <property name="BuildY" value="21"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

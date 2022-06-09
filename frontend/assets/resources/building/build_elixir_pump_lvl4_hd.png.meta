@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "524c01f8-432f-4481-b557-16b704606b36",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 199,
+  "height": 347,
+  "platformSettings": {},
+  "subMetas": {
+    "build_elixir_pump_lvl4_hd": {
+      "ver": "1.0.6",
+      "uuid": "b9c3c471-b138-41ad-849d-1998d99efa9c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "524c01f8-432f-4481-b557-16b704606b36",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 5,
+      "offsetY": 54,
+      "trimX": 36,
+      "trimY": 34,
+      "width": 137,
+      "height": 171,
+      "rawWidth": 199,
+      "rawHeight": 347,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

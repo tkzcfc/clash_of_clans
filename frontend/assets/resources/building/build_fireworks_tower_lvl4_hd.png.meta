@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "da21bf44-83e3-40eb-8339-910d03a45a55",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 157,
+  "height": 205,
+  "platformSettings": {},
+  "subMetas": {
+    "build_fireworks_tower_lvl4_hd": {
+      "ver": "1.0.6",
+      "uuid": "cfc72c34-61f1-41a6-ba18-3e49061a1a51",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "da21bf44-83e3-40eb-8339-910d03a45a55",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 23.5,
+      "trimX": 2,
+      "trimY": 7,
+      "width": 154,
+      "height": 144,
+      "rawWidth": 157,
+      "rawHeight": 205,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

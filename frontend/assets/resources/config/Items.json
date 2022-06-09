@@ -1,0 +1,116 @@
+{
+  "10001": {
+    "Id": 10001, 
+    "Type": 1, 
+    "Name": "联盟城堡", 
+    "Resource": "build_alliance_castle"
+  },
+  "10002": {
+    "Id": 10002, 
+    "Type": 1, 
+    "Name": "军营", 
+    "Resource": "build_barracks"
+  },
+  "10003": {
+    "Id": 10003, 
+    "Type": 1, 
+    "Name": "基本炮塔", 
+    "Resource": "build_basic_turret"
+  },
+  "10004": {
+    "Id": 10004, 
+    "Type": 1, 
+    "Name": "防御墙", 
+    "Resource": "build_defense_wall"
+  },
+  "10005": {
+    "Id": 10005, 
+    "Type": 1, 
+    "Name": "地雷", 
+    "Resource": "build_dilei"
+  },
+  "10006": {
+    "Id": 10006, 
+    "Type": 1, 
+    "Name": "圣水收集器", 
+    "Resource": "build_elixir_pump"
+  },
+  "10007": {
+    "Id": 10007, 
+    "Type": 1, 
+    "Name": "圣水储藏室", 
+    "Resource": "build_elixir_storage"
+  },
+  "10008": {
+    "Id": 10008, 
+    "Type": 1, 
+    "Name": "魔法塔", 
+    "Resource": "build_fireplace"
+  },
+  "10009": {
+    "Id": 10009, 
+    "Type": 1, 
+    "Name": "火箭塔", 
+    "Resource": "build_fireworks_tower"
+  },
+  "10010": {
+    "Id": 10010, 
+    "Type": 1, 
+    "Name": "储金罐", 
+    "Resource": "build_gold_storage"
+  },
+  "10011": {
+    "Id": 10011, 
+    "Type": 1, 
+    "Name": "金矿", 
+    "Resource": "build_goldmine"
+  },
+  "10012": {
+    "Id": 10012, 
+    "Type": 1, 
+    "Name": "炼药厂", 
+    "Resource": "build_laboratory"
+  },
+  "10013": {
+    "Id": 10013, 
+    "Type": 1, 
+    "Name": "符咒工厂", 
+    "Resource": "build_spell_factory"
+  },
+  "10014": {
+    "Id": 10014, 
+    "Type": 1, 
+    "Name": "箭塔", 
+    "Resource": "build_tower_turret"
+  },
+  "10015": {
+    "Id": 10015, 
+    "Type": 1, 
+    "Name": "主城", 
+    "Resource": "build_town_hall"
+  },
+  "10016": {
+    "Id": 10016, 
+    "Type": 1, 
+    "Name": "建筑工人小屋", 
+    "Resource": "build_worker_building"
+  },
+  "20001": {
+    "Id": 20001, 
+    "Type": 2, 
+    "Name": "金币", 
+    "Resource": ""
+  },
+  "20002": {
+    "Id": 20002, 
+    "Type": 2, 
+    "Name": "圣水", 
+    "Resource": ""
+  },
+  "20003": {
+    "Id": 20003, 
+    "Type": 2, 
+    "Name": "钻石", 
+    "Resource": ""
+  }
+}

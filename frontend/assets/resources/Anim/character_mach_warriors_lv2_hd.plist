@@ -1,0 +1,2982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>character_mach_warriors_lv2_attack1_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 262}, {24, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 17}</string>
+			<key>spriteSize</key>
+			<string>{24, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{38, 2}, {24, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 263}, {36, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 18}</string>
+			<key>spriteSize</key>
+			<string>{36, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{64, 2}, {36, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 264}, {26, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 15}</string>
+			<key>spriteSize</key>
+			<string>{26, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{102, 2}, {26, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{350, 271}, {50, 34}}</string>
+			<key>spriteOffset</key>
+			<string>{-25, 12}</string>
+			<key>spriteSize</key>
+			<string>{50, 34}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{130, 2}, {50, 34}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{361, 266}, {44, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, 14}</string>
+			<key>spriteSize</key>
+			<string>{44, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{182, 2}, {44, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{228, 2}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{264, 2}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 261}, {26, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 17}</string>
+			<key>spriteSize</key>
+			<string>{26, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{288, 2}, {26, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 261}, {28, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 18}</string>
+			<key>spriteSize</key>
+			<string>{28, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{316, 2}, {28, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 265}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 11}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{346, 2}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{367, 282}, {32, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, -2}</string>
+			<key>spriteSize</key>
+			<string>{32, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{370, 2}, {32, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 275}, {26, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 3}</string>
+			<key>spriteSize</key>
+			<string>{26, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{404, 2}, {26, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{432, 2}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{456, 2}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 259}, {32, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 20}</string>
+			<key>spriteSize</key>
+			<string>{32, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{498, 2}, {32, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 265}, {36, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{532, 2}, {36, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 259}, {34, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 22}</string>
+			<key>spriteSize</key>
+			<string>{34, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{570, 2}, {34, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{362, 257}, {46, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-15, 23}</string>
+			<key>spriteSize</key>
+			<string>{46, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{606, 2}, {46, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{366, 258}, {44, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 21}</string>
+			<key>spriteSize</key>
+			<string>{44, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{654, 2}, {44, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack1_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{700, 2}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{742, 2}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 262}, {42, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 15}</string>
+			<key>spriteSize</key>
+			<string>{42, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{778, 2}, {42, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 262}, {34, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 15}</string>
+			<key>spriteSize</key>
+			<string>{34, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{822, 2}, {34, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{359, 264}, {50, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-16, 14}</string>
+			<key>spriteSize</key>
+			<string>{50, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{858, 2}, {50, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 260}, {38, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{910, 2}, {38, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 261}, {32, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 16}</string>
+			<key>spriteSize</key>
+			<string>{32, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{950, 2}, {32, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{984, 2}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 52}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 261}, {42, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{10, 17}</string>
+			<key>spriteSize</key>
+			<string>{42, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{26, 52}, {42, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 258}, {28, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{6, 19}</string>
+			<key>spriteSize</key>
+			<string>{28, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{70, 52}, {28, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 263}, {30, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 13}</string>
+			<key>spriteSize</key>
+			<string>{30, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{100, 52}, {30, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 266}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 13}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{132, 52}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 266}, {34, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 14}</string>
+			<key>spriteSize</key>
+			<string>{34, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{172, 52}, {34, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{208, 52}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{232, 52}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 264}, {26, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 15}</string>
+			<key>spriteSize</key>
+			<string>{26, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{272, 52}, {26, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 263}, {44, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 15}</string>
+			<key>spriteSize</key>
+			<string>{44, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{300, 52}, {44, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{359, 263}, {54, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-14, 16}</string>
+			<key>spriteSize</key>
+			<string>{54, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{346, 52}, {54, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{387, 258}, {38, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{6, 20}</string>
+			<key>spriteSize</key>
+			<string>{38, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{402, 52}, {38, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{385, 258}, {34, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 19}</string>
+			<key>spriteSize</key>
+			<string>{34, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{442, 52}, {34, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_attack2_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 263}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{478, 52}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 260}, {34, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 18}</string>
+			<key>spriteSize</key>
+			<string>{34, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{518, 52}, {34, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 265}, {40, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 15}</string>
+			<key>spriteSize</key>
+			<string>{40, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{554, 52}, {40, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{596, 52}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 260}, {38, 34}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 23}</string>
+			<key>spriteSize</key>
+			<string>{38, 34}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{636, 52}, {38, 34}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 265}, {42, 36}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{42, 36}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{676, 52}, {42, 36}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 18}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{720, 52}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 260}, {34, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 18}</string>
+			<key>spriteSize</key>
+			<string>{34, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{760, 52}, {34, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{387, 257}, {28, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 18}</string>
+			<key>spriteSize</key>
+			<string>{28, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{796, 52}, {28, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 264}, {26, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 13}</string>
+			<key>spriteSize</key>
+			<string>{26, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{826, 52}, {26, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{387, 260}, {26, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 19}</string>
+			<key>spriteSize</key>
+			<string>{26, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{854, 52}, {26, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 257}, {32, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 23}</string>
+			<key>spriteSize</key>
+			<string>{32, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{882, 52}, {32, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{385, 264}, {30, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 16}</string>
+			<key>spriteSize</key>
+			<string>{30, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{916, 52}, {30, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{387, 261}, {24, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 17}</string>
+			<key>spriteSize</key>
+			<string>{24, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{948, 52}, {24, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{387, 257}, {28, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 18}</string>
+			<key>spriteSize</key>
+			<string>{28, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{974, 52}, {28, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 262}, {38, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 19}</string>
+			<key>spriteSize</key>
+			<string>{38, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 104}, {38, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {44, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 16}</string>
+			<key>spriteSize</key>
+			<string>{44, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{42, 104}, {44, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{88, 104}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 256}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 24}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{130, 104}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 264}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 15}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{170, 104}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {42, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 18}</string>
+			<key>spriteSize</key>
+			<string>{42, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{212, 104}, {42, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_run_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{377, 262}, {38, 38}}</string>
+			<key>spriteOffset</key>
+			<string>{-4, 19}</string>
+			<key>spriteSize</key>
+			<string>{38, 38}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{256, 104}, {38, 38}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{296, 104}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 263}, {32, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 16}</string>
+			<key>spriteSize</key>
+			<string>{32, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{332, 104}, {32, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 263}, {30, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-7, 15}</string>
+			<key>spriteSize</key>
+			<string>{30, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{366, 104}, {30, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 264}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 15}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{398, 104}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 15}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{436, 104}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 265}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{474, 104}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 265}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{514, 104}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 265}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{554, 104}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 265}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 15}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{594, 104}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 15}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{634, 104}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{672, 104}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 263}, {22, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{708, 104}, {22, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 262}, {24, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{24, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{732, 104}, {24, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 262}, {26, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{26, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{758, 104}, {26, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 262}, {24, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 15}</string>
+			<key>spriteSize</key>
+			<string>{24, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{786, 104}, {24, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 265}, {22, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 12}</string>
+			<key>spriteSize</key>
+			<string>{22, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{812, 104}, {22, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 268}, {28, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 11}</string>
+			<key>spriteSize</key>
+			<string>{28, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{836, 104}, {28, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 270}, {28, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 10}</string>
+			<key>spriteSize</key>
+			<string>{28, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{866, 104}, {28, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 269}, {28, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 10}</string>
+			<key>spriteSize</key>
+			<string>{28, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{896, 104}, {28, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 270}, {28, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, 10}</string>
+			<key>spriteSize</key>
+			<string>{28, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{926, 104}, {28, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{385, 266}, {24, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 12}</string>
+			<key>spriteSize</key>
+			<string>{24, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{956, 104}, {24, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 263}, {22, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{982, 104}, {22, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 154}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{366, 263}, {46, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 16}</string>
+			<key>spriteSize</key>
+			<string>{46, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{44, 154}, {46, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{365, 264}, {46, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 16}</string>
+			<key>spriteSize</key>
+			<string>{46, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{92, 154}, {46, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 264}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{140, 154}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 262}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 17}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{180, 154}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 261}, {32, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{32, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{220, 154}, {32, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 261}, {32, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{32, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{254, 154}, {32, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{376, 261}, {32, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{32, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{288, 154}, {32, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 261}, {34, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 17}</string>
+			<key>spriteSize</key>
+			<string>{34, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{322, 154}, {34, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 262}, {36, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 17}</string>
+			<key>spriteSize</key>
+			<string>{36, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{358, 154}, {36, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_specialstand_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{396, 154}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{438, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{474, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{510, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{375, 263}, {32, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{32, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 154}, {32, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {32, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{32, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{580, 154}, {32, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{374, 263}, {32, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{32, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{614, 154}, {32, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{648, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{684, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{720, 154}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{756, 154}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{780, 154}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 13}</string>
+			<key>spriteSize</key>
+			<string>{22, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{804, 154}, {22, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 13}</string>
+			<key>spriteSize</key>
+			<string>{22, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{828, 154}, {22, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 263}, {24, 50}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 12}</string>
+			<key>spriteSize</key>
+			<string>{24, 50}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{852, 154}, {24, 50}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 263}, {24, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 13}</string>
+			<key>spriteSize</key>
+			<string>{24, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{878, 154}, {24, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 263}, {24, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 13}</string>
+			<key>spriteSize</key>
+			<string>{24, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{904, 154}, {24, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 263}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 13}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{930, 154}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{954, 154}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{978, 154}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{44, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{86, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{128, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{170, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{212, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{254, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_stand_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{296, 206}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{338, 206}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 264}, {20, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 10}</string>
+			<key>spriteSize</key>
+			<string>{20, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{374, 206}, {20, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 260}, {26, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 17}</string>
+			<key>spriteSize</key>
+			<string>{26, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{396, 206}, {26, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 259}, {24, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 18}</string>
+			<key>spriteSize</key>
+			<string>{24, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{424, 206}, {24, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 247}, {28, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 24}</string>
+			<key>spriteSize</key>
+			<string>{28, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{450, 206}, {28, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 259}, {26, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 18}</string>
+			<key>spriteSize</key>
+			<string>{26, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{480, 206}, {26, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 260}, {26, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 17}</string>
+			<key>spriteSize</key>
+			<string>{26, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{508, 206}, {26, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 259}, {24, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 18}</string>
+			<key>spriteSize</key>
+			<string>{24, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{536, 206}, {24, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{388, 247}, {26, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 24}</string>
+			<key>spriteSize</key>
+			<string>{26, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{562, 206}, {26, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 263}, {22, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 16}</string>
+			<key>spriteSize</key>
+			<string>{22, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{590, 206}, {22, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_left_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {34, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, 16}</string>
+			<key>spriteSize</key>
+			<string>{34, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{614, 206}, {34, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{650, 206}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 261}, {48, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 15}</string>
+			<key>spriteSize</key>
+			<string>{48, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{674, 206}, {48, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 261}, {60, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{11, 16}</string>
+			<key>spriteSize</key>
+			<string>{60, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{724, 206}, {60, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 254}, {36, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 20}</string>
+			<key>spriteSize</key>
+			<string>{36, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{786, 206}, {36, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 250}, {24, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 22}</string>
+			<key>spriteSize</key>
+			<string>{24, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{824, 206}, {24, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 258}, {36, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 18}</string>
+			<key>spriteSize</key>
+			<string>{36, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{850, 206}, {36, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 262}, {62, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{12, 16}</string>
+			<key>spriteSize</key>
+			<string>{62, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{888, 206}, {62, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 255}, {34, 52}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 19}</string>
+			<key>spriteSize</key>
+			<string>{34, 52}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{952, 206}, {34, 52}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{389, 250}, {24, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 22}</string>
+			<key>spriteSize</key>
+			<string>{24, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{988, 206}, {24, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{379, 262}, {44, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 16}</string>
+			<key>spriteSize</key>
+			<string>{44, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 266}, {44, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_leftbottom_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 262}, {22, 48}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 14}</string>
+			<key>spriteSize</key>
+			<string>{22, 48}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{48, 266}, {22, 48}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{72, 266}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{367, 266}, {48, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 13}</string>
+			<key>spriteSize</key>
+			<string>{48, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{114, 266}, {48, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 264}, {36, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 16}</string>
+			<key>spriteSize</key>
+			<string>{36, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{164, 266}, {36, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{385, 259}, {28, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 18}</string>
+			<key>spriteSize</key>
+			<string>{28, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{202, 266}, {28, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 249}, {26, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 23}</string>
+			<key>spriteSize</key>
+			<string>{26, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{232, 266}, {26, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 259}, {32, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, 18}</string>
+			<key>spriteSize</key>
+			<string>{32, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{260, 266}, {32, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 264}, {38, 40}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 40}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{294, 266}, {38, 40}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 259}, {30, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 18}</string>
+			<key>spriteSize</key>
+			<string>{30, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{334, 266}, {30, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{386, 249}, {26, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 23}</string>
+			<key>spriteSize</key>
+			<string>{26, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{366, 266}, {26, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 263}, {38, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 16}</string>
+			<key>spriteSize</key>
+			<string>{38, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{394, 266}, {38, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>character_mach_warriors_lv2_win_lefttop_0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{371, 263}, {40, 42}}</string>
+			<key>spriteOffset</key>
+			<string>{-9, 16}</string>
+			<key>spriteSize</key>
+			<string>{40, 42}</string>
+			<key>spriteSourceSize</key>
+			<string>{800, 600}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{434, 266}, {40, 42}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 512}</string>
+        <key>textureFileName</key>
+        <string>character_mach_warriors_lv2_hd.png</string>
+	</dict>
+</dict>
+</plist>

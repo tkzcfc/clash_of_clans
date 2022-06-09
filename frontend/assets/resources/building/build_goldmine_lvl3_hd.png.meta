@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "09ee2bcf-107c-49be-9009-2393a3aee885",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 192,
+  "height": 265,
+  "platformSettings": {},
+  "subMetas": {
+    "build_goldmine_lvl3_hd": {
+      "ver": "1.0.6",
+      "uuid": "e7be4146-7a8e-4a75-bdc5-56554247b0fa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "09ee2bcf-107c-49be-9009-2393a3aee885",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 5,
+      "offsetY": 26,
+      "trimX": 39,
+      "trimY": 57,
+      "width": 124,
+      "height": 99,
+      "rawWidth": 192,
+      "rawHeight": 265,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

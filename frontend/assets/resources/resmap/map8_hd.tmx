@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="37" height="37" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="build_1_1_yes_hd" tilewidth="64" tileheight="32">
+  <image source="../common/build_1_1_yes_hd.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="build_1_1__" tilewidth="64" tileheight="32">
+  <image source="build_1_1__.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="build_1_1____" tilewidth="64" tileheight="32">
+  <image source="build_1_1____.png" width="64" height="32"/>
+ </tileset>
+ <layer name="块层1" width="37" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6Ej+w/dHfpWcNVUVVVVVX09lToKsw==
+  </data>
+ </layer>
+ <objectgroup name="对象层1" width="37" height="37">
+  <object gid="3" x="544" y="544">
+   <properties>
+    <property name="ID" value="10001"/>
+    <property name="IndexX" value="16"/>
+    <property name="IndexY" value="16"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="448">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="13"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="480">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="14"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="512">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="15"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="544">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="16"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="576">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="17"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="608">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="18"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="640">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="19"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="480" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="14"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="512" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="15"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="544" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="16"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="576" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="17"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="608" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="18"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="640" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="19"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="672" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="20"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="704" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="21"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="736" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="22"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="672">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="20"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="640">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="19"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="608">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="18"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="576">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="17"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="544">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="16"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="512">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="15"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="480">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="14"/>
+   </properties>
+  </object>
+  <object gid="3" x="480" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="14"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="512" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="15"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="544" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="16"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="576" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="17"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="608" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="18"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="672" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="20"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="704" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="21"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="736" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="22"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="416">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="12"/>
+   </properties>
+  </object>
+  <object gid="3" x="768" y="448">
+   <properties>
+    <property name="ID" value="40001"/>
+    <property name="IndexX" value="23"/>
+    <property name="IndexY" value="13"/>
+   </properties>
+  </object>
+  <object gid="3" x="672" y="544">
+   <properties>
+    <property name="ID" value="30001"/>
+    <property name="IndexX" value="20"/>
+    <property name="IndexY" value="16"/>
+   </properties>
+  </object>
+  <object gid="3" x="544" y="352">
+   <properties>
+    <property name="ID" value="10001"/>
+    <property name="IndexX" value="16"/>
+    <property name="IndexY" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

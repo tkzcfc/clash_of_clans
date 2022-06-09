@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="37" height="37" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="build_1_1_yes_hd" tilewidth="64" tileheight="32">
+  <image source="../common/build_1_1_yes_hd.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="build_1_1__" tilewidth="64" tileheight="32">
+  <image source="build_1_1__.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="build_1_1____" tilewidth="64" tileheight="32">
+  <image source="build_1_1____.png" width="64" height="32"/>
+ </tileset>
+ <layer name="块层1" width="37" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6Ej+w/dHfpWcNVUVVVVVX09lToKsw==
+  </data>
+ </layer>
+ <objectgroup name="对象层1" width="37" height="37">
+  <object gid="3" x="608" y="576">
+   <properties>
+    <property name="ID" value="10001"/>
+    <property name="IndexX" value="17"/>
+    <property name="IndexY" value="18"/>
+   </properties>
+  </object>
+  <object gid="3" x="448" y="704">
+   <properties>
+    <property name="ID" value="30401"/>
+    <property name="IndexX" value="13"/>
+    <property name="IndexY" value="21"/>
+   </properties>
+  </object>
+  <object gid="3" x="736" y="736">
+   <properties>
+    <property name="ID" value="30101"/>
+    <property name="IndexX" value="22"/>
+    <property name="IndexY" value="22"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

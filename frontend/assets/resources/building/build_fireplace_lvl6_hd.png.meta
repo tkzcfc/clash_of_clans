@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5ca1acc4-d6bd-4274-8d41-f3e75a73ad58",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 337,
+  "height": 230,
+  "platformSettings": {},
+  "subMetas": {
+    "build_fireplace_lvl6_hd": {
+      "ver": "1.0.6",
+      "uuid": "d1601653-b883-4f9f-95e9-15f40e91dfbb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5ca1acc4-d6bd-4274-8d41-f3e75a73ad58",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6,
+      "offsetY": 24.5,
+      "trimX": 117,
+      "trimY": 46,
+      "width": 91,
+      "height": 89,
+      "rawWidth": 337,
+      "rawHeight": 230,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

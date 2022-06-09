@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "tsrpc-browser": "^3.3.0"
+  }
+}

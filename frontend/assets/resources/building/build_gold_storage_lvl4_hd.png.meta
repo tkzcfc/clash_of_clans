@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "335e5900-c851-4215-86ba-e058463b5409",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 192,
+  "height": 176,
+  "platformSettings": {},
+  "subMetas": {
+    "build_gold_storage_lvl4_hd": {
+      "ver": "1.0.6",
+      "uuid": "b968cec0-1536-4917-8b4c-f77b986a3f28",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "335e5900-c851-4215-86ba-e058463b5409",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 21.5,
+      "trimX": 35,
+      "trimY": 17,
+      "width": 123,
+      "height": 99,
+      "rawWidth": 192,
+      "rawHeight": 176,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

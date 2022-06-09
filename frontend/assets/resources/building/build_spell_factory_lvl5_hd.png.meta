@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "10d7b19d-e3d0-4126-9d65-94e025d3de8f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 279,
+  "height": 404,
+  "platformSettings": {},
+  "subMetas": {
+    "build_spell_factory_lvl5_hd": {
+      "ver": "1.0.6",
+      "uuid": "6a846f04-f6bf-4954-8eed-2a27f7af7026",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "10d7b19d-e3d0-4126-9d65-94e025d3de8f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 70,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 279,
+      "height": 264,
+      "rawWidth": 279,
+      "rawHeight": 404,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

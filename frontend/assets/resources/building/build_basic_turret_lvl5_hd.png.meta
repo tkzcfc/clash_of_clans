@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "86f11af8-a2ab-4426-a014-4084100af603",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 156,
+  "height": 158,
+  "platformSettings": {},
+  "subMetas": {
+    "build_basic_turret_lvl5_hd": {
+      "ver": "1.0.6",
+      "uuid": "3babbb17-3949-4730-bb08-f75f9de93ca2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "86f11af8-a2ab-4426-a014-4084100af603",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -4.5,
+      "trimX": 40,
+      "trimY": 54,
+      "width": 75,
+      "height": 59,
+      "rawWidth": 156,
+      "rawHeight": 158,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

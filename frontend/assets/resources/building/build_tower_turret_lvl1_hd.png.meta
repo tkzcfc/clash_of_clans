@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "be5efa82-f1eb-4db4-87ec-062f3c72f221",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 192,
+  "height": 270,
+  "platformSettings": {},
+  "subMetas": {
+    "build_tower_turret_lvl1_hd": {
+      "ver": "1.0.6",
+      "uuid": "b5a9afdd-8801-4fe6-b68d-bf620b1e3e55",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "be5efa82-f1eb-4db4-87ec-062f3c72f221",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2,
+      "offsetY": 34,
+      "trimX": 61,
+      "trimY": 47,
+      "width": 74,
+      "height": 108,
+      "rawWidth": 192,
+      "rawHeight": 270,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

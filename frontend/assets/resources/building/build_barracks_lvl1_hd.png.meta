@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d619374e-cb0e-4f24-9d37-7bed80f3f00f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 244,
+  "height": 277,
+  "platformSettings": {},
+  "subMetas": {
+    "build_barracks_lvl1_hd": {
+      "ver": "1.0.6",
+      "uuid": "9edd517b-d925-4dc8-ae5c-08d7583dd0fa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d619374e-cb0e-4f24-9d37-7bed80f3f00f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2.5,
+      "offsetY": 18.5,
+      "trimX": 45,
+      "trimY": 66,
+      "width": 149,
+      "height": 108,
+      "rawWidth": 244,
+      "rawHeight": 277,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

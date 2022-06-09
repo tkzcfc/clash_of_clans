@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>build_basic_turret_lvl6_base_left1_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{66, 37}, {57, 63}}</string>
+			<key>spriteOffset</key>
+			<string>{2, 19}</string>
+			<key>spriteSize</key>
+			<string>{57, 63}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {57, 63}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>build_basic_turret_lvl6_base_left2_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{50, 37}, {79, 59}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 21}</string>
+			<key>spriteSize</key>
+			<string>{79, 59}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{61, 2}, {79, 59}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>build_basic_turret_lvl6_base_left3_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{45, 38}, {79, 47}}</string>
+			<key>spriteOffset</key>
+			<string>{-8, 26}</string>
+			<key>spriteSize</key>
+			<string>{79, 47}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{142, 2}, {79, 47}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>build_basic_turret_lvl6_base_left4_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{47, 37}, {79, 51}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 25}</string>
+			<key>spriteSize</key>
+			<string>{79, 51}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 67}, {79, 51}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>build_basic_turret_lvl6_base_left5_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{49, 26}, {75, 63}}</string>
+			<key>spriteOffset</key>
+			<string>{-6, 30}</string>
+			<key>spriteSize</key>
+			<string>{75, 63}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{83, 67}, {75, 63}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>build_basic_turret_lvl6_base_left6_0000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{63, 21}, {57, 69}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 32}</string>
+			<key>spriteSize</key>
+			<string>{57, 69}</string>
+			<key>spriteSourceSize</key>
+			<string>{185, 175}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{160, 67}, {57, 69}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{256, 256}</string>
+        <key>textureFileName</key>
+        <string>build_anim_basic_turret_lvl6_hd.png</string>
+	</dict>
+</dict>
+</plist>

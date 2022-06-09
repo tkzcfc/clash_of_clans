@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="9" height="9" tilewidth="32" tileheight="24">
+ <tileset firstgid="1" name="32x24" tilewidth="32" tileheight="24">
+  <image source="32x24.png" width="128" height="168"/>
+ </tileset>
+ <layer name="map_9x9" width="9" height="9">
+  <data encoding="base64" compression="zlib">
+   eJwTZGBgEBzFFGEAc5UFYg==
+  </data>
+ </layer>
+ <objectgroup name="对象层 1" width="9" height="9">
+  <object gid="1" x="24" y="216"/>
+  <object gid="1" x="49" y="191"/>
+  <object gid="1" x="76" y="169"/>
+  <object gid="1" x="100" y="144"/>
+  <object gid="1" x="124" y="120"/>
+  <object gid="1" x="148" y="97"/>
+  <object gid="1" x="171" y="73"/>
+  <object gid="1" x="195" y="49"/>
+  <object gid="1" x="216" y="27"/>
+  <object gid="1" x="25" y="23"/>
+  <object gid="1" x="51" y="48"/>
+  <object gid="1" x="74" y="72"/>
+  <object gid="1" x="100" y="97"/>
+  <object gid="1" x="-1" y="189"/>
+  <object gid="1" x="-21" y="169"/>
+  <object gid="1" x="-45" y="145"/>
+  <object gid="1" x="-70" y="120"/>
+  <object gid="1" x="-45" y="96"/>
+  <object gid="1" x="-20" y="68"/>
+  <object gid="1" x="4" y="44"/>
+  <object gid="1" x="47" y="1"/>
+  <object gid="1" x="71" y="-25"/>
+  <object gid="1" x="-226" y="354"/>
+  <object gid="1" x="217" y="220"/>
+  <object gid="1" x="239" y="195"/>
+  <object gid="1" x="263" y="171"/>
+  <object gid="1" x="286" y="148"/>
+  <object gid="1" x="310" y="122"/>
+  <object gid="1" x="289" y="99"/>
+  <object gid="1" x="240" y="50"/>
+  <object gid="1" x="264" y="74"/>
+  <object gid="1" x="191" y="1"/>
+  <object gid="1" x="166" y="-24"/>
+  <object gid="1" x="145" y="-49"/>
+  <object gid="1" x="120" y="-74"/>
+  <object gid="1" x="95" y="-49"/>
+  <object gid="1" x="73" y="265"/>
+  <object gid="1" x="98" y="290"/>
+  <object gid="1" x="123" y="313"/>
+  <object gid="1" x="149" y="289"/>
+  <object gid="1" x="173" y="265"/>
+  <object gid="1" x="48" y="240"/>
+  <object gid="1" x="196" y="242"/>
+  <object gid="1" x="25" y="71"/>
+  <object gid="1" x="74" y="23"/>
+  <object gid="1" x="2" y="95"/>
+  <object gid="1" x="98" y="-2"/>
+  <object gid="1" x="4" y="145"/>
+  <object gid="1" x="24" y="120"/>
+  <object gid="1" x="48" y="96"/>
+  <object gid="1" x="-108" y="256"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4da3ee03-1266-4896-b99a-0ca4e4d633cf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 257,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "build_weidang_4_4_hd": {
+      "ver": "1.0.6",
+      "uuid": "9e9da3f6-520f-44c2-a2c5-9c2de3f28a90",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4da3ee03-1266-4896-b99a-0ca4e4d633cf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -18,
+      "trimX": 5,
+      "trimY": 37,
+      "width": 244,
+      "height": 90,
+      "rawWidth": 257,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

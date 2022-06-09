@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "668a1d65-5d5e-4281-89e6-429cde1acc80",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 159,
+  "height": 183,
+  "platformSettings": {},
+  "subMetas": {
+    "build_town_hall_lvl1_hd": {
+      "ver": "1.0.6",
+      "uuid": "a5f28ec8-0bd6-49d2-9185-deb3c5dc6a4e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "668a1d65-5d5e-4281-89e6-429cde1acc80",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 27,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 159,
+      "height": 129,
+      "rawWidth": 159,
+      "rawHeight": 183,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
