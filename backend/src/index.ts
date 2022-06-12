@@ -21,6 +21,8 @@ declare global {
 
     var GSysEventEmitter : EventEmitter<SysEvent>;
     var GGmEventEmitter : EventEmitter<string>;
+    
+    function STR(str: string): string;
 }
 
 

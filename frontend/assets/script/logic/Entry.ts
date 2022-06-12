@@ -18,7 +18,7 @@ export default class Entry extends Root {
         super.onLoad();
         // mgr初始化
         mgr.initialize();
-        
+
         // // 开启动态合批
         // cc.macro.CLEANUP_IMAGE_CACHE = false;
         // cc.dynamicAtlasManager.enabled = true;

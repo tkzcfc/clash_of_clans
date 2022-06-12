@@ -5,7 +5,7 @@
  */
 
 import { IService } from "../IService";
-import { dbConfig } from "../../const/dbConfig";
+import { dbConfig } from "./dbConfig";
 import { LocalStorage } from "./LocalStorage";
 
 export class DBService extends IService {
@@ -16,6 +16,9 @@ export class DBService extends IService {
     onLoadSync(): boolean {
         let storage = new LocalStorage();
         storage.addTable("data", "user");
+        storage.addTable("data", "bag");
+        storage.addTable("data", "map");
+        storage.addTable("data", "player");
         this.addStorage(storage);
 
         return true;

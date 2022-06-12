@@ -1,9 +1,9 @@
 import { core } from "../../../core/InitCore";
 import { UIDelegate } from "../../../core/ui_manager/UIDelegate";
-import { Const } from "../../common/Const";
-import { PlayerData } from "../../data/PlayerData";
-import { MessageID } from "../../msg/Message";
-import { NetError } from "../../msg/NetError";
+import { RpcErrCode } from "../../../shared/RpcErr";
+import { LoginMgr } from "../../manager/LoginMgr";
+import { mgr } from "../../manager/mgr";
+import { RpcMgr } from "../../manager/RpcMgr";
 import { UIUtils } from "../UIUtils";
 
 const {ccclass, property} = cc._decorator;
@@ -18,19 +18,12 @@ export class Login extends UIDelegate {
     editBox_Password: cc.EditBox;
 
     protected onLoad(): void {
-        core.client.connect(core.NET_KEY_GAME, {
-            protocol : "ws",
-            ip: "1.14.65.70", // localhost   1.14.65.70
-            port: 8205,
-        });
-        this.initEvent();
+        mgr.getMgr(RpcMgr).connect();
 
         this.editBox_Account.string = core.storage.get("username", "qwq");
         this.editBox_Password.string = core.storage.get("password", "qwq");
-    }
 
-    protected onDestroy(): void {
-        core.netEventEmitter.removeAllListenerByContext(this);
+        this.node.opacity = 0;
     }
 
     onClickLogin() {
@@ -47,39 +40,54 @@ export class Login extends UIDelegate {
             return;
         }
 
-        core.client.sendJson(core.NET_KEY_GAME, MessageID.LOGIN_GAME_REQ, {
-            account: account,
-            password: password
-        });
+        this.doLogin();
     }
 
-    initEvent() {        
-        core.netEventEmitter.on(MessageID.LOGIN_GAME_ACK, (msg: any)=>{
-            if(msg.code == NetError.Account_Not_Exist) {
-                UIUtils.showMsgBoxTwo("账号不存在，是否注册？", ()=>{
-                    core.client.sendJson(core.NET_KEY_GAME, MessageID.REGISTER_REQ, {
-                        account: this.editBox_Account.string,
-                        password: this.editBox_Password.string
-                    });
-                });
-            }
-            else if(msg.code == NetError.Password_Error) {
-                UIUtils.showMsgBoxOne("密码错误");
-            }
-            else if(msg.code == NetError.OK){
-                // 登录成功
-                core.storage.set("username", this.editBox_Account.string);
-                core.storage.set("password", this.editBox_Password.string);
-            }
-        }, this);
+    async doLogin() {
+        let account = this.editBox_Account.string;
+        let password = this.editBox_Password.string;
 
-        core.netEventEmitter.on(MessageID.REGISTER_ACK, (msg: any)=> {
-            if(msg.code == NetError.OK) {
-                UIUtils.showMsgBoxOne("注册成功!");
-            }
-            else {
-                UIUtils.showMsgBoxOne(`注册失败，错误码:${msg.code}`);
-            }
-        }, this);
+        let ret = await mgr.getMgr(RpcMgr).callApi("ptl/Login", {
+            account: account,
+            password: password,
+        })
+
+        if(ret.isSucc) {
+            // 登录成功
+            core.storage.set("username", this.editBox_Account.string);
+            core.storage.set("password", this.editBox_Password.string);
+
+            mgr.getMgr(LoginMgr).token = ret.res.token;
+            mgr.getMgr(LoginMgr).pid = ret.res.players[0];
+            mgr.getMgr(LoginMgr).loginGame();
+            return;
+        }
+
+        let code = ret.err.code;
+        if(typeof(code) != "number") {
+            return;
+        }
+
+        if(code == RpcErrCode.NOT_ACCOUNT) {
+            UIUtils.showMsgBoxTwo("账号不存在，是否注册？", ()=>{
+                this.doRegister();
+            });
+        }
+    }
+
+    async doRegister() {
+        let account = this.editBox_Account.string;
+        let password = this.editBox_Password.string;
+        
+        let ret = await mgr.getMgr(RpcMgr).callApi("ptl/Register", {
+            account: account,
+            password: password,
+            platform: cc.sys.platform,
+            deviceid: "",
+        })
+
+        if(ret.isSucc) {
+            this.doLogin();
+        }
     }
 };

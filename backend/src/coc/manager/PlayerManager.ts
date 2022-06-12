@@ -1,14 +1,18 @@
+import { DataFactory } from "../models/DataFactory";
+import { Player } from "../models/Player";
 import { DBService } from "../service/db/DBService";
 import { CryptoUtils } from "../utils/CryptoUtils";
-import { Player } from "./Player";
+import { IManager } from "./IManager";
 
 
-
-export class PlayerManager {
+/**
+ * 玩家管理
+ */
+export class PlayerManager implements IManager {
     players: Player[] = [];
     playerMap = new Map<string, Player>();
 
-    constructor() {
+    onStart(): void {
         GServiceManager.getService(DBService).onRead("data", "player", data=>{
             let player = new Player(data);
             this.players.push(player);
@@ -34,28 +38,7 @@ export class PlayerManager {
      * @param pid 
      */
     newPlayerEx(pid: string) {
-        let player = new Player({
-            // pid
-            pid: pid,
-            // 昵称
-            name: CryptoUtils.generateUUID(),
-            // 等级
-            lv: 0,
-            // 经验
-            exp: 0,
-            // 金币
-            coins: 100,
-            // 钻石
-            diamonds: 0,
-
-            map: {
-                units: [],
-            },
-
-            bag: {
-                build: [],
-            }
-        });
+        let player = new Player(DataFactory.newDBPlayerInfo(pid));
         this.players.push(player);
         this.playerMap.set(pid, player);
 

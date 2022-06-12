@@ -4,8 +4,6 @@
  * Description: GM服务
  */
 
-import { UserInfo } from "../../const/dbConfig";
-import { DBService } from "../db/DBService";
 import { IService } from "../IService";
 var http = require("http")
 // var fs = require("fs")
@@ -71,32 +69,6 @@ export class GMService extends IService {
 
             GServiceManager.stop();
         }, this);
-
-        
-        // GGmEventEmitter.on("/add", (paramsMap : Map<string, string>, request: any, response: any)=>{
-        //     response.writeHead(200, { 'Content-Type': 'application/json' });
-        //     response.end(JSON.stringify({
-        //         data: 'add ok',
-        //     }));
-
-        //     let data: UserInfo = {
-        //         account: paramsMap.get("account") || "default_account",
-        //         password: paramsMap.get("password") || "default_password",
-        //     };
-        //     GServiceManager.getService(DBService).autoAddData("data", "user", data);
-
-        // }, this);
-
-        
-        // GGmEventEmitter.on("/remove", (paramsMap : Map<string, string>, request: any, response: any)=>{
-        //     response.writeHead(200, { 'Content-Type': 'application/json' });
-        //     response.end(JSON.stringify({
-        //         data: 'remove ok',
-        //     }));
-
-        //     let id = Number.parseInt(paramsMap.get("id") || "0")
-        //     GServiceManager.getService(DBService).delData("data", "user", id);
-        // }, this);
     }
 
     onStop(): Promise<void> {

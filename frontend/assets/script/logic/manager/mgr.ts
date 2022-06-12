@@ -8,6 +8,7 @@ import { BaseMgr } from "./BaseMgr";
 import { FightMgr } from "./FightMgr";
 import { GameCfgMgr } from "./GameCfgMgr";
 import { LoginMgr } from "./LoginMgr";
+import { RpcMgr } from "./RpcMgr";
 
 
 
@@ -17,6 +18,7 @@ export namespace mgr {
 
     export function initialize() {
         addMgr(GameCfgMgr);
+        addMgr(RpcMgr);
         addMgr(LoginMgr);
         addMgr(FightMgr);
     }

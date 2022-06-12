@@ -1,18 +1,18 @@
-import { ReqRegister } from "../../shared/protocols/ptl/PtlRegister";
+import { DBAccountInfo } from "../../shared/db_structure/Account";
 import { RpcErrCode } from "../../shared/RpcErr";
-import { DBAccountInfo } from "../const/dbConfig";
 import { DBService } from "../service/db/DBService";
-import { Player } from "./Player";
+import { Player } from "../models/Player";
+import { IManager } from "./IManager";
 
 
 /**
  * 账号管理
  */
-export class AccountManager {
+export class AccountManager implements IManager {
     
     datas: DBAccountInfo[] = [];
 
-    constructor() {
+    onStart(): void {
         GServiceManager.getService(DBService).onRead("data", "user", (data: DBAccountInfo)=>{
             this.datas.push(data)
         }, this);

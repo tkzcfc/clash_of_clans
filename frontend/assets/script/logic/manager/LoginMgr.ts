@@ -4,127 +4,49 @@
  * Description: 登录管理
  */
 
-import { CoreEvent } from "../../core/common/event/CoreEvent";
 import { core } from "../../core/InitCore";
 import { Const } from "../common/Const";
-import { PlayerData } from "../data/PlayerData";
-import { MessageID } from "../msg/Message";
-import { NetError } from "../msg/NetError";
-import { MessageBox } from "../ui/common/MessageBox";
-import { UIUtils } from "../ui/UIUtils";
 import { BaseMgr } from "./BaseMgr";
+import { mgr } from "./mgr";
+import { RpcMgr } from "./RpcMgr";
 
 export class LoginMgr extends BaseMgr
 {
-    // 当前重连次数
-    _reconnectNum: number = 0;
-    // 是否显示msgBox
-    _showMsgBox: boolean = false;
-    // 是否断线重连
-    _isReconnect: boolean = true;
+    pid = "";
+    token = "";
+    cookie = "";
 
     constructor() {
         super();
-        this.initSysEvent();
         this.initNetEvent();
     }
-    
-    private initSysEvent() {
-            
-        // 连接成功
-        core.sysEventEmitter.on(CoreEvent.NET_ON_OPEN, (key, url)=>{
-            this._showMsgBox = false;
-            this._reconnectNum = 0;
-            // 已经登录过了，此处直接使用token断线重连
-            if(PlayerData.getInstance()) {
-                PlayerData.getInstance().tokenReconnection();
-            }
-        }, this);
-        
-        // 关闭后自动重连
-        core.sysEventEmitter.on(CoreEvent.NET_ON_CLOSE, (key, url)=>{
-            if(this._showMsgBox || !this._isReconnect)
-                return;
 
-            if(this._reconnectNum > 5) {
-                this._reconnectNum = 0;
-                this._showMsgBox = true;
-                console.log("服务器连接失败...");
+    async loginGame() {
+        if(this.pid == "") {
+            return;
+        }
 
-                core.ui.current().pushUI(Const.UIs.MessageBox, null, (node: cc.Node)=>{
-                    node.getComponent(MessageBox).showOne("服务器连接失败，请稍后再试", ()=>{
-                        this._showMsgBox = false;
-                        core.client.connect(key, url);
-                    });
-                }, 10);
-            }
-            else {
-                setTimeout(()=>{
-                    core.client.connect(key, url);
-                }, this._reconnectNum * 100);
-            }
-            this._reconnectNum++;
-        }, this);
+        let ret = await mgr.getMgr(RpcMgr).callApi("ptl/LoginGame", {
+            pid: this.pid,
+            token: this.token,
+            cookie: this.cookie
+        })
 
-        // 开始连接
-        core.sysEventEmitter.on(CoreEvent.NET_ON_CONNECT_START, (key, url)=>{
-            if(!core.ui.current().contain(Const.UIs.NetLoading)) {
-                core.ui.current().pushUI(Const.UIs.NetLoading, null, null, 10);
-            }
-        }, this);
+        if(ret.isSucc) {
+            // ret.res.pdata
+        }
     }
 
     private initNetEvent() {
-        // 登录结果返回
-        core.netEventEmitter.on(MessageID.LOGIN_GAME_ACK, (msg: any) => {
-            let errStr = "";
-            if(msg.code == NetError.Token_Expiration) {
-                errStr = "token已过期，请重新登录";
-            }
-            else if(msg.code == NetError.Player_In_The_Game) {
-                errStr = "此玩家已在游戏中";                
-            }
+        let client = mgr.getMgr(RpcMgr).client;
 
-            if(errStr !== "") {
-                this._isReconnect = false;
-                UIUtils.showMsgBoxOne(errStr, ()=>{
-                    cc.game.end();
-                });
-            }
-        }, this);
-
-        // 此账号在其他设备登录
-        core.netEventEmitter.on(MessageID.LOGIN_IN_ELSEWHERE, (msg: any) => {
-            this._isReconnect = false;
-            UIUtils.showMsgBoxOne("账号在其他设备登录", ()=>{
-                cc.game.end();
-            });
-        }, this);
-
-        // 断线重连开始
-        core.netEventEmitter.on(MessageID.REUNION_PUSH_BEGIN, (msg: any) => {
-        }, this);
-
-        // 断线重连结束
-        core.netEventEmitter.on(MessageID.REUNION_PUSH_END, (msg: any) => {
-        }, this);
-
-
-        // 登录成功推送开始
-        core.netEventEmitter.on(MessageID.LOGIN_SUC_PUSH_BEGIN, (msg: any) => {
-            PlayerData.destroy();
-            PlayerData.newInstance(msg);
-        }, this);
-
-        // 登录成功推送结束
-        core.netEventEmitter.on(MessageID.LOGIN_SUC_PUSH_END, (msg: any) => {
-            PlayerData.getInstance().token = msg.token;
+        // 进入游戏完成消息
+        client.listenMsg("msg/LoginGameFinish", (msg => {
             core.viewManager.runView(Const.Views.GameView);
-        }, this);
-    }
-
-    onDestroy() {
-        core.sysEventEmitter.removeAllListenerByContext(this);
-        super.onDestroy();
+        }));
+        // 被服务器踢出消息
+        client.listenMsg("msg/SelfOffline", (msg => {
+            mgr.getMgr(RpcMgr).showErrCode(msg.why);
+        }));
     }
 }

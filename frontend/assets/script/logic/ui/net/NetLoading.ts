@@ -12,15 +12,4 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass()
 export class NetLoading extends UIDelegate {
-    
-    protected update(dt: number): void {
-        if(core.client.isConnect(core.NET_KEY_GAME))
-            this.closeSelf();
-    }
-
-    
-    /** 是否可以关闭UI */
-    public canCloseUI(): boolean {
-        return core.client.isConnect(core.NET_KEY_GAME);
-    }
 };

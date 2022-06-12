@@ -3,8 +3,11 @@ import { IService } from "../IService";
 import * as path from "path";
 import { TerminalColorLogger, WsServer } from "tsrpc";
 import { serviceProto } from "../../../shared/protocols/serviceProto";
-import { AccountManager } from "../../logic/AccountManager";
-import { PlayerManager } from "../../logic/PlayerManager";
+import { AccountManager } from "../../manager/AccountManager";
+import { PlayerManager } from "../../manager/PlayerManager";
+import { enableAuthentication } from "../../models/EnableAuthentication";
+import { connectionInterception } from "../../models/ConnectionInterception";
+import { MapManager } from "../../manager/MapManager";
 
 export class RpcService extends IService {
     readonly rpc = new WsServer(serviceProto, {
@@ -18,23 +21,22 @@ export class RpcService extends IService {
         })
     });
 
-    public accountMng?: AccountManager;
-    public playerMng?: PlayerManager;
+    readonly accountMng = new AccountManager();
+    readonly playerMng = new PlayerManager();
+    readonly mapMng = new MapManager();
 
     async onStart(): Promise<void> {
-        this.accountMng = new AccountManager();
-        this.playerMng = new PlayerManager();
+        this.accountMng.onStart();
+        this.playerMng.onStart();
+        this.mapMng.onStart();
 
         await this.rpc.autoImplementApi(path.resolve(__dirname, '../../../api'));
         await this.rpc.start();
 
-        
-
-        this.rpc.flows.postDisconnectFlow.push(v=>{
-            
-            return v;
-        });
-
+        // 登录鉴权
+        enableAuthentication(this);
+        // 连接拦截
+        connectionInterception(this);
     }
 
     async onStop(): Promise<void> {

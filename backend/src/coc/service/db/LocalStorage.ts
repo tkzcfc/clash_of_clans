@@ -1,7 +1,7 @@
 
 import { SqliteDB } from "./SqliteDB";
 import { StringUtils } from "../../utils/StringUtils";
-import { dbConfig } from "../../const/dbConfig";
+import { dbConfig } from "./dbConfig";
 import { EventEmitter } from "../../common/EventEmitter";
 
 export class LocalStorage {
@@ -29,47 +29,14 @@ export class LocalStorage {
     }
 
     async open(): Promise<boolean> {
-        return new Promise<boolean>((resolve, reject)=>{
-            this.sql.initWithFile(this.dbname + ".db");
-
-            for (let i = 0; i < this.tabs.length; i++) {
-                const element = this.tabs[i];
-                let createTableSql = `create table if not exists ${element}(id INTEGER, data BLOB);`;
-                this.sql.createTable(createTableSql);
+        this.sql.initWithFile(this.dbname + ".db");
+        for (let i = 0; i < this.tabs.length; i++) {
+            let ok = await this.openTable(i);
+            if(!ok) {
+                return false;
             }
-
-            let resultCount = 0;
-
-            // query data
-            for (let i = 0; i < this.tabs.length; i++) {
-                const element = this.tabs[i];
-                const eventEmitter = this.getEventEmitter(element);
-                let querySql = `select * from ${element}`;
-
-                this.sql.queryData(querySql, (objects: any)=>{                    
-                    let maxDbId = 0;
-
-                    for(let j = 0; j < objects.length; ++j) {
-                        const object = objects[j];
-                        let data = StringUtils.decodeBlob(object.data);
-                        data._db_id_ = object.id;
-
-                        if(object.id > maxDbId) {
-                            maxDbId = object.id;
-                        }
-                        
-                        eventEmitter?.emit("read", data);
-                    }
-                    
-                    this.tabCountMap.set(element, maxDbId);
-
-                    resultCount++;
-                    if(resultCount === this.tabs.length) {
-                        resolve(true);
-                    }
-                });
-            }
-        });
+        }
+        return true;
     }
 
     async close(): Promise<void> {
@@ -113,6 +80,46 @@ export class LocalStorage {
     
     public getEventEmitter(tabName: string) {
         return this.eventEmitterMap.get(tabName);
+    }
+
+    ////////////////////////////////////////////////// private //////////////////////////////////////////////////
+    
+    /**
+     * 初始化table，并查询数据
+     * @param index 
+     * @returns 
+     */
+     private async openTable(index: number): Promise<boolean> { 
+        const tableName = this.tabs[index];
+
+        let createTableSql = `create table if not exists ${tableName}(id INTEGER, data BLOB);`;
+        let querySql = `select * from ${tableName}`;
+
+        let ok = await this.sql.createTable(createTableSql);
+        if(!ok) {
+            return false;
+        }
+
+        let objects = await this.sql.queryData(querySql);
+        
+        const eventEmitter = this.getEventEmitter(tableName);
+        let maxDbId = 0;
+
+        for(let j = 0; j < objects.length; ++j) {
+            const object = objects[j];
+            let data = StringUtils.decodeBlob(object.data);
+            data._db_id_ = object.id;
+
+            if(object.id > maxDbId) {
+                maxDbId = object.id;
+            }
+            
+            eventEmitter?.emit("read", data);
+        }
+        
+        this.tabCountMap.set(tableName, maxDbId);
+
+        return true;
     }
 
     /**

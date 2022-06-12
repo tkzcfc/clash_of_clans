@@ -9066,7 +9066,6 @@ declare namespace cc {
 		/** !#en specify the size tracing mode.
 		!#zh 精灵尺寸调整模式 */
 		sizeMode: Sprite.SizeMode;		
-        sprite: Asset;
 		/**
 		Change the state of sprite.
 		@param state NORMAL or GRAY State. 

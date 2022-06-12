@@ -25,13 +25,15 @@ export class SqliteDB {
         };        
     }
 
-    createTable(sql: string) {
-        this.db.serialize(()=>{
-            this.db.run(sql, (err: Error)=>{
-                if(null != err){
-                    printErrorInfo(err);
-                    return;
-                }
+    async createTable(sql: string): Promise<boolean> {
+        return new Promise<boolean>((resolve, reject) =>{
+            this.db.serialize(()=>{
+                this.db.run(sql, (err: Error)=>{
+                    if(null != err){
+                        printErrorInfo(err);
+                    }
+                    resolve(!err);
+                });
             });
         });
     }
@@ -47,25 +49,29 @@ export class SqliteDB {
         });
     }
 
-    queryData(sql: string, callback: Function) {
-        this.db.all(sql, function(err: any, rows: any){
-            if(null != err){
-                printErrorInfo(err);
-                return;
-            }
-     
-            /// deal query data.
-            if(callback){
-                callback(rows);
-            }
+    async queryData(sql: string): Promise<any> {
+        return new Promise<any>((resolve, reject)=>{
+            this.db.all(sql, function(err: any, rows: any){
+                if(null != err){
+                    printErrorInfo(err);
+                    reject();
+                    return;
+                }
+         
+                /// deal query data.
+                resolve(rows);
+            });
         });
     }
 
-    executeSql(sql : string) {
-        this.db.run(sql, (err: Error) => {
-            if(null != err){
-                printErrorInfo(err);
-            }
+    async executeSql(sql : string): Promise<boolean> {
+        return new Promise<boolean>((resolve, reject)=>{
+            this.db.run(sql, (err: Error) => {
+                if(null != err){
+                    printErrorInfo(err);
+                }
+                resolve(!err);
+            });
         });
     }
 
