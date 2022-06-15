@@ -5,7 +5,7 @@
  */
 
 
-import { RoleDirection } from "../../logic/common/enums";
+import { RoleDirection } from "../const/enums";
 
 const {ccclass, property} = cc._decorator;
 

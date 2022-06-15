@@ -28,6 +28,10 @@ export enum RpcErrCode {
     // 连接断开
     Offline_DISCONNECTED,
     // 其他原因
-    Offline_OTHER
+    Offline_OTHER,
+
+
+    // 保存地图失败，存在未知unit
+    SAVE_MAP_HAS_BAD_UNIT,
 
 }

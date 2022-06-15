@@ -25,59 +25,54 @@ export class ViewManager {
         }, this);
     }
 
-    runView(url: string, callback?: Function) {
+    async runView(url: string) {
         let cur = this.curView();
         if(cur) {
             cur.addComponent(cc.BlockInputEvents);
         }
 
-        cc.resources.load(url, cc.Prefab, (error: Error, prefab: cc.Prefab)=>{
-            if(cur) {
-                cur.getComponent(cc.BlockInputEvents).destroy();
-            }
-            if(error) {
-                cc.error(`加载预制体:(${url})失败,View无法创建`);
-                if(callback) {
-                    callback(false);
+        return new Promise<void>((resolve, reject) => {
+            cc.resources.load(url, cc.Prefab, (error: Error, prefab: cc.Prefab)=>{
+                if(cur) {
+                    cur.getComponent(cc.BlockInputEvents).destroy();
                 }
-                return;
-            }
-            
-            this.popView();
-            this._runView(cc.instantiate(prefab));
-
-            if(callback) {
-                callback(true);
-            }
+                if(error) {
+                    cc.error(`加载预制体:(${url})失败,View无法创建`);
+                    reject();
+                    return;
+                }
+                
+                this.popView();
+                this._runView(cc.instantiate(prefab));
+                resolve();
+            });
         });
     }
 
-    pushView(url: string, callback?: Function) {
+    async pushView(url: string) {
         let cur = this.curView();
         if(cur) {
             cur.addComponent(cc.BlockInputEvents);
         }
 
-        cc.resources.load(url, cc.Prefab, (error: Error, prefab: cc.Prefab)=>{
-            if(cur) {
-                cur.getComponent(cc.BlockInputEvents).destroy();
-            }
-
-            if(error) {
-                cc.error(`加载预制体:(${url})失败,View无法创建`);
-                if(callback) {
-                    callback(false);
+        return new Promise<void>((resolve, reject) => {
+            cc.resources.load(url, cc.Prefab, (error: Error, prefab: cc.Prefab)=>{
+                if(cur) {
+                    cur.getComponent(cc.BlockInputEvents).destroy();
                 }
-                return;
-            }
-            
-            if(cur) {
-                cur.node.active = false;
-            }
-            this._runView(cc.instantiate(prefab));
-            if(callback) {
-                callback(true);
-            }
+    
+                if(error) {
+                    cc.error(`加载预制体:(${url})失败,View无法创建`);
+                    reject();
+                    return;
+                }
+                
+                if(cur) {
+                    cur.node.active = false;
+                }
+                this._runView(cc.instantiate(prefab));
+                resolve();
+            });
         });
     }
     

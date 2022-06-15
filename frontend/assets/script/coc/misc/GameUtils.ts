@@ -1,4 +1,4 @@
-import { RoleDirection } from "../../logic/common/enums";
+import { RoleDirection } from "../const/enums";
 
 export namespace GameUtils {
 

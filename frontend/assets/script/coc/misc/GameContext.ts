@@ -7,8 +7,8 @@
 import { TileAlgorithm } from "../algorithm/TileAlgorithm";
 import { EventEmitter } from "../../core/common/event/EventEmitter";
 import { GameEvent } from "./GameEvent";
-import { DrawTileMode, LogicTileType, UnitType } from "../../logic/common/enums";
-import { BuildInfo } from "../unit/BuildInfo";
+import { DrawTileMode, LogicTileType, UnitType } from "../const/enums";
+import { Build } from "../unit/Build";
 import { GameUtils } from "./GameUtils";
 import { GameLayer } from "../GameLayer";
 import { UnitTransform } from "../unit/UnitInfo";
@@ -118,11 +118,11 @@ export class GameContext {
         }
     }
 
-    addBuild(build: BuildInfo) {
+    addBuild(build: Build) {
         this.modifyBuild(build, GameUtils.bitSet);
     }
 
-    delBuild(build: BuildInfo) {
+    delBuild(build: Build) {
         this.modifyBuild(build, GameUtils.bitDel);
     }
 
@@ -169,7 +169,7 @@ export class GameContext {
         return outPos;
     }
 
-    modifyBuild(build: BuildInfo, operation: Function) {
+    modifyBuild(build: Build, operation: Function) {
         const transform = build.unit.transform;
         const buildCfg = build.buildCfg;
 

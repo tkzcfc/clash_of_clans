@@ -6,9 +6,9 @@
 
 import { GameCfgKey } from "../../common/config/GameCfgKey";
 import { GameCfgHelper } from "../../common/config/GameCfgHelper";
-import { GameCfgMgr } from "../../logic/manager/GameCfgMgr";
-import { mgr } from "../../logic/manager/mgr";
-import { BuildInfo } from "./BuildInfo";
+import { GameCfgMgr } from "../../manager/GameCfgMgr";
+import { mgr } from "../../manager/mgr";
+import { Build } from "./Build";
 const {ccclass, property} = cc._decorator;
 
 
@@ -20,11 +20,11 @@ export default class BuildRender extends cc.Component {
     @property({ type: cc.Sprite, tooltip: "建筑渲染节点"})
     buildSpr: cc.Sprite = null;
 
-    private buildInfo: BuildInfo = null;
+    private buildInfo: Build = null;
     private cacheBuildResource: string = "";
     
     protected onLoad(): void {
-        this.buildInfo = this.getComponent(BuildInfo);
+        this.buildInfo = this.getComponent(Build);
     }
 
     protected onDestroy(): void {

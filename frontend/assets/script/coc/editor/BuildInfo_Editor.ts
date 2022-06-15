@@ -7,7 +7,7 @@
 
 
 import { GameContext } from "../misc/GameContext";
-import { DrawTileMode, LogicTileType, DrawTileGroundType } from "../../logic/common/enums";
+import { DrawTileMode, LogicTileType, DrawTileGroundType } from "../const/enums";
 
 const {ccclass, property, executeInEditMode, requireComponent} = cc._decorator;
 

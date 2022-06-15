@@ -1,9 +1,12 @@
-import { BuildComeFrom, GameZIndex } from "../../logic/common/enums";
-import { PlayerData } from "../../logic/data/PlayerData";
+import { mgr } from "../../manager/mgr";
+import { PlayerDataMgr } from "../../manager/PlayerDataMgr";
+import { RpcMgr } from "../../manager/RpcMgr";
+import { SaveMapUnit } from "../../shared/protocols/ptl/PtlSaveMapUnits";
+import { BuildComeFrom, GameZIndex } from "../const/enums";
 import { GameLayer } from "../GameLayer";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
-import { BuildInfo } from "../unit/BuildInfo";
+import { Build } from "../unit/Build";
 import { UnitInfo } from "../unit/UnitInfo";
 import { BaseControl } from "./BaseControl";
 
@@ -44,18 +47,38 @@ export class HomeControl extends BaseControl
 
     
     onDoSaveMap() {
-        let mapItems = [];
-        this.gameLayer.builds.forEach((build: BuildInfo)=>{
-            mapItems.push({
-                id: build.cfgId,
-                lv: build.lv,
+        let items: SaveMapUnit[] = [];
+        this.gameLayer.builds.forEach((build: Build)=>{
+            items.push({
+                uuid: build.uuid,
                 x: build.unit.transform.x,
                 y: build.unit.transform.y,     
             });
         });
 
-        PlayerData.getInstance().mapData.setItems(mapItems);
-        PlayerData.getInstance().sendMdfUnimportantData();
+        // 更新服务器地图数据
+        mgr.getMgr(RpcMgr).callApi("ptl/SaveMapUnits", {
+            units: items
+        });
+
+        // 更新本地地图数据
+        let units = mgr.getMgr(PlayerDataMgr).map.units;
+        for(let i = units.length - 1; i >= 0; ++i) {
+            let find = false;
+            let unit = units[i];
+
+            items.forEach(v=>{
+                if(v.uuid == unit.uuid) {
+                    find = true;
+                    unit.x = v.x;
+                    unit.y = v.y;
+                }
+            });
+
+            if(!find) {
+                units.splice(i, 1);
+            }
+        }
     }
     
 }

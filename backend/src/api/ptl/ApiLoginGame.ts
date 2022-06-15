@@ -31,7 +31,8 @@ export async function ApiLoginGame(call: ApiCall<ReqLoginGame, ResLoginGame>) {
     }
 
     call.succ({
-        pdata: player.dbData,
+        pdata: player.toPlayerInfo(),
+        map: player.map.toPlayerMap(),
     }); 
 
     player.login(call.conn, isReunion);

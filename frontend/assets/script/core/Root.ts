@@ -6,7 +6,6 @@
 
 import { EventEmitter } from "./common/event/EventEmitter";
 import { core } from "./InitCore";
-import { WSClient } from "./network/WSClient";
 import { UIManager } from "./ui_manager/UIManager";
 import { ViewManager } from "./view_manager/ViewManager";
 const {ccclass, property} = cc._decorator;
@@ -31,10 +30,7 @@ export default class Root extends cc.Component {
         core.uiContextPrefab = this.uiContextPrefab;
         core.uiPanelPrefab = this.uiPanelPrefab;
 
-        core.netEventEmitter = new EventEmitter<number>();
         core.sysEventEmitter = new EventEmitter<string>();
-
-        core.client = new WSClient();
 
         core.gameRootNode = cc.find("root/game");
         core.guiRootNode = cc.find("root/gui");

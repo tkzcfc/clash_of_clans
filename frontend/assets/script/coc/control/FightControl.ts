@@ -1,4 +1,4 @@
-import { GameZIndex } from "../../logic/common/enums";
+import { GameZIndex } from "../const/enums";
 import { GameLayer } from "../GameLayer";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";

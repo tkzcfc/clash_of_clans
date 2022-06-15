@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "tsrpc-browser": "^3.3.0"
+    "tsrpc-browser": "^3.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
   }
 }

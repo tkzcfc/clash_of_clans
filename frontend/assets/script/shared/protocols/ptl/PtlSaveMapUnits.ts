@@ -1,6 +1,6 @@
 
 export interface SaveMapUnit {
-    uuid: number,
+    uuid: string,
     x: number,
     y: number
 }

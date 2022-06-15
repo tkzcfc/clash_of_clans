@@ -1,5 +1,6 @@
 import { BaseConnection } from "tsrpc";
 import { DBPlayerInfo } from "../../shared/db_structure/Player";
+import { PlayerInfo, PlayerSimpleInfo } from "../../shared/protocols/base";
 import { ServiceType } from "../../shared/protocols/serviceProto";
 import { RpcErrCode } from "../../shared/RpcErr";
 import { DBService } from "../service/db/DBService";
@@ -50,6 +51,7 @@ export class Player {
         this.logout(RpcErrCode.Offline_ALTERNATE_LOGIN);
         // 指向当前Player
         conn.currentPlayer = this;
+        this.conn = conn;
         // 重置cookie
         if(!isReunion) {
             this.cookie = CryptoUtils.generateUUID();
@@ -112,6 +114,14 @@ export class Player {
         else {
             this.token = token;
         }
+    }
+
+    toPlayerInfo(): PlayerInfo {
+        return this.dbData;
+    }
+
+    toPlayerSimpleInfo(): PlayerSimpleInfo {
+        return this.dbData;
     }
 
     /**

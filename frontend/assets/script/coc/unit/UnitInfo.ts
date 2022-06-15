@@ -4,8 +4,8 @@
  * Description: 
  */
 
-import { UnitType } from "../../logic/common/enums";
-import { BuildInfo } from "./BuildInfo";
+import { UnitType } from "../const/enums";
+import { Build } from "./Build";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 
@@ -75,7 +75,7 @@ export class UnitInfo extends cc.Component {
     touchTest(event) {
         if(this.type == UnitType.buildings) {
             let pos = this.node.parent.convertToNodeSpaceAR(event.touch.getLocation());
-            return this.getComponent(BuildInfo).touchTest(pos);
+            return this.getComponent(Build).touchTest(pos);
         }
         return false;
     }

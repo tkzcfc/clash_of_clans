@@ -126,32 +126,18 @@ export class LocalStorage {
      * 添加数据
      */
     private addData(tabName: string, id: number, data: any) {
-        // 剔除runtime数据
-        let runtime = data.runtime;
-        data.runtime = undefined;
-
         let datas = [[id, StringUtils.encodeBlob(data)]];
         let insertSql = `insert into ${tabName}(id, data) values(?, ?)`;
         this.sql.insertData(insertSql, datas);
-
-        // 恢复runtime数据
-        data.runtime = runtime;
     }
 
     /**
      * 更新数据
      */
     private updateData(tabName: string, id: number, data: any) {
-        // 剔除runtime数据
-        let runtime = data.runtime;
-        data.runtime = undefined;
-
         data = StringUtils.encodeBlob(data);
         let updateSql = `update ${tabName} set data = '${data}' where id = ${id}`;
         this.sql.executeSql(updateSql);
-        
-        // 恢复runtime数据
-        data.runtime = runtime;
     }
     
     /**

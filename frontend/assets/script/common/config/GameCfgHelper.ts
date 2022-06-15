@@ -1,4 +1,4 @@
-import { ItemType } from "../../logic/common/enums";
+import { ItemType } from "../../coc/const/enums";
 
 export class GameCfgHelper {
 

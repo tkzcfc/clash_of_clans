@@ -5,24 +5,17 @@
  */
 
 
-import { storage } from "./common/storage/SqlUtil";
+import { storage as SqlStorage } from "./common/storage/SqlUtil";
 import { EventEmitter } from "./common/event/EventEmitter"
 import { UIManager } from "./ui_manager/UIManager";
-import { WSClient } from "./network/WSClient";
 import { ViewManager } from "./view_manager/ViewManager";
 
 export class core {
     /** 本地存储 */
-    public static storage = storage;
-
-    /** 网络事件派发器 */
-    public static netEventEmitter: EventEmitter<number>;
+    public static storage = SqlStorage;
     
     /** 系统事件派发器 */
     public static sysEventEmitter: EventEmitter<string>;
-
-    /** 客户端网格管理 */
-    public static client : WSClient;
 
     /** UI管理器 */
     public static ui : UIManager;
@@ -36,8 +29,5 @@ export class core {
 
     public static gameRootNode: cc.Node;
     public static guiRootNode: cc.Node;
-
-
-
-    public static NET_KEY_GAME = "game";
 }
+

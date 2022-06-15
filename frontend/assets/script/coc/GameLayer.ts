@@ -6,21 +6,21 @@
 
 import { EventEmitter } from "../core/common/event/EventEmitter";
 import { ZoomView } from "./misc/ZoomView";
-import { BuildComeFrom, DrawTileMode, GameZIndex, UnitType } from "../logic/common/enums";
-import { PlayerData } from "../logic/data/PlayerData";
+import { BuildComeFrom, DrawTileMode, GameZIndex, UnitType } from "./const/enums";
 import { UnitSort } from "./algorithm/UnitSort";
-import { BuildInfo } from "./unit/BuildInfo";
+import { Build } from "./unit/Build";
 import { GameContext } from "./misc/GameContext";
 import { GameEvent } from "./misc/GameEvent";
 import { UnitInfo } from "./unit/UnitInfo";
 import { UnitFollow } from "./misc/UnitFollow";
 import { BaseControl } from "./control/BaseControl";
-import { mgr } from "../logic/manager/mgr";
-import { FightMgr } from "../logic/manager/FightMgr";
+import { mgr } from "../manager/mgr";
+import { FightMgr } from "../manager/FightMgr";
 import { FightControl } from "./control/FightControl";
 import { HomeControl } from "./control/HomeControl";
-import { MapData } from "../logic/data/MapData";
 import { RoleBase } from "./unit/RoleBase";
+import { PlayerDataMgr } from "../manager/PlayerDataMgr";
+import { PlayerMap, PlayerMapUnit, PlayerSimpleMap, PlayerSimpleMapUnit } from "../shared/protocols/base";
 
 const {ccclass, property} = cc._decorator;
 
@@ -65,7 +65,7 @@ export class GameLayer extends cc.Component {
     // 地图中的所有单位
     units: UnitInfo [] = [];
     // 地图中的所有建筑
-    builds: BuildInfo[] = [];
+    builds: Build[] = [];
 
     // 游戏内部事件派发器
     eventEmitter: EventEmitter<GameEvent>;
@@ -147,7 +147,7 @@ export class GameLayer extends cc.Component {
         else {
             this.control = new HomeControl();
             this.control.initialize(this);
-            this.reloadMap(PlayerData.getInstance().mapData);
+            this.reloadMap(mgr.getMgr(PlayerDataMgr).map);
         }
     }
 
@@ -167,7 +167,7 @@ export class GameLayer extends cc.Component {
         }
     }
 
-    reloadMap(mapData: MapData) {
+    reloadMap(mapData: PlayerMap | PlayerSimpleMap) {
         this.units.forEach((item: UnitInfo)=>{
             item.node.destroy();
         });
@@ -178,8 +178,8 @@ export class GameLayer extends cc.Component {
 
         this.enableDebugDraw = false;
 
-        let items = mapData.getItems();
-        items.forEach((data)=>{
+        
+        mapData.units.forEach((data)=>{
             this.newBuild(data, BuildComeFrom.MAP);
         });
 
@@ -192,14 +192,14 @@ export class GameLayer extends cc.Component {
      * 创建建筑
      * @param data 
      */
-    newBuild(data: any, comeFrom: BuildComeFrom): cc.Node {
+    newBuild(data: PlayerMapUnit | PlayerSimpleMapUnit, comeFrom: BuildComeFrom): cc.Node {
         let node = cc.instantiate(this.buildPrefab);
         node.parent = this.layers[GameZIndex.UnitLayer];
         
         this.units.push(node.getComponent(UnitInfo));
 
-        let build = node.getComponent(BuildInfo);
-        build.initWithBuildData(data.id, data.lv, data.x, data.y, comeFrom);
+        let build = node.getComponent(Build);
+        build.initWithBuildData(data, comeFrom);
         this.builds.push(build);
 
         GameContext.getInstance().addBuild(build);
@@ -207,7 +207,7 @@ export class GameLayer extends cc.Component {
         return node;
     }
 
-    delBuild(build: BuildInfo) {
+    delBuild(build: Build) {
         GameContext.getInstance().delBuild(build);
 
         for(let i = 0, j = this.builds.length; i < j; ++i) {
@@ -357,7 +357,7 @@ export class GameLayer extends cc.Component {
 
         if(unit.type == UnitType.buildings) {                
             if(this._focusUnit) {
-                if(!this._focusUnit.getComponent(BuildInfo).canUnFocusOnClickOtherUnit(unit)) {
+                if(!this._focusUnit.getComponent(Build).canUnFocusOnClickOtherUnit(unit)) {
                     return;
                 }
                 this.eventEmitter.emit(GameEvent.DO_UNFOCUS_UNIT, false, false);
@@ -418,7 +418,7 @@ export class GameLayer extends cc.Component {
 
     onDoDelUnit(unitNode: cc.Node) {
         if(unitNode.getComponent(UnitInfo).type === UnitType.buildings) {
-            this.delBuild(unitNode.getComponent(BuildInfo));
+            this.delBuild(unitNode.getComponent(Build));
         }
         else{
             console.assert(false);

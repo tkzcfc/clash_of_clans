@@ -1,4 +1,5 @@
 import { DBPlayerInfo } from "../../db_structure/Player";
+import { PlayerInfo, PlayerMap } from "../base";
 
 export interface ReqLoginGame {
     pid: string,
@@ -7,7 +8,8 @@ export interface ReqLoginGame {
 }
 
 export interface ResLoginGame {
-    pdata : DBPlayerInfo;
+    pdata : PlayerInfo;
+    map: PlayerMap;
 }
 
 

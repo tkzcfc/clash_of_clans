@@ -8,11 +8,10 @@ import RoleDynamicClip from "./RoleDynamicClip";
 import { AStar } from "../algorithm/AStar";
 import { UnitInfo } from "./UnitInfo";
 import { GameContext } from "../misc/GameContext";
-import { BuildInfo } from "./BuildInfo";
 import { GameEvent } from "../misc/GameEvent";
 import { GameUtils } from "../misc/GameUtils";
-import { mgr } from "../../logic/manager/mgr";
-import { GameCfgMgr } from "../../logic/manager/GameCfgMgr";
+import { mgr } from "../../manager/mgr";
+import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { GameCfgKey } from "../../common/config/GameCfgKey";
 
 const {ccclass, property} = cc._decorator;

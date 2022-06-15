@@ -1,6 +1,10 @@
 import { ServiceProto } from 'tsrpc-proto';
 import { MsgLoginGameFinish } from './msg/MsgLoginGameFinish';
 import { MsgSelfOffline } from './msg/MsgSelfOffline';
+import { ReqAddUnitToMap, ResAddUnitToMap } from './ptl/PtlAddUnitToMap';
+import { ReqAttackPlayer, ResAttackPlayer } from './ptl/PtlAttackPlayer';
+import { ReqBuyAndPlaceToMap, ResBuyAndPlaceToMap } from './ptl/PtlBuyAndPlaceToMap';
+import { ReqGetPvpList, ResGetPvpList } from './ptl/PtlGetPvpList';
 import { ReqLogin, ResLogin } from './ptl/PtlLogin';
 import { ReqLoginGame, ResLoginGame } from './ptl/PtlLoginGame';
 import { ReqRegister, ResRegister } from './ptl/PtlRegister';
@@ -8,6 +12,22 @@ import { ReqSaveMapUnits, ResSaveMapUnits } from './ptl/PtlSaveMapUnits';
 
 export interface ServiceType {
     api: {
+        "ptl/AddUnitToMap": {
+            req: ReqAddUnitToMap,
+            res: ResAddUnitToMap
+        },
+        "ptl/AttackPlayer": {
+            req: ReqAttackPlayer,
+            res: ResAttackPlayer
+        },
+        "ptl/BuyAndPlaceToMap": {
+            req: ReqBuyAndPlaceToMap,
+            res: ResBuyAndPlaceToMap
+        },
+        "ptl/GetPvpList": {
+            req: ReqGetPvpList,
+            res: ResGetPvpList
+        },
         "ptl/Login": {
             req: ReqLogin,
             res: ResLogin
@@ -32,7 +52,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 15,
+    "version": 20,
     "services": [
         {
             "id": 14,
@@ -43,6 +63,26 @@ export const serviceProto: ServiceProto<ServiceType> = {
             "id": 9,
             "name": "msg/SelfOffline",
             "type": "msg"
+        },
+        {
+            "id": 16,
+            "name": "ptl/AddUnitToMap",
+            "type": "api"
+        },
+        {
+            "id": 18,
+            "name": "ptl/AttackPlayer",
+            "type": "api"
+        },
+        {
+            "id": 17,
+            "name": "ptl/BuyAndPlaceToMap",
+            "type": "api"
+        },
+        {
+            "id": 15,
+            "name": "ptl/GetPvpList",
+            "type": "api"
         },
         {
             "id": 4,
@@ -158,6 +198,283 @@ export const serviceProto: ServiceProto<ServiceType> = {
                 {
                     "id": 13,
                     "value": 13
+                },
+                {
+                    "id": 14,
+                    "value": 14
+                }
+            ]
+        },
+        "ptl/PtlAddUnitToMap/ReqAddUnitToMap": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "uuid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "x",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "y",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlAddUnitToMap/ResAddUnitToMap": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "data",
+                    "type": {
+                        "type": "Reference",
+                        "target": "base/PlayerMapUnit"
+                    }
+                }
+            ]
+        },
+        "base/PlayerMapUnit": {
+            "type": "Interface",
+            "extends": [
+                {
+                    "id": 0,
+                    "type": {
+                        "type": "Reference",
+                        "target": "base/PlayerSimpleMapUnit"
+                    }
+                }
+            ]
+        },
+        "base/PlayerSimpleMapUnit": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "uuid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "id",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "x",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "y",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "lv",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlAttackPlayer/ReqAttackPlayer": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "pid",
+                    "type": {
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlAttackPlayer/ResAttackPlayer": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 1,
+                    "name": "pdata",
+                    "type": {
+                        "type": "Reference",
+                        "target": "base/PlayerSimpleInfo"
+                    }
+                },
+                {
+                    "id": 0,
+                    "name": "map",
+                    "type": {
+                        "type": "Reference",
+                        "target": "base/PlayerSimpleMap"
+                    }
+                }
+            ]
+        },
+        "base/PlayerSimpleInfo": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "pid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "name",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "lv",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "exp",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "base/PlayerSimpleMap": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "units",
+                    "type": {
+                        "type": "Array",
+                        "elementType": {
+                            "type": "Reference",
+                            "target": "base/PlayerSimpleMapUnit"
+                        }
+                    }
+                }
+            ]
+        },
+        "ptl/PtlBuyAndPlaceToMap/ReqBuyAndPlaceToMap": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "id",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "x",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "y",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlBuyAndPlaceToMap/ResBuyAndPlaceToMap": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "data",
+                    "type": {
+                        "type": "Reference",
+                        "target": "base/PlayerMapUnit"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlGetPvpList/ReqGetPvpList": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "pageIndex",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "pageCount",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "ptl/PtlGetPvpList/ResGetPvpList": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "items",
+                    "type": {
+                        "type": "Array",
+                        "elementType": {
+                            "type": "Reference",
+                            "target": "ptl/PtlGetPvpList/PvpListItem"
+                        }
+                    }
+                }
+            ]
+        },
+        "ptl/PtlGetPvpList/PvpListItem": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "pid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "name",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "lv",
+                    "type": {
+                        "type": "Number"
+                    }
                 }
             ]
         },
@@ -236,68 +553,59 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "name": "pdata",
                     "type": {
                         "type": "Reference",
-                        "target": "../db_structure/Player/DBPlayerInfo"
-                    }
-                }
-            ]
-        },
-        "../db_structure/Player/DBPlayerInfo": {
-            "type": "Interface",
-            "properties": [
-                {
-                    "id": 0,
-                    "name": "pid",
-                    "type": {
-                        "type": "String"
+                        "target": "base/PlayerInfo"
                     }
                 },
                 {
                     "id": 1,
-                    "name": "name",
+                    "name": "map",
                     "type": {
-                        "type": "String"
+                        "type": "Reference",
+                        "target": "base/PlayerMap"
                     }
-                },
+                }
+            ]
+        },
+        "base/PlayerInfo": {
+            "type": "Interface",
+            "extends": [
                 {
-                    "id": 2,
-                    "name": "lv",
+                    "id": 0,
                     "type": {
-                        "type": "Number"
+                        "type": "Reference",
+                        "target": "base/PlayerSimpleInfo"
                     }
-                },
+                }
+            ],
+            "properties": [
                 {
-                    "id": 3,
-                    "name": "exp",
-                    "type": {
-                        "type": "Number"
-                    }
-                },
-                {
-                    "id": 4,
+                    "id": 0,
                     "name": "coins",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
-                    "id": 5,
+                    "id": 1,
                     "name": "diamonds",
                     "type": {
                         "type": "Number"
                     }
-                },
+                }
+            ]
+        },
+        "base/PlayerMap": {
+            "type": "Interface",
+            "properties": [
                 {
-                    "id": 8,
-                    "name": "mapuuid",
+                    "id": 0,
+                    "name": "units",
                     "type": {
-                        "type": "String"
-                    }
-                },
-                {
-                    "id": 9,
-                    "name": "baguuid",
-                    "type": {
-                        "type": "String"
+                        "type": "Array",
+                        "elementType": {
+                            "type": "Reference",
+                            "target": "base/PlayerMapUnit"
+                        }
                     }
                 }
             ]
@@ -370,7 +678,7 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "id": 0,
                     "name": "uuid",
                     "type": {
-                        "type": "Number"
+                        "type": "String"
                     }
                 },
                 {

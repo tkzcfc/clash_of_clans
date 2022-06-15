@@ -1,10 +1,9 @@
 export interface DBUnitData {
-    uuid: number,
+    uuid: string,
     id: number,
     x: number,
     y: number,
     lv: number,
-    type: number,
 }
 
 export interface DBMapData {
