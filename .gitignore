@@ -1,3 +1,4 @@
 .svn/
 backend/data.db
 backend/.vscode/
+tools/Excel2Json/tmp/

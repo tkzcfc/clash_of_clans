@@ -100,8 +100,7 @@ export class RpcMgr extends BaseMgr
     async callApi<T extends keyof ServiceType['api']>(apiName: T, req: ServiceType['api'][T]['req'], options?: TransportOptions) {
         let result = await this.client.callApi(apiName, req, options);
         if(!result.isSucc && result.err && result.err.type == TsrpcErrorType.ApiError) {
-            cc.error(result.err.message);
-            UIUtils.showMsgBoxOne(result.err.message);
+            // cc.error(result.err.message);
             if(typeof(result.err.code) == "number") {
                 this.showErrCode(result.err.code, result.err.message);
             }
@@ -117,14 +116,31 @@ export class RpcMgr extends BaseMgr
     }
 
     showErrCode(code: number, message?: string) {
-        // 0:不显示  1:显示弹窗  2:显示飘字 3:返回登录 4:结束游戏
-        mgr.getMgr(GameCfgMgr).getData("", code);
+        let cfg = mgr.getMgr(GameCfgMgr).getData("RpcError", code);
 
-        if(message !== undefined) {
-
+        if(!cfg) {
+            if(message && message != "") {
+                UIUtils.showMsgBoxOne(message);
+            }
+            return;
         }
 
-        
+        // 0:不显示  1:显示弹窗  2:显示飘字 3:返回登录 4:结束游戏
+        switch(cfg.showstyle){
+            case 0: {}break;
+            case 1: {
+                UIUtils.showMsgBoxOne(cfg.desc);
+            }break;
+            case 2: {
+                UIUtils.showMsgBoxOne(cfg.desc);
+            }break;
+            case 3: {
+                UIUtils.showMsgBoxOne(cfg.desc);
+            }break;
+            case 4: {
+                UIUtils.showMsgBoxOne(cfg.desc);
+            }break;
+        }
     }
 
     onDestroy(): void {
