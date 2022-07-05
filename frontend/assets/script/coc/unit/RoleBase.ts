@@ -5,7 +5,6 @@
  */
 
 import RoleDynamicClip from "./RoleDynamicClip";
-import { AStar } from "../algorithm/AStar";
 import { UnitInfo } from "./UnitInfo";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
@@ -13,24 +12,24 @@ import { GameUtils } from "../misc/GameUtils";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { GameCfgKey } from "../../common/config/GameCfgKey";
+import { Pathfinding } from "../misc/Pathfinding";
 
 const {ccclass, property} = cc._decorator;
-
-
-let astar: AStar = new AStar();;
 
 @ccclass
 export class RoleBase extends cc.Component {
     // 动画
     dynamicClip: RoleDynamicClip;
 
+    ///////////////// 寻路相关 /////////////////
     // 移动点合集
     walkPosArray: cc.Vec2[] = [];
-    // 
+    // 当前移动路径下标
     walkIndex: number = 0;
 
+    // 缓动执行类
     moveTween: cc.Tween<cc.Node> = null;
-
+    // 逻辑坐标
     position: cc.Vec2 = new cc.Vec2();
     
 
@@ -79,87 +78,6 @@ export class RoleBase extends cc.Component {
         return this.position;
     }
 
-    goto(unit: UnitInfo) {
-        const logicTileAlgorithm = GameContext.getInstance().logicTileAlgorithm;
-        const selfTransform = this.getComponent(UnitInfo).logicTransform;
-        const targetTransform = unit.logicTransform;
-
-        const bpos = new cc.Vec2(selfTransform.x, selfTransform.y);
-        const epos = new cc.Vec2(targetTransform.x, targetTransform.y);
-
-        this.walkIndex = 0;
-        this.walkPosArray = astar.run(logicTileAlgorithm.X_COUNT, logicTileAlgorithm.Y_COUNT, bpos, epos, (x: number, y: number)=>{
-            if(unit.containLogicPosEx(unit.logicTransform, x, y)) {
-                return true;
-            }
-            return GameContext.getInstance().canWalk(x, y);
-        });
-        
-        this.step();
-
-
-        
-        // const logicTileAlgorithm = GameContext.getInstance().logicTileAlgorithm;
-
-        // const bpos = new cc.Vec2(10, 10);
-        // const epos = new cc.Vec2(20, 0);
-
-        // this.walkIndex = 0;
-        // this.walkPosArray = astar.run(logicTileAlgorithm.X_COUNT, logicTileAlgorithm.Y_COUNT, bpos, epos, (x: number, y: number)=>{
-        //     return GameContext.getInstance().canWalk(x, y);
-        // });
-        
-        // this.step();
-    }
-
-    step() {
-        if(this.moveTween) {
-            this.moveTween.stop();
-        }
-
-        this.walkIndex++;
-        if(!this.walkPosArray) {
-            this.dynamicClip.actName = "stand";
-            this.dynamicClip.updatePlay();
-            this.moveTween = cc.tween(this.node)
-                .delay(3)
-                .call(this.gotoRandomBuild, this)
-                .start();
-            return;
-        }
-
-        let pos = this.walkPosArray[this.walkIndex];
-
-        if(this.walkIndex >= this.walkPosArray.length || GameContext.getInstance().canWalk(pos.x, pos.y) == false) {
-            // 更新角色朝向
-            pos = this.walkPosArray[this.walkPosArray.length - 1];
-            this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, pos);
-            this.dynamicClip.actName = "attack1";
-            this.dynamicClip.updatePlay();
-            this.moveTween = cc.tween(this.node)
-                .delay(3)
-                .call(this.gotoRandomBuild, this)
-                .start();
-            return;
-        }
-
-        // 更新角色朝向
-        this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, pos);
-        this.dynamicClip.actName = "run";
-        this.dynamicClip.updatePlay();
-
-        this.setPosition(pos.x, pos.y, true);
-        
-        pos = GameContext.getInstance().logicTileAlgorithm.calculateMapTilePos(pos.x, pos.y);
-        let toPos = new cc.Vec3(pos.x, pos.y, 0.0);
-        let length = this.node.position.sub(toPos).len();
-
-        this.moveTween = cc.tween(this.node)
-            .to(length / 70, {position: toPos})
-            .call(this.step, this)
-            .start();
-    }
-
     gotoRandomBuild() {
         const builds = GameContext.getInstance().gameLayer.builds;
         const build = builds[GameUtils.randomRangeInt(0, builds.length - 1)];
@@ -173,6 +91,97 @@ export class RoleBase extends cc.Component {
             .call(this.gotoRandomBuild, this)
             .start();
         }
+    }
+
+    async goto(unit: UnitInfo) {
+        // 重置寻路相关参数
+        Pathfinding.cancel(this);
+        if(this.moveTween) {
+            this.moveTween.stop();
+        }
+
+        const selfTransform = this.getComponent(UnitInfo).logicTransform;
+        const targetTransform = unit.logicTransform;
+
+        const from = new cc.Vec2(selfTransform.x, selfTransform.y);
+        const to = new cc.Vec2(targetTransform.x, targetTransform.y);
+
+        this.walkPosArray = await Pathfinding.runAsync(from, to, (x: number, y: number)=>{
+            if(unit.containLogicPosEx(unit.logicTransform, x, y)) {
+                return true;
+            }
+            return GameContext.getInstance().canWalk(x, y);
+        }, this);
+
+        // 寻路被中断
+        if(!this.walkPosArray) {
+            return;
+        }
+
+        // 寻路失败，无法到达目标点
+        if(this.walkPosArray.length <= 0) {
+            this.dynamicClip.actName = "stand";
+            this.dynamicClip.updatePlay();
+            this.moveTween = cc.tween(this.node)
+                .delay(3)
+                .call(this.gotoRandomBuild, this)
+                .start();
+            return;
+        }
+
+        this.doStep();
+    }
+
+    doStep() {
+        this.walkIndex++;
+        if(this.moveTween) {
+            this.moveTween.stop();
+        }
+
+        let doWalk = false;
+        do
+        {
+            if(this.walkIndex >= this.walkPosArray.length) {
+                break;
+            }
+
+            let pos = this.walkPosArray[this.walkIndex];
+            if(false == GameContext.getInstance().canWalk(pos.x, pos.y)){
+                break;
+            }
+            
+            doWalk = true;
+            this.stepWalk(pos);
+        }while(false);
+        
+        if(false == doWalk) {
+            let pos = this.walkPosArray[this.walkPosArray.length - 1];
+            this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, pos);
+            this.dynamicClip.actName = "attack1";
+            this.dynamicClip.updatePlay();
+            this.moveTween = cc.tween(this.node)
+                .delay(3)
+                .call(this.gotoRandomBuild, this)
+                .start();
+        }
+    }
+
+    stepWalk(to: cc.Vec2) {
+        // 更新角色朝向
+        this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, to);
+        this.dynamicClip.actName = "run";
+        this.dynamicClip.updatePlay();
+
+        this.setPosition(to.x, to.y, true);
+        
+        let renderPos = GameContext.getInstance().logicTileAlgorithm.calculateMapTilePos(to.x, to.y);
+        let toPos = new cc.Vec3(renderPos.x, renderPos.y, 0.0);
+        let length = this.node.position.sub(toPos).len();
+
+        this.moveTween = cc.tween(this.node)
+            .to(length / 70, {position: toPos})
+            .call(this.doStep, this)
+            .start();
     }
 }
 

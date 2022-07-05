@@ -39,16 +39,14 @@ export enum ItemType {
     currency = 2,
 }
 
-// 游戏状态
-export enum GameStatus {
-    // 普通状态
+// 游戏模式
+export enum GameMode {
+    // 普通模式
     Normal,
-    // 编辑状态
-    Edit,
-    // 战斗状态
+    // 战斗模式
     Fight,
-    // 观察状态
-    Observe
+    // 观察模式
+    Observe,
 }
 
 // 建筑来源

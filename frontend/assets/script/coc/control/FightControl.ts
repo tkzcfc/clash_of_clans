@@ -1,3 +1,9 @@
+/*
+ * Created: 2022-06-09 16:32:51
+ * Author : fc
+ * Description: 战斗模式-游戏控制器
+ */
+
 import { GameZIndex } from "../const/enums";
 import { GameLayer } from "../GameLayer";
 import { GameContext } from "../misc/GameContext";
@@ -8,7 +14,6 @@ import { GameUtils } from "../misc/GameUtils";
 
 export class FightControl extends BaseControl
 {
-
     initialize(gameLayer: GameLayer): void {
         super.initialize(gameLayer);
 

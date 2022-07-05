@@ -74,7 +74,7 @@ export class AStar {
     mapw: number = 0;
     maph: number = 0;
     // 目标点
-    epos: cc.Vec2 = null;
+    toPos: cc.Vec2 = null;
     // 自定义检测函数
     check_func: Function = defaultCheckFunc;
 
@@ -82,28 +82,29 @@ export class AStar {
      * 
      * @param mapw 地图宽
      * @param maph 地图高
-     * @param spos 起始点 x数值范围:[0,mapw)  y数值范围:[0,maph)
-     * @param epos 目的点 x数值范围:[0,mapw)  y数值范围:[0,maph)
+     * @param from 起始点 x数值范围:[0,mapw)  y数值范围:[0,maph)
+     * @param to 目的点 x数值范围:[0,mapw)  y数值范围:[0,maph)
      * @param check_func 自定义检测函数
      * @returns 路径点列表,为空则表示目标点不可达
      */
-    run(mapw: number, maph: number, spos: cc.Vec2, epos: cc.Vec2, check_func: Function) {
+    run(mapw: number, maph: number, from: cc.Vec2, to: cc.Vec2, check_func: Function): cc.Vec2[] {
         this.reset();
 
         this.mapw = mapw;
         this.maph = maph;
-        this.epos = epos;
+        this.toPos = to;
         this.check_func = check_func;
 
-        this.openset.push(this.allocNode(spos.x, spos.y, null));
+        this.openset.push(this.allocNode(from.x, from.y, null));
         while(this.openset.length > 0) {
             let S = this.getBestNode();
-            if(S.x == epos.x && S.y == epos.y) {
+            if(S.x == to.x && S.y == to.y) {
                 // 寻路结束,找到目标点
                 return this.result(S);
             }
             this.findNeighbor(S);
         }
+        return [];
     }
 
     /**
@@ -266,8 +267,8 @@ export class AStar {
      * @returns 
      */
     H(x: number, y: number) {
-        // return abs(this.epos.x - x) + abs(this.epos.y - y)
-        return pow(this.epos.x - x, 2) + pow(this.epos.y - y, 2);
+        // return abs(this.toPos.x - x) + abs(this.toPos.y - y)
+        return pow(this.toPos.x - x, 2) + pow(this.toPos.y - y, 2);
     }
 }
 

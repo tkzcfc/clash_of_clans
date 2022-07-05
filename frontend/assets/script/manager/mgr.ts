@@ -7,6 +7,7 @@
 import { BaseMgr } from "./BaseMgr";
 import { FightMgr } from "./FightMgr";
 import { GameCfgMgr } from "./GameCfgMgr";
+import { GameDataMgr } from "./GameDataMgr";
 import { LoginMgr } from "./LoginMgr";
 import { PlayerDataMgr } from "./PlayerDataMgr";
 import { RpcMgr } from "./RpcMgr";
@@ -23,6 +24,7 @@ export namespace mgr {
         addMgr(LoginMgr);
         addMgr(FightMgr);
         addMgr(PlayerDataMgr);
+        addMgr(GameDataMgr);
     }
 
     export function termination() {

@@ -7,8 +7,9 @@
 import { core } from "../core/InitCore";
 import { View } from "../core/view_manager/View";
 import { Const } from "../common/Const";
-import { FightMgr } from "../manager/FightMgr";
 import { mgr } from "../manager/mgr";
+import { GameDataMgr } from "../manager/GameDataMgr";
+import { GameMode } from "../coc/const/enums";
 
 const {ccclass, property} = cc._decorator;
 
@@ -16,7 +17,7 @@ const {ccclass, property} = cc._decorator;
 export default class GameView extends View {
 
     protected start(): void {
-        if(mgr.getMgr(FightMgr).hasFightInfo) {
+        if(mgr.getMgr(GameDataMgr).getCurrentMode() == GameMode.Fight) {
             core.ui.current().pushUI(Const.UIs.Fight_Main);
         }
         else {

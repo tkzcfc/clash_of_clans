@@ -5,14 +5,14 @@
  */
 
 import { EventEmitter } from "../core/common/event/EventEmitter";
-import { ZoomView } from "./misc/ZoomView";
-import { BuildComeFrom, DrawTileMode, GameZIndex, UnitType } from "./const/enums";
+import { ZoomView } from "./ui/ZoomView";
+import { BuildComeFrom, DrawTileMode, GameMode, GameZIndex, UnitType } from "./const/enums";
 import { UnitSort } from "./algorithm/UnitSort";
 import { Build } from "./unit/Build";
 import { GameContext } from "./misc/GameContext";
 import { GameEvent } from "./misc/GameEvent";
 import { UnitInfo } from "./unit/UnitInfo";
-import { UnitFollow } from "./misc/UnitFollow";
+import { UnitFollow } from "./ui/UnitFollow";
 import { BaseControl } from "./control/BaseControl";
 import { mgr } from "../manager/mgr";
 import { FightMgr } from "../manager/FightMgr";
@@ -21,8 +21,17 @@ import { HomeControl } from "./control/HomeControl";
 import { RoleBase } from "./unit/RoleBase";
 import { PlayerDataMgr } from "../manager/PlayerDataMgr";
 import { PlayerMap, PlayerMapUnit, PlayerSimpleMap, PlayerSimpleMapUnit } from "../shared/protocols/base";
+import { Pathfinding } from "./misc/Pathfinding";
+import { ObserveControl } from "./control/ObserveControl";
+import { GameDataMgr } from "../manager/GameDataMgr";
 
 const {ccclass, property} = cc._decorator;
+
+const TypeofControl = {
+    [GameMode.Normal] : HomeControl,
+    [GameMode.Fight] : FightControl,
+    [GameMode.Observe] : ObserveControl,    
+}
 
 @ccclass()
 export class GameLayer extends cc.Component {
@@ -92,6 +101,7 @@ export class GameLayer extends cc.Component {
     protected onLoad(): void {
         GameContext.destroy();
         GameContext.getInstance().gameLayer = this;
+        Pathfinding.reset();
         this.eventEmitter = GameContext.getInstance().eventEmitter;
 
         let mapw = GameContext.getInstance().TILE_WIDTH * GameContext.getInstance().X_COUNT;
@@ -139,16 +149,10 @@ export class GameLayer extends cc.Component {
             cc.audioEngine.playMusic(audio, true);
         });
 
-        if(mgr.getMgr(FightMgr).hasFightInfo) {
-            this.control = new FightControl();
-            this.control.initialize(this);
-            this.reloadMap(mgr.getMgr(FightMgr).mapData);
-        }
-        else {
-            this.control = new HomeControl();
-            this.control.initialize(this);
-            this.reloadMap(mgr.getMgr(PlayerDataMgr).map);
-        }
+        this.control = new TypeofControl[mgr.getMgr(GameDataMgr).getCurrentMode()]();
+        this.control.initialize(this);
+        
+        this.reloadMap(mgr.getMgr(GameDataMgr).getMapData());
     }
 
     protected onDestroy(): void {
@@ -165,6 +169,7 @@ export class GameLayer extends cc.Component {
                 this._maxZIdxNode.zIndex = cc.macro.MAX_ZINDEX;
             }
         }
+        Pathfinding.update();
     }
 
     reloadMap(mapData: PlayerMap | PlayerSimpleMap) {

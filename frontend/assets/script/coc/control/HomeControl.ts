@@ -1,3 +1,9 @@
+/*
+ * Created: 2022-06-09 16:32:51
+ * Author : fc
+ * Description: 普通模式-游戏控制器
+ */
+
 import { mgr } from "../../manager/mgr";
 import { PlayerDataMgr } from "../../manager/PlayerDataMgr";
 import { RpcMgr } from "../../manager/RpcMgr";

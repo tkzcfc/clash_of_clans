@@ -138,7 +138,7 @@ export class RpcMgr extends BaseMgr
                 UIUtils.showMsgBoxOne(cfg.desc);
             }break;
             case 4: {
-                UIUtils.showMsgBoxOne(cfg.desc);
+                cc.game.end();
             }break;
         }
     }

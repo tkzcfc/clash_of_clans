@@ -8,7 +8,7 @@ import { mgr } from "../../manager/mgr";
 import { RpcMgr } from "../../manager/RpcMgr";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
-import { UnitFollow } from "../misc/UnitFollow";
+import { UnitFollow } from "./UnitFollow";
 import { Build } from "../unit/Build";
 
 

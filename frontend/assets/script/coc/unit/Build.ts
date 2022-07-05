@@ -13,7 +13,7 @@ import { GameEvent } from "../misc/GameEvent";
 import { UnitInfo } from "./UnitInfo";
 import BuildRender from "./BuildRender";
 import { RenderUtil } from "../../core/utils/RenderUtil";
-import { UnitFollow } from "../misc/UnitFollow";
+import { UnitFollow } from "../ui/UnitFollow";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { PlayerMapUnit, PlayerSimpleMapUnit } from "../../shared/protocols/base";
