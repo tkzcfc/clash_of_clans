@@ -4,7 +4,6 @@
  * Description: 建筑物渲染
  */
 
-import { GameCfgKey } from "../../common/config/GameCfgKey";
 import { GameCfgHelper } from "../../common/config/GameCfgHelper";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { mgr } from "../../manager/mgr";
@@ -35,7 +34,7 @@ export default class BuildRender extends cc.Component {
     updateRender() {
         const lv = this.buildInfo.lv;
         const buildCfg = this.buildInfo.buildCfg;
-        const itemCfg = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Items, this.buildInfo.cfgId);
+        const itemCfg = mgr.getMgr(GameCfgMgr).getData("Items", this.buildInfo.cfgId);
         const url = GameCfgHelper.getItemImage(itemCfg, lv);
 
         // 更新建筑物资源

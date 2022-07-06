@@ -1,6 +1,5 @@
 import { UIDelegate } from "../../core/ui_manager/UIDelegate";
 import TableView from "../../core/ui/TableView";
-import { GameCfgKey } from "../../common/config/GameCfgKey";
 import TableViewDelegate from "../../core/ui/TableViewDelegate";
 import { ShopItem } from "./ShopItem";
 import { BuildComeFrom, ItemType } from "../../coc/const/enums";
@@ -25,10 +24,10 @@ export class Shop extends UIDelegate {
         this.tableView.setOnItemCreateCallback((item: ShopItem)=>{
             item.node.on("click", ()=>{
                 let itemId = this.getCurShowItems()[item.itemIndex];
-                let cfg = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Items, itemId);
+                let cfg = mgr.getMgr(GameCfgMgr).getData("Items", itemId);
 
                 if(cfg.Type === ItemType.buildings) {
-                    let buildCfg = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Building, itemId);
+                    let buildCfg = mgr.getMgr(GameCfgMgr).getData("Building", itemId);
                     let placePos = GameContext.getInstance().getPlacePos(buildCfg.XCount, buildCfg.YCount);
 
                     if(placePos.x < 0) {
@@ -87,6 +86,6 @@ export class Shop extends UIDelegate {
     }
 
     public getCurShowItems() {
-        return mgr.getMgr(GameCfgMgr).getItem(GameCfgKey.Shop, this.showType, "Items");
+        return mgr.getMgr(GameCfgMgr).getItem("Shop", this.showType, "Items");
     }
 };

@@ -1,8 +1,9 @@
 import { ItemType } from "../../coc/const/enums";
+import { ItemsItem } from "../../imports/config/Items";
 
 export class GameCfgHelper {
 
-    static getItemImage(cfg: any, lv?: number):string {
+    static getItemImage(cfg: ItemsItem, lv?: number):string {
         switch(cfg.Type) {
             case ItemType.buildings:{
                 if(lv === undefined)

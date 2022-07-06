@@ -1,6 +1,5 @@
 
 
-import { GameCfgKey } from "../../common/config/GameCfgKey";
 import TableView from "../../core/ui/TableView";
 import TableViewItem from "../../core/ui/TableViewItem";
 import { GameCfgHelper } from "../../common/config/GameCfgHelper";
@@ -25,7 +24,7 @@ export class ShopItem extends TableViewItem {
      */
      onUpdateItem(datas: any, tableView: TableView) {  
         let data = datas[this.itemIndex];
-        let cfg = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Items, data);
+        let cfg = mgr.getMgr(GameCfgMgr).getData("Items", data);
 
         this.iconName.string = cfg.Name;
 

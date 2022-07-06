@@ -11,7 +11,6 @@ import { GameEvent } from "../misc/GameEvent";
 import { GameUtils } from "../misc/GameUtils";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
-import { GameCfgKey } from "../../common/config/GameCfgKey";
 import { Pathfinding } from "../misc/Pathfinding";
 
 const {ccclass, property} = cc._decorator;
@@ -40,7 +39,7 @@ export class RoleBase extends cc.Component {
     }
 
     initRole(id: number, lv: number, x: number, y: number) {
-        let cfg = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Role, id.toString());
+        let cfg = mgr.getMgr(GameCfgMgr).getData("Role", id.toString());
         
         this.dynamicClip = this.getComponent(RoleDynamicClip);
         this.dynamicClip.actName = "stand";

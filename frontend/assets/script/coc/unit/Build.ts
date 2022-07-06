@@ -8,7 +8,6 @@
 
 import { GameContext } from "../misc/GameContext";
 import { UnitType, DrawTileGroundType, BuildComeFrom, GameZIndex } from "../const/enums";
-import { GameCfgKey } from "../../common/config/GameCfgKey";
 import { GameEvent } from "../misc/GameEvent";
 import { UnitInfo } from "./UnitInfo";
 import BuildRender from "./BuildRender";
@@ -86,7 +85,7 @@ export class Build extends cc.Component {
         this.uuid = data.uuid;
         this.lv = data.lv;
         this.comeFrom = comeFrom;
-        this.buildCfg  = mgr.getMgr(GameCfgMgr).getData(GameCfgKey.Building, this.cfgId);
+        this.buildCfg  = mgr.getMgr(GameCfgMgr).getData("Building", this.cfgId);
 
         this.unit.transform.x = data.x;
         this.unit.transform.y = data.y;
