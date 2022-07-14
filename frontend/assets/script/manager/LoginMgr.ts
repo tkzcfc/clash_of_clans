@@ -5,11 +5,11 @@
  */
 
 import { core } from "../core/InitCore";
-import { Const } from "../common/Const";
 import { BaseMgr } from "./BaseMgr";
 import { mgr } from "./mgr";
 import { RpcMgr } from "./RpcMgr";
 import { PlayerDataMgr } from "./PlayerDataMgr";
+import GameView from "../views/GameView";
 
 export class LoginMgr extends BaseMgr
 {
@@ -44,7 +44,7 @@ export class LoginMgr extends BaseMgr
         // 进入游戏完成消息
         client.listenMsg("msg/LoginGameFinish", (msg => {
             this.cookie = msg.cookie;
-            core.viewManager.runView(Const.Views.GameView);
+            core.viewManager.runEmptyView(GameView);
         }));
     }
 }

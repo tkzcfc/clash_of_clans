@@ -15,7 +15,7 @@ export interface PlayerInfo extends PlayerSimpleInfo {
 
 
 
-export interface PlayerSimpleMapUnit {
+export interface PlayerMapUnit {
     uuid: string,
     id: number,
     x: number,
@@ -23,13 +23,9 @@ export interface PlayerSimpleMapUnit {
     lv: number,
 }
 export interface PlayerSimpleMap {
-    units: PlayerSimpleMapUnit[]
+    units: PlayerMapUnit[]
 }
 
-
-
-export interface PlayerMapUnit extends PlayerSimpleMapUnit {
-}
 export interface PlayerMap {
     units: PlayerMapUnit[]
 }

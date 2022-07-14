@@ -4,21 +4,22 @@
  * Description: 角色基类
  */
 
-import RoleDynamicClip from "./RoleDynamicClip";
-import { UnitInfo } from "./UnitInfo";
+import GameRoleDynamicClip from "./GameRoleDynamicClip";
+import { GameUnit } from "./GameUnit";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 import { GameUtils } from "../misc/GameUtils";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { Pathfinding } from "../misc/Pathfinding";
+import { UnitType } from "../const/enums";
 
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export class RoleBase extends cc.Component {
+export class GameRole extends cc.Component {
     // 动画
-    dynamicClip: RoleDynamicClip;
+    dynamicClip: GameRoleDynamicClip;
 
     ///////////////// 寻路相关 /////////////////
     // 移动点合集
@@ -33,6 +34,11 @@ export class RoleBase extends cc.Component {
     
 
     protected onLoad(): void {
+        let unit = this.addComponent(GameUnit)
+        unit.type = UnitType.Role;
+
+        this.addComponent(GameRoleDynamicClip);
+
         setTimeout(()=>{
             this.gotoRandomBuild();
         }, 1000);
@@ -41,7 +47,7 @@ export class RoleBase extends cc.Component {
     initRole(id: number, lv: number, x: number, y: number) {
         let cfg = mgr.getMgr(GameCfgMgr).getData("Role", id.toString());
         
-        this.dynamicClip = this.getComponent(RoleDynamicClip);
+        this.dynamicClip = this.getComponent(GameRoleDynamicClip);
         this.dynamicClip.actName = "stand";
         this.dynamicClip.loadClip(`${cfg.Resource}_lv${lv}`, [
             "attack1",
@@ -63,8 +69,8 @@ export class RoleBase extends cc.Component {
         this.position.x = x;
         this.position.y = y;
 
-        this.getComponent(UnitInfo).logicTransform.x = x;
-        this.getComponent(UnitInfo).logicTransform.y = y;
+        this.getComponent(GameUnit).logicTransform.x = x;
+        this.getComponent(GameUnit).logicTransform.y = y;
         GameContext.getInstance().eventEmitter.emit(GameEvent.DO_UPDATE_SORT);
 
         if(!noSyncRender) {
@@ -82,7 +88,7 @@ export class RoleBase extends cc.Component {
         const build = builds[GameUtils.randomRangeInt(0, builds.length - 1)];
 
         if(build) {
-            this.goto(build.getComponent(UnitInfo));
+            this.goto(build.getComponent(GameUnit));
         }
         else {
             cc.tween(this.node)
@@ -92,14 +98,14 @@ export class RoleBase extends cc.Component {
         }
     }
 
-    async goto(unit: UnitInfo) {
+    async goto(unit: GameUnit) {
         // 重置寻路相关参数
         Pathfinding.cancel(this);
         if(this.moveTween) {
             this.moveTween.stop();
         }
 
-        const selfTransform = this.getComponent(UnitInfo).logicTransform;
+        const selfTransform = this.getComponent(GameUnit).logicTransform;
         const targetTransform = unit.logicTransform;
 
         const from = new cc.Vec2(selfTransform.x, selfTransform.y);
@@ -155,7 +161,7 @@ export class RoleBase extends cc.Component {
         
         if(false == doWalk) {
             let pos = this.walkPosArray[this.walkPosArray.length - 1];
-            this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, pos);
+            this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(GameUnit).logicTransform, pos);
             this.dynamicClip.actName = "attack1";
             this.dynamicClip.updatePlay();
             this.moveTween = cc.tween(this.node)
@@ -167,7 +173,7 @@ export class RoleBase extends cc.Component {
 
     stepWalk(to: cc.Vec2) {
         // 更新角色朝向
-        this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(UnitInfo).logicTransform, to);
+        this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(GameUnit).logicTransform, to);
         this.dynamicClip.actName = "run";
         this.dynamicClip.updatePlay();
 

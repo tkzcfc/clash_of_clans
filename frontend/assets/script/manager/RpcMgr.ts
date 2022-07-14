@@ -31,7 +31,13 @@ export class RpcMgr extends BaseMgr
 
         this.client = new WsClient(serviceProto, {
             server: GameCfgNet.ServerURL,
-            json: false
+            json: false,
+            heartbeat: {
+                // 两次心跳检测的间隔时间（毫秒）
+                interval: 5000,
+                // 发出心跳检测包后，多长时间未收到回复视为超时（毫秒），超时将使连接断开
+                timeout: 3000
+            }
         })
         
         // 断开事件
@@ -76,7 +82,6 @@ export class RpcMgr extends BaseMgr
             }
         }
 
-        cc.log(`this.connectNum = ${this.connectNum}`)
         // 连接成功
         if(this.connectNum <= 0) {
             mgr.getMgr(LoginMgr).loginGame();
@@ -98,6 +103,8 @@ export class RpcMgr extends BaseMgr
      * @returns 
      */
     async callApi<T extends keyof ServiceType['api']>(apiName: T, req: ServiceType['api'][T]['req'], options?: TransportOptions) {
+        // cc.log("callApi: " + apiName);
+        // cc.log("request: ", JSON.stringify(req));
         let result = await this.client.callApi(apiName, req, options);
         if(!result.isSucc && result.err && result.err.type == TsrpcErrorType.ApiError) {
             // cc.error(result.err.message);
@@ -105,6 +112,7 @@ export class RpcMgr extends BaseMgr
                 this.showErrCode(result.err.code, result.err.message);
             }
         }
+        // cc.log("response: " + JSON.stringify(result));
         return result;
     }
 

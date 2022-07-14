@@ -4,9 +4,9 @@
  * Description: 斜45度地图中元素排序
  */
 
-import { UnitInfo, UnitTransform } from "../unit/UnitInfo";
+import { GameUnit, UnitTransform } from "../unit/GameUnit";
 
-let remove = cc.js.array.remove;
+const remove = cc.js.array.remove;
 
 export namespace UnitSort {
 
@@ -16,7 +16,7 @@ export namespace UnitSort {
      * @param zScale Zorder缩放系数
      * @returns orderedList 排序好的元素数组
      */
-    export function doSort(itemSet: UnitInfo[], zScale: number){
+    export function doSort(itemSet: GameUnit[], zScale: number){
         let totalCount = itemSet.length;
         let orderedList = [];
 
@@ -45,10 +45,10 @@ export namespace UnitSort {
      * @param candidateList 候选列表
      * @param itemSet 
      */
-    function xxFind(candidateList: UnitInfo[], itemSet: UnitInfo[]) {
+    function xxFind(candidateList: GameUnit[], itemSet: GameUnit[]) {
         let maxZItem = getMaxZItem(candidateList);
 
-        let exceptList = new Map<UnitInfo, boolean>();
+        let exceptList = new Map<GameUnit, boolean>();
         exceptList.set(maxZItem, true);
         do{
             let item = filter(maxZItem.logicTransform, exceptList, itemSet);
@@ -65,7 +65,7 @@ export namespace UnitSort {
      * 在元素列表中查找Y值可能最小的元素(Y值越小即Z值越大)
      * @param list 
      */
-     function getMaxZItem(list: UnitInfo[]): UnitInfo {
+     function getMaxZItem(list: GameUnit[]): GameUnit {
         let minItem = list[0];
         let minY = minItem.logicTransform.getMinY();
 
@@ -93,12 +93,12 @@ export namespace UnitSort {
      * @param exceptList 排除元素列表
      * @param itemSet 所有元素合集
      */
-     function filter(curItem: UnitTransform, exceptList: Map<UnitInfo, boolean>, itemSet: UnitInfo[]) {
-        let list: UnitInfo[] = [];
+     function filter(curItem: UnitTransform, exceptList: Map<GameUnit, boolean>, itemSet: GameUnit[]) {
+        let list: GameUnit[] = [];
 
         let v: UnitTransform;
 
-        itemSet.forEach((unit: UnitInfo)=>{
+        itemSet.forEach((unit: GameUnit)=>{
             if(!exceptList.get(unit)) {
                 v = unit.logicTransform;
 

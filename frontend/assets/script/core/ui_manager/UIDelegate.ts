@@ -9,7 +9,7 @@ import { UIContext } from "./UIContext";
 const {ccclass, property} = cc._decorator;
 
 // 入场/退场动画类型
-enum ActionType {
+export enum ActionType {
     NoAction,
     ScaleAction,
 }

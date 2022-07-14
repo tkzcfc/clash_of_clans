@@ -1,5 +1,5 @@
 import { ItemType } from "../../coc/const/enums";
-import { ItemsItem } from "../../imports/config/Items";
+import { ItemsItem } from "../../imports/config/Cfg_Items";
 
 export class GameCfgHelper {
 
@@ -18,6 +18,5 @@ export class GameCfgHelper {
                 console.assert(false);
         }
     }
-
 }
 

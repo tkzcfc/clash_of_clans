@@ -15,6 +15,16 @@ export class GameDataMgr extends BaseMgr {
         return GameMode.Normal;
     };
 
+    getBGM():string {
+        switch (this.getCurrentMode()) {
+            case GameMode.Fight:
+                return "sounds/music/battle_music";
+            case GameMode.Observe:
+                return "sounds/music/home_music";
+        }
+        return "sounds/music/home_music"
+    }
+
     getMapData() {
         switch (this.getCurrentMode()) {
             case GameMode.Normal:

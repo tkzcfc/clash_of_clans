@@ -285,7 +285,7 @@ def exportToTS(luaFile, xlsxFileName, rootDir, ignoreFirstColumn, ignoreTypeMark
     for sheetInfo in sheetInfoArr:
         log(sheetInfo['sheetName'] + ' start...')
 
-        outLuaFile = os.path.split(luaFile)[0] + '/' + sheetInfo['sheetName'] + os.path.splitext(luaFile)[1]
+        outLuaFile = os.path.split(luaFile)[0] + '/Cfg_' + sheetInfo['sheetName'] + os.path.splitext(luaFile)[1]
         outFileArr.append(outLuaFile)
 
         rowInfo = sheetInfo['rowInfoArr']
@@ -368,6 +368,11 @@ def exportToTS(luaFile, xlsxFileName, rootDir, ignoreFirstColumn, ignoreTypeMark
                 return False
     return True
 
+def clearTsName(name):
+    if name[:4] == "Cfg_":
+        return name[4:]
+    return name
+
 # 遍历文件夹
 def exportDir(workDir, outDir):
     ExtensionArr = ['.xlsx', '.xlsm']
@@ -401,25 +406,25 @@ def exportDir(workDir, outDir):
     script = ""
     for file in outFileArr:
         bname = os.path.basename(file)[:-3]
-        script = script + 'import {{ {0}Item, {0}Data }} from \'./{0}\';'.format(bname) + row_separator
+        script = script + 'import {{ {0}Item, {0}Data }} from \'./{1}\';'.format(clearTsName(bname), bname) + row_separator
 
 
     script = script + row_separator
     script = script + 'export interface ConfigItemType {' + row_separator
     for file in outFileArr:
         bname = os.path.basename(file)[:-3]
-        script = script + indent(2) + "{0}: {0}Item,\n".format(bname)
+        script = script + indent(2) + "{0}: {0}Item,\n".format(clearTsName(bname))
     script = tabClose(script, 0) + row_separator + row_separator
 
 
     script = script + 'export const ConfigData = {' + row_separator
     for file in outFileArr:
         bname = os.path.basename(file)[:-3]
-        script = script + indent(1) + "{0}: {0}Data,".format(bname) + row_separator
+        script = script + indent(1) + "{0}: {0}Data,".format(clearTsName(bname)) + row_separator
     script = tabClose(script, 0) + row_separator
 
     
-    output_file = codecs.open(outDir + 'init.ts', 'w', output_encoding)
+    output_file = codecs.open(outDir + 'GameCfgInit.ts', 'w', output_encoding)
     output_file.write(script)
     output_file.close()
 

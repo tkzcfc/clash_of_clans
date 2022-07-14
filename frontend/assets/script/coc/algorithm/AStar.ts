@@ -16,7 +16,7 @@ enum direction {
 }
 
 // 正方向偏移
-let NeighborOffset = {
+const NeighborOffset = {
 	[direction.LEFT] 	: [-1,  0 ], // 左
 	[direction.RIGHT] 	: [1 ,  0 ], // 右
 	[direction.TOP] 	: [0 ,  1 ], // 上
@@ -24,7 +24,7 @@ let NeighborOffset = {
 }
 
 // 斜方向偏移
-let SkewNeighbor = [
+const SkewNeighbor = [
 	{ offset : [-1,  1], relation : [ direction.LEFT, direction.TOP     ]},// 左上
 	{ offset : [ 1,  1], relation : [ direction.RIGHT, direction.TOP    ]},// 右上
 	{ offset : [-1, -1], relation : [ direction.LEFT, direction.BOTTOM  ]},// 左下
@@ -32,8 +32,8 @@ let SkewNeighbor = [
 ]
 
 
-let pow = Math.pow;
-let abs = Math.abs;
+const pow = Math.pow;
+const abs = Math.abs;
 
 class Node {
     x: number = 0;

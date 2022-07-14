@@ -126,7 +126,7 @@ export class ZoomView extends cc.Component {
     _convertToLocation(touch: cc.Touch) {
         let scrollNode = this.scrollView.node;
 
-        // 使用 convertToNodeSpace有警告，以下逻辑等同于使用convertToNodeSpaceAR
+        // 使用 convertToNodeSpace 有警告，以下逻辑等同于使用 convertToNodeSpace
         let pos = this.scrollView.node.convertToNodeSpaceAR(touch.getLocation());
         pos.x += scrollNode.anchorX * scrollNode.width;
         pos.y += scrollNode.anchorY * scrollNode.height;

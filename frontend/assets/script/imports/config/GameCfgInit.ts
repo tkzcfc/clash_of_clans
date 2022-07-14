@@ -1,8 +1,8 @@
-import { BuildingItem, BuildingData } from './Building';
-import { ItemsItem, ItemsData } from './Items';
-import { RoleItem, RoleData } from './Role';
-import { RpcErrorItem, RpcErrorData } from './RpcError';
-import { ShopItem, ShopData } from './Shop';
+import { BuildingItem, BuildingData } from './Cfg_Building';
+import { ItemsItem, ItemsData } from './Cfg_Items';
+import { RoleItem, RoleData } from './Cfg_Role';
+import { RpcErrorItem, RpcErrorData } from './Cfg_RpcError';
+import { ShopItem, ShopData } from './Cfg_Shop';
 
 export interface ConfigItemType {
     Building: BuildingItem,

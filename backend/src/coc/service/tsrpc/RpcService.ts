@@ -18,7 +18,10 @@ export class RpcService extends IService {
         // logger
         logger: new TerminalColorLogger({
             pid: "rpc",
-        })
+        }),
+        // 超过 10 秒未收到心跳包，则断开该连接
+        // 注意，这个值需要大于客户端的 heartbeat.interval（2倍以上为宜）
+        heartbeatWaitTime: 10000
     });
 
     readonly accountMng = new AccountManager();

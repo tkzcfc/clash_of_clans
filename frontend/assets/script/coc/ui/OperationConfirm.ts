@@ -9,18 +9,23 @@ import { RpcMgr } from "../../manager/RpcMgr";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 import { UnitFollow } from "./UnitFollow";
-import { Build } from "../unit/Build";
+import { GameBuild } from "../unit/GameBuild";
 
 
 
 const {ccclass, property} = cc._decorator;
 
+const Invalid_SN = -1;
+
 @ccclass()
 export class OperationConfirm extends cc.Component {
     
-    requestSN: number = -1;
+    requestSN: number = Invalid_SN;
 
     onClickOK() {
+        if(this.requestSN !== Invalid_SN) {
+            return;
+        }
         this.buyAndPlaceToMap();
     }
 
@@ -29,7 +34,7 @@ export class OperationConfirm extends cc.Component {
 
         // 获取目标建筑
         let followTarget = this.getComponent(UnitFollow).followTarget;
-        let build = followTarget.getComponent(Build);
+        let build = followTarget.getComponent(GameBuild);
 
         let result = await mgr.getMgr(RpcMgr).callApi("ptl/BuyAndPlaceToMap", {
             id: build.cfgId,
@@ -37,8 +42,11 @@ export class OperationConfirm extends cc.Component {
             y: build.unit.transform.y,
         });
 
+        this.requestSN = Invalid_SN;
+
         if(result.isSucc) {
-            build.uuid = result.res.data.uuid;
+            build.unitUUID = result.res.data.uuid;
+            build.lv = result.res.data.lv;
 
             GameContext.getInstance().eventEmitter.emit(GameEvent.DO_UNFOCUS_UNIT, true, false);
             this.node.destroy();
@@ -50,6 +58,9 @@ export class OperationConfirm extends cc.Component {
     }
 
     onClickCancel() {
+        if(this.requestSN !== Invalid_SN) {
+            return;
+        }
         GameContext.getInstance().eventEmitter.emit(GameEvent.DO_UNFOCUS_UNIT, true, true);
         this.node.destroy();
     }

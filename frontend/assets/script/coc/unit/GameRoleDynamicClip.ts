@@ -38,7 +38,7 @@ let DirectionNames = [
 
 
 @ccclass
-export default class RoleDynamicClip extends cc.Component {
+export default class GameRoleDynamicClip extends cc.Component {
     // 动画组件渲染节点
     render: cc.Node = null;
     // 动画组件

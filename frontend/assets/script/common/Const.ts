@@ -10,7 +10,6 @@ export namespace Const {
      * view预制体路径
      */
     export class Views {
-        static GameView = "prefab/views/gameView";
     }
 
     /**
@@ -21,6 +20,7 @@ export namespace Const {
         static Main = "prefab/ui/main/main";
         static Shop = "prefab/ui/shop/shop";
         static MessageBox = "prefab/ui/common/messageBox";
+        static LoadProgress = "prefab/ui/common/loadProgress";
         static Launch = "prefab/ui/launch/launch";
         static NetLoading = "prefab/ui/net/netLoading";
         static Fight_PlayerList = "prefab/ui/fight/playerList";

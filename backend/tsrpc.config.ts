@@ -17,8 +17,9 @@ const tsrpcConf: TsrpcConfig = {
         {
             from: 'src/shared',
             to: '../frontend/assets/script/shared',
-            type: 'copy'     // Change this to 'copy' if your environment not support symlink
-        }
+            type: 'copy',     // Change this to 'copy' if your environment not support symlink
+			readonly: false
+	   }
     ],
     // Dev server
     dev: {

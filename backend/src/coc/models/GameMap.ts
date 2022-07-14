@@ -38,7 +38,7 @@ export class GameMap {
             id: id,
             x: x,
             y: y,
-            lv: 0,
+            lv: 1,
         });
 
         this.updateToDb();

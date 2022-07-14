@@ -5,7 +5,7 @@
  */
 
 import { BaseMgr } from "./BaseMgr";
-import { ConfigItemType, ConfigData } from "../imports/config/init";
+import { ConfigItemType, ConfigData } from "../imports/config/GameCfgInit";
 
 export class GameCfgMgr extends BaseMgr
 {    

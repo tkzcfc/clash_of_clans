@@ -5,7 +5,7 @@
  */
 
 import { UnitType } from "../const/enums";
-import { Build } from "./Build";
+import { GameBuild } from "./GameBuild";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 
@@ -53,7 +53,7 @@ export class UnitTransform {
 
 
 @ccclass()
-export class UnitInfo extends cc.Component {
+export class GameUnit extends cc.Component {
 
     @property({type: cc.Enum(UnitType)})
     type: UnitType = UnitType.buildings;
@@ -75,7 +75,7 @@ export class UnitInfo extends cc.Component {
     touchTest(event) {
         if(this.type == UnitType.buildings) {
             let pos = this.node.parent.convertToNodeSpaceAR(event.touch.getLocation());
-            return this.getComponent(Build).touchTest(pos);
+            return this.getComponent(GameBuild).touchTest(pos);
         }
         return false;
     }

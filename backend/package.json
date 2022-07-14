@@ -18,12 +18,12 @@
     "mocha": "^9.2.2",
     "onchange": "^7.1.0",
     "ts-node": "^10.8.0",
-    "tsrpc-cli": "^2.4.4",
+    "tsrpc-cli": "^2.4.5",
     "typescript": "^4.6.4"
   },
   "dependencies": {
     "sqlite3": "^5.0.8",
-    "tsrpc": "^3.4.0",
+    "tsrpc": "^3.4.1",
     "uuid": "^8.3.2"
   }
 }

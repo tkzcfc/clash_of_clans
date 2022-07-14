@@ -76,17 +76,22 @@ export class ViewManager {
         });
     }
     
-    runEmptyView() {
+    runEmptyView<T extends View>(type: {new(): T}) {
         this.popView();
-        this._runView(new cc.Node());
+
+        let node = new cc.Node();
+        node.addComponent(type);
+        this._runView(node);
     }
 
-    pushEmptyView() {
+    pushEmptyView<T extends View>(type: {new(): T}) {
         let cur = this.curView();
         if(cur) {
             cur.node.active = false;
         }
-        this._runView(new cc.Node());
+        let node = new cc.Node();
+        node.addComponent(type);
+        this._runView(node);
     }
 
     popView() {
@@ -115,6 +120,19 @@ export class ViewManager {
         let view = node.getComponent(View);
         if(!view) {
             view = node.addComponent(View);
+        }
+
+        if(!node.getComponent(cc.Widget)) {
+            let widget = node.addComponent(cc.Widget);
+            widget.alignMode = cc.Widget.AlignMode.ON_WINDOW_RESIZE;
+            widget.isAlignBottom = true;
+            widget.bottom = 0;
+            widget.isAlignTop = true;
+            widget.top = 0;
+            widget.isAlignLeft = true;
+            widget.left = 0;
+            widget.isAlignRight = true;
+            widget.right = 0;
         }
         node.parent = core.gameRootNode;
 

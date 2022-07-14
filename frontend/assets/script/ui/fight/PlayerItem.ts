@@ -1,4 +1,3 @@
-import { Const } from "../../common/Const";
 import { core } from "../../core/InitCore";
 import TableView from "../../core/ui/TableView";
 import TableViewItem from "../../core/ui/TableViewItem";
@@ -6,6 +5,7 @@ import { PvpListItem } from "../../shared/protocols/ptl/PtlGetPvpList";
 import { FightMgr } from "../../manager/FightMgr";
 import { mgr } from "../../manager/mgr";
 import { RpcMgr } from "../../manager/RpcMgr";
+import GameView from "../../views/GameView";
 
 
 
@@ -44,7 +44,7 @@ export class PlayerItem extends TableViewItem {
 
         if(result.isSucc) {
             mgr.getMgr(FightMgr).setPvPInfo(result.res.pdata, result.res.map);
-            core.viewManager.runView(Const.Views.GameView);
+            core.viewManager.runEmptyView(GameView);
         }
      }
 }

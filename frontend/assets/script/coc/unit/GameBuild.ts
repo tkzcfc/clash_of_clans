@@ -9,26 +9,27 @@
 import { GameContext } from "../misc/GameContext";
 import { UnitType, DrawTileGroundType, BuildComeFrom, GameZIndex } from "../const/enums";
 import { GameEvent } from "../misc/GameEvent";
-import { UnitInfo } from "./UnitInfo";
-import BuildRender from "./BuildRender";
+import { GameUnit } from "./GameUnit";
+import GameBuildRender from "./GameBuildRender";
 import { RenderUtil } from "../../core/utils/RenderUtil";
 import { UnitFollow } from "../ui/UnitFollow";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
-import { PlayerMapUnit, PlayerSimpleMapUnit } from "../../shared/protocols/base";
+import { PlayerMapUnit } from "../../shared/protocols/base";
+import { RpcMgr } from "../../manager/RpcMgr";
 
 const {ccclass, property} = cc._decorator;
 
 
 @ccclass()
-export class Build extends cc.Component {
+export class GameBuild extends cc.Component {
 
     //////////////////////////////////////////////////////////
     /// 对其他组件的引用
-    // UnitInfo
-    unit: UnitInfo = null;
+    // GameUnit
+    unit: GameUnit = null;
     // 渲染组件
-    render: BuildRender = null;
+    render: GameBuildRender = null;
 
     // 建筑物地面渲染节点
     buildGround: cc.Node = null;
@@ -49,8 +50,8 @@ export class Build extends cc.Component {
     buildCfg: any;
     // 当前等级
     lv: number = 0;
-    // uuid
-    uuid: string = "";
+    // unitUUID
+    unitUUID: string = "";
 
     // 该建筑物来自哪儿
     comeFrom: BuildComeFrom = BuildComeFrom.MAP;
@@ -60,8 +61,10 @@ export class Build extends cc.Component {
 
     
     protected onLoad(): void {
-        this.render = this.getComponent(BuildRender);
-        this.unit = this.getComponent(UnitInfo);
+        this.unit = this.addComponent(GameUnit);
+        this.unit.type = UnitType.buildings;
+
+        this.render = this.addComponent(GameBuildRender)
 
         this.buildGround = this.node.getChildByName("build_ground");
         this.buildGround.removeFromParent();
@@ -80,9 +83,9 @@ export class Build extends cc.Component {
         GameContext.getInstance().eventEmitter.removeAllListenerByContext(this);        
     }
 
-    initWithBuildData(data: PlayerMapUnit | PlayerSimpleMapUnit, comeFrom: BuildComeFrom) {
+    initWithBuildData(data: PlayerMapUnit, comeFrom: BuildComeFrom) {
         this.cfgId = data.id;
-        this.uuid = data.uuid;
+        this.unitUUID = data.uuid;
         this.lv = data.lv;
         this.comeFrom = comeFrom;
         this.buildCfg  = mgr.getMgr(GameCfgMgr).getData("Building", this.cfgId);
@@ -138,7 +141,7 @@ export class Build extends cc.Component {
      * 是否允许点击其他unit来让自己失焦
      * @param newUnit 
      */
-    canUnFocusOnClickOtherUnit(newUnit: UnitInfo): boolean {
+    canUnFocusOnClickOtherUnit(newUnit: GameUnit): boolean {
         // 当前焦点元素是新建的，不允许点击其他元素将其失焦
         if(this.comeFrom != BuildComeFrom.MAP) {
             return false;
@@ -147,11 +150,11 @@ export class Build extends cc.Component {
     }
 
 
-    isSelfUnit(unit: UnitInfo): boolean {
+    isSelfUnit(unit: GameUnit): boolean {
         return unit.node === this.node;
     }
     
-    onEventFocusUnit(unit: UnitInfo) {
+    onEventFocusUnit(unit: GameUnit) {
         if(!this.isSelfUnit(unit)){
             return;
         }
@@ -172,7 +175,7 @@ export class Build extends cc.Component {
      * @param discardModify 是否放弃此次修改
      * @returns 
      */
-    onEventUnFocusUnit(unit: UnitInfo, compulsive: boolean, discardModify: boolean) {
+    onEventUnFocusUnit(unit: GameUnit, compulsive: boolean, discardModify: boolean) {
         if(!this.isSelfUnit(unit)){
             return;
         }
@@ -231,7 +234,7 @@ export class Build extends cc.Component {
         this.render.stopFocusAction();
     }
 
-    onEventDragUnitStart(unit: UnitInfo) {
+    onEventDragUnitStart(unit: GameUnit) {
         if(!this.isSelfUnit(unit)){
             return;
         }
@@ -240,7 +243,7 @@ export class Build extends cc.Component {
         this.dragStartLogicPos.y = this.unit.transform.y;
     }
 
-    onEventDragUnit(unit: UnitInfo, distance: cc.Vec2) {
+    onEventDragUnit(unit: GameUnit, distance: cc.Vec2) {
         if(!this.isSelfUnit(unit)){
             return;
         }

@@ -1,4 +1,4 @@
 
 export namespace GameCfgNet {
-    export var ServerURL = "ws://127.0.0.1:8205";
+    export var ServerURL = "ws://1.14.65.70:8205";
 }

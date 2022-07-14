@@ -7,23 +7,24 @@
 import { GameCfgHelper } from "../../common/config/GameCfgHelper";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { mgr } from "../../manager/mgr";
-import { Build } from "./Build";
+import { GameBuild } from "./GameBuild";
 const {ccclass, property} = cc._decorator;
 
 
 const FOCUS_ACTION_TAG = 1;
 
 @ccclass
-export default class BuildRender extends cc.Component {
+export default class GameBuildRender extends cc.Component {
 
     @property({ type: cc.Sprite, tooltip: "建筑渲染节点"})
     buildSpr: cc.Sprite = null;
 
-    private buildInfo: Build = null;
+    private buildInfo: GameBuild = null;
     private cacheBuildResource: string = "";
     
     protected onLoad(): void {
-        this.buildInfo = this.getComponent(Build);
+        this.buildSpr = this.node.getChildByName("render").getComponent(cc.Sprite);
+        this.buildInfo = this.getComponent(GameBuild);
     }
 
     protected onDestroy(): void {

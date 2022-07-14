@@ -52,7 +52,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 20,
+    "version": 21,
     "services": [
         {
             "id": 14,
@@ -246,18 +246,6 @@ export const serviceProto: ServiceProto<ServiceType> = {
         },
         "base/PlayerMapUnit": {
             "type": "Interface",
-            "extends": [
-                {
-                    "id": 0,
-                    "type": {
-                        "type": "Reference",
-                        "target": "base/PlayerSimpleMapUnit"
-                    }
-                }
-            ]
-        },
-        "base/PlayerSimpleMapUnit": {
-            "type": "Interface",
             "properties": [
                 {
                     "id": 0,
@@ -372,7 +360,7 @@ export const serviceProto: ServiceProto<ServiceType> = {
                         "type": "Array",
                         "elementType": {
                             "type": "Reference",
-                            "target": "base/PlayerSimpleMapUnit"
+                            "target": "base/PlayerMapUnit"
                         }
                     }
                 }

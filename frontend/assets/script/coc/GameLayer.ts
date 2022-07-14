@@ -8,19 +8,17 @@ import { EventEmitter } from "../core/common/event/EventEmitter";
 import { ZoomView } from "./ui/ZoomView";
 import { BuildComeFrom, DrawTileMode, GameMode, GameZIndex, UnitType } from "./const/enums";
 import { UnitSort } from "./algorithm/UnitSort";
-import { Build } from "./unit/Build";
+import { GameBuild } from "./unit/GameBuild";
 import { GameContext } from "./misc/GameContext";
 import { GameEvent } from "./misc/GameEvent";
-import { UnitInfo } from "./unit/UnitInfo";
+import { GameUnit } from "./unit/GameUnit";
 import { UnitFollow } from "./ui/UnitFollow";
 import { BaseControl } from "./control/BaseControl";
 import { mgr } from "../manager/mgr";
-import { FightMgr } from "../manager/FightMgr";
 import { FightControl } from "./control/FightControl";
 import { HomeControl } from "./control/HomeControl";
-import { RoleBase } from "./unit/RoleBase";
-import { PlayerDataMgr } from "../manager/PlayerDataMgr";
-import { PlayerMap, PlayerMapUnit, PlayerSimpleMap, PlayerSimpleMapUnit } from "../shared/protocols/base";
+import { GameRole } from "./unit/GameRole";
+import { PlayerMap, PlayerMapUnit, PlayerSimpleMap } from "../shared/protocols/base";
 import { Pathfinding } from "./misc/Pathfinding";
 import { ObserveControl } from "./control/ObserveControl";
 import { GameDataMgr } from "../manager/GameDataMgr";
@@ -72,9 +70,9 @@ export class GameLayer extends cc.Component {
 
 
     // 地图中的所有单位
-    units: UnitInfo [] = [];
+    units: GameUnit [] = [];
     // 地图中的所有建筑
-    builds: Build[] = [];
+    builds: GameBuild[] = [];
 
     // 游戏内部事件派发器
     eventEmitter: EventEmitter<GameEvent>;
@@ -86,9 +84,9 @@ export class GameLayer extends cc.Component {
     // 记录触摸开始的touchid,保证多点触摸时其他触摸无效
     _touchStartID: number = Number.MAX_SAFE_INTEGER;
     // 当前触摸对象
-    _curTouchUnit: UnitInfo;
+    _curTouchUnit: GameUnit;
     // 当前编辑焦点对象
-    _focusUnit: UnitInfo;
+    _focusUnit: GameUnit;
     // 当前设置最大Zindex的节点
     _maxZIdxNode: cc.Node;
 
@@ -135,14 +133,14 @@ export class GameLayer extends cc.Component {
         this.mapScrollView.content.setPosition(0, 0);
 
         // 手势缩放
-        this._zoomView = this.getComponent(ZoomView);
+        this._zoomView = this.addComponent(ZoomView);
         this._zoomView.contentNode = mapRenderNode;
         this._zoomView.scrollView = this.mapScrollView;
 
         this.initEvent();
 
         // BGM
-        cc.resources.load("sounds/music/home_music", cc.AudioClip, (err, audio: cc.AudioClip)=> {
+        cc.resources.load(mgr.getMgr(GameDataMgr).getBGM(), cc.AudioClip, (err, audio: cc.AudioClip)=> {
             if(!!err) {
                 return;
             }
@@ -173,7 +171,7 @@ export class GameLayer extends cc.Component {
     }
 
     reloadMap(mapData: PlayerMap | PlayerSimpleMap) {
-        this.units.forEach((item: UnitInfo)=>{
+        this.units.forEach((item: GameUnit)=>{
             item.node.destroy();
         });
         this.units.length = 0;
@@ -197,22 +195,21 @@ export class GameLayer extends cc.Component {
      * 创建建筑
      * @param data 
      */
-    newBuild(data: PlayerMapUnit | PlayerSimpleMapUnit, comeFrom: BuildComeFrom): cc.Node {
+    newBuild(data: PlayerMapUnit, comeFrom: BuildComeFrom): cc.Node {
         let node = cc.instantiate(this.buildPrefab);
         node.parent = this.layers[GameZIndex.UnitLayer];
-        
-        this.units.push(node.getComponent(UnitInfo));
-
-        let build = node.getComponent(Build);
+                
+        let build = node.addComponent(GameBuild);
         build.initWithBuildData(data, comeFrom);
         this.builds.push(build);
+        
+        this.units.push(node.getComponent(GameUnit));
 
         GameContext.getInstance().addBuild(build);
-
         return node;
     }
 
-    delBuild(build: Build) {
+    delBuild(build: GameBuild) {
         GameContext.getInstance().delBuild(build);
 
         for(let i = 0, j = this.builds.length; i < j; ++i) {
@@ -236,11 +233,10 @@ export class GameLayer extends cc.Component {
         let node = cc.instantiate(this.rolePrefab);
         node.parent = this.layers[GameZIndex.UnitLayer];
 
-        let unit = node.getComponent(UnitInfo);
-        this.units.push(unit);
-        
-        let role = node.getComponent(RoleBase);
+        let role = node.addComponent(GameRole);
         role.initRole(id, lv, x, y);
+
+        this.units.push(node.getComponent(GameUnit));
     }
 
     initEvent() {
@@ -282,6 +278,7 @@ export class GameLayer extends cc.Component {
     }
     
     onTouchStart(event) {
+        cc.log("onTouchStart begin");
         if(this._touchStartID !== Number.MAX_SAFE_INTEGER) {
             return;
         }
@@ -298,7 +295,7 @@ export class GameLayer extends cc.Component {
             }
 
             for(let i = 0, j = this.units.length; i < j; ++i) {
-                let unit = this.units[i].getComponent(UnitInfo);
+                let unit = this.units[i].getComponent(GameUnit);
                 if(this._focusUnit != unit && unit.touchTest(event)) {
                     unit.onTouchStart(event);
                     this._curTouchUnit = unit;
@@ -313,7 +310,8 @@ export class GameLayer extends cc.Component {
         }
     }
 
-    onTouchMove(event) {        
+    onTouchMove(event) {
+        cc.log("onTouchMove ====>");
         if(this._zoomView.touchNum() > 1 || this._touchStartID !== event.touch.getID()) {
             return;
         }
@@ -330,6 +328,7 @@ export class GameLayer extends cc.Component {
     }
 
     onTouchEnd(event) {
+        cc.log("onTouchMove ====>");
         if(this._touchStartID !== event.touch.getID()) {
             return;
         }
@@ -355,14 +354,14 @@ export class GameLayer extends cc.Component {
     }
     
     // 点击单元
-    onEventClickUnit(unit: UnitInfo) {
+    onEventClickUnit(unit: GameUnit) {
         if(this._focusUnit == unit || this._zoomView.touchNum() > 1 || !this.control.canFocusOnClickUnit()) {
             return;
         }
 
         if(unit.type == UnitType.buildings) {                
             if(this._focusUnit) {
-                if(!this._focusUnit.getComponent(Build).canUnFocusOnClickOtherUnit(unit)) {
+                if(!this._focusUnit.getComponent(GameBuild).canUnFocusOnClickOtherUnit(unit)) {
                     return;
                 }
                 this.eventEmitter.emit(GameEvent.DO_UNFOCUS_UNIT, false, false);
@@ -372,7 +371,7 @@ export class GameLayer extends cc.Component {
     }
  
     // 长按单元
-    onEventLongTouchUnit(unit: UnitInfo) {
+    onEventLongTouchUnit(unit: GameUnit) {
         if(this._focusUnit == unit) {
             return;
         }
@@ -389,7 +388,7 @@ export class GameLayer extends cc.Component {
     }
 
     // 让某个单元成为焦点单元
-    onDoFocusUnit(focusUnit: UnitInfo) {
+    onDoFocusUnit(focusUnit: GameUnit) {
         // 强制失焦，且放弃此次修改
         if(this._focusUnit) {
             this.eventEmitter.emit(GameEvent.DO_UNFOCUS_UNIT, true, true);
@@ -422,8 +421,8 @@ export class GameLayer extends cc.Component {
     }
 
     onDoDelUnit(unitNode: cc.Node) {
-        if(unitNode.getComponent(UnitInfo).type === UnitType.buildings) {
-            this.delBuild(unitNode.getComponent(Build));
+        if(unitNode.getComponent(GameUnit).type === UnitType.buildings) {
+            this.delBuild(unitNode.getComponent(GameBuild));
         }
         else{
             console.assert(false);
