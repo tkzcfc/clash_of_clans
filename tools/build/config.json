@@ -1,0 +1,28 @@
+{
+	"stronger_ver": 0,
+	"root_dir": "../../frontend/build/jsb-link/",
+	"project_dir": "../../frontend/",
+	"hotfix_archives_dir": "./archives/",
+	"hotfix_out_dir": "./hotfix/",
+	"asset_out_dir": "../../frontend/build/jsb-link/",
+
+	"platform": "android",
+
+	"android_sdk_build_tools": "C:/Users/test/AppData/Local/Android/Sdk/build-tools/29.0.2",
+	"android_app_output_path": "app/build/outputs/apk/release/game-release.apk",
+	"key_alias": "public_alias",
+	"key_password": "147852369",
+	"key_store_pwd": "147852369",
+	"key_store": "./apk_key.jks",
+
+
+	"creator_exe": "D:/soft/CocosDashboard_1.2.0/resources/.editors/Creator/2.4.8/CocosCreator",
+	"build_params": "platform=android;debug=true;name=coc;outputName=game.coc.fccom;compressTexture=true",
+	"enable_encrypt": true,
+	"ignores": [
+	],
+	"files": [
+		"main.js",
+		"project.json"
+	]
+}
