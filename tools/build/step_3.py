@@ -8,21 +8,21 @@ import random
 
 
 def genKey():
-    dbKey = "Shakespeare Sonnet 12\
-When I do count the clock that tells the time\
-And see the brave day sunk in hideous night\
-When I behold the violet past prime\
-And sable curls all silverd oer with white\
-When lofty trees I see barren of leaves\
-Which erst from heat did canopy the herd\
-And summers green all girded up in sheaves\
-Born on the bier with white and bristly beard\
-Then of thy beauty do I question make\
-That thou among the wastes of time must go\
-Since sweets and beauties do themselves forsake\
-And die as fast as they see others grow\
-And nothing gainst Times scythe can make defence\
-Save breed to brave him when he takes thee hence"
+    dbKey = '''Shakespeare Sonnet 12
+When I do count the clock that tells the time
+And see the brave day sunk in hideous night
+When I behold the violet past prime
+And sable curls all silverd oer with white
+When lofty trees I see barren of leaves
+Which erst from heat did canopy the herd
+And summers green all girded up in sheaves
+Born on the bier with white and bristly beard
+Then of thy beauty do I question make
+That thou among the wastes of time must go
+Since sweets and beauties do themselves forsake
+And die as fast as they see others grow
+And nothing gainst Times scythe can make defence
+Save breed to brave him when he takes thee hence'''
 
     keys = dbKey.split(" ")
     

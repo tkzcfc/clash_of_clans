@@ -84,6 +84,24 @@ def readJsonFromFile(file_path):
 
     return cfg
 
+def readDataFromFile(file_path):
+    if not os.path.isfile(file_path):
+        print("Invalid file: " + file_path)
+        return None
+
+    fp = open(file_path, "rt")
+    if not fp:
+        print("Open failed: " + file_path)
+        return None
+
+    data = fp.read()
+    fp.close()
+    if not data:
+        print("Cannt read: " + file_path)
+        return None
+        
+    return data
+
 def writeDataToFile(file_path, data):
     dir_, file_ = os.path.split(file_path)
     if dir_ and not os.path.exists(dir_):
