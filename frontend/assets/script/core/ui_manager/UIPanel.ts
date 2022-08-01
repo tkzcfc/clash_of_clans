@@ -9,6 +9,7 @@
 import { core } from "../InitCore";
 import { UIContext } from "./UIContext";
 import { UIDelegate } from "./UIDelegate";
+import { CoreEvent } from "../common/event/CoreEvent";
 const {ccclass, property} = cc._decorator;
 
 @ccclass()
@@ -84,21 +85,25 @@ export class UIPanel extends cc.Component {
         }, this);
     }
 
-    public open(callback: Function){
+    public open(callback: Function) {
+        this._uiNode.emit(CoreEvent.UI_ON_WILL_OPEN);
         this._delegate.onUIBeforeOpened();
         this._delegate.doOpenAction(()=>{
+            this._uiNode.emit(CoreEvent.UI_ON_OPEN_FINISH);
             this._delegate.onUIAfterOpened();
             callback();
         });
     }
 
     public close(callback: Function) {
+        this._uiNode.emit(CoreEvent.UI_ON_WILL_CLOSE);
         this._delegate.onUIWillClose();
         this._delegate.doCloseAction(callback);
         return true;
     }
     
     public dismiss() {
+        this._uiNode.emit(CoreEvent.UI_ON_CLOSE_FINISH);
         this._delegate.onUIDismiss();
     }
 

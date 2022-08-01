@@ -7,35 +7,22 @@ import config
 injectScript = '''
 (function () {
     if (typeof window.jsb === 'object') {
-        var hotUpdateSearchPaths = localStorage.getItem('HotUpdateSearchPaths');
-        if (hotUpdateSearchPaths) {
-            var paths = JSON.parse(hotUpdateSearchPaths);
-            jsb.fileUtils.setSearchPaths(paths);
+        jsb.fileUtils.purgeCachedEntries();
 
-            var fileList = [];
-            var storagePath = paths[0] || '';
-            var tempPath = storagePath + '_temp/';
-            var baseOffset = tempPath.length;
+        var searchPaths = jsb.fileUtils.getSearchPaths();
 
-            if (jsb.fileUtils.isDirectoryExist(tempPath) && !jsb.fileUtils.isFileExist(tempPath + 'project.manifest.temp')) {
-                jsb.fileUtils.listFilesRecursively(tempPath, fileList);
-                fileList.forEach(srcPath => {
-                    var relativePath = srcPath.substr(baseOffset);
-                    var dstPath = storagePath + relativePath;
+        let writablePath = jsb.fileUtils.getWritablePath() + "hotfix/"
+        searchPaths.unshift(writablePath);
 
-                    if (srcPath[srcPath.length] == '/') {
-                        jsb.fileUtils.createDirectory(dstPath)
-                    }
-                    else {
-                        if (jsb.fileUtils.isFileExist(dstPath)) {
-                            jsb.fileUtils.removeFile(dstPath)
-                        }
-                        jsb.fileUtils.renameFile(srcPath, dstPath);
-                    }
-                })
-                jsb.fileUtils.removeDirectory(tempPath);
-            }
+        for (var i = 0; i < searchPaths.length; i++) {
+            searchPaths[i] = searchPaths[i].replace(/\\\\/g, "/")
         }
+        // delete duplicate paths
+        var newSearchPaths = searchPaths.filter(function(value,index,self){
+            return self.indexOf(value) === index;
+        });
+
+        jsb.fileUtils.setSearchPaths(newSearchPaths);
     }
 })();
 '''

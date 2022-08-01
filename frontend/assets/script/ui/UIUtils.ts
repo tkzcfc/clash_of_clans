@@ -4,16 +4,16 @@ import { MessageBox } from "./common/MessageBox";
 
 export namespace UIUtils{
 
-    export function showMsgBoxOne(content: string, callbaack?: Function) {
-        core.ui.current().pushUI(Const.UIs.MessageBox, null, (node: cc.Node)=>{
-            node.getComponent(MessageBox).showOne(content, callbaack);
-        }, 10);
+    export async function showMsgBoxOne(content: string, callback?: Function) {
+        let node = await core.ui.current().pushUI(Const.UIs.MessageBox);
+        node.getComponent(MessageBox).showOne(content, callback);
+        return node;
     }
     
-    export function showMsgBoxTwo(content: string, callbaack1?: Function, callbaack2?: Function) {
-        core.ui.current().pushUI(Const.UIs.MessageBox, null, (node: cc.Node)=>{
-            node.getComponent(MessageBox).showTwo(content, callbaack1, callbaack2);
-        }, 10);
+    export async function showMsgBoxTwo(content: string, callback1?: Function, callback2?: Function) {
+        let node = await core.ui.current().pushUI(Const.UIs.MessageBox);
+        node.getComponent(MessageBox).showTwo(content, callback1, callback2);
+        return node;
     }
 }
 

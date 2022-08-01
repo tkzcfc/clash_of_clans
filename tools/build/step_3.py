@@ -41,9 +41,11 @@ Save breed to brave him when he takes thee hence'''
     if utils.runCmd(cmd) != 0:
         utils.error("Certificate generation failed")
 
-def signApkV1(inApkName, outApkName):
+def jarSigner(inApkName, outApkName):
     # 签名工具
     # C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe
+    # abb包只能jarsigner签名
+    # https://developer.android.com/studio/build/building-cmdline?hl=zh-cn
 
     # 删除输出文件
     utils.removeFile(outApkName)
@@ -62,12 +64,12 @@ def signApkV1(inApkName, outApkName):
     if utils.runCmd(cmd) != 0:
         utils.error("v1 signing failed")
 
-def signApkV2(inApkName, outApkName):
+def apkSigner(inApkName, outApkName):
     if not os.path.isfile(config.getKeyStore()):
         genKey()
 
     # 签名工具
-    # C:/Users/test/AppData/Local/Android/Sdk/build-tools/32.0.0/apksigner.bat
+    # C:/Users/test/AppData/Local/Android/Sdk/build-tools/29.0.2/apksigner.bat
     apksigner = utils.joinPath(config.getAndroidSdkBuildTools(), "apksigner")
 
     # 删除输出文件
@@ -109,7 +111,11 @@ def makeApk():
 
     # 签名
     outApk_v2 = apkName[:-4] + "_v2" + ".apk"
-    signApkV2(apkName, outApk_v2)
+    apkSigner(apkName, outApk_v2)
+
+    if config.getApkOutPath() != "":
+        utils.removeFile(config.getApkOutPath())
+        utils.copyFile(outApk_v2, config.getApkOutPath())
 
 
 def main():

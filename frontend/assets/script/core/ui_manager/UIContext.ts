@@ -41,7 +41,7 @@ class UIInfo {
     // UI初始化参数
     public params: any;
     // UI创建成功后的回调函数
-    public callback: Function;
+    public callback: (node: cc.Node)=>void;
     // zorder
     public zorder: number;
     // uiname
@@ -114,26 +114,28 @@ export class UIContext extends cc.Component {
         return ok;
     }
 
-    pushUI(prefabURL: string | cc.Prefab, params?: any, callback?: (value: cc.Node) => void, zorder?: number) {
-        let url = "";
-        if(prefabURL instanceof cc.Prefab) {
-            url = prefabURL.nativeUrl;
-        }
-        else {
-            url = prefabURL;
-        }
+    async pushUI(prefabURL: string | cc.Prefab, params?: any, zorder?: number): Promise<cc.Node> {
+        return new Promise<cc.Node>((resolve, reject)=>{
+            let url = "";
+            if(prefabURL instanceof cc.Prefab) {
+                url = prefabURL.nativeUrl;
+            }
+            else {
+                url = prefabURL;
+            }
 
-        let info = new UIInfo();
-        info.prefabURL = url;
-        info.panel = null;
-        info.state = UIState.WAIT;
-        info.params = params;
-        info.callback = callback;
-        info.zorder = (zorder === undefined) ? 0 : zorder;
-        info.uiname = "";
-        this._waitOpenQueue.push(info);
+            let info = new UIInfo();
+            info.prefabURL = url;
+            info.panel = null;
+            info.state = UIState.WAIT;
+            info.params = params;
+            info.callback = resolve;
+            info.zorder = (zorder === undefined) ? 0 : zorder;
+            info.uiname = "";
+            this._waitOpenQueue.push(info);
 
-        this._doOpenUI();
+            this._doOpenUI();
+        });
     };
 
     popTop() {

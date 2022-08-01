@@ -11,25 +11,33 @@ export class LoadProgress extends UIDelegate {
     public progressBar: cc.ProgressBar;
 
     // 完成回调
-    _finishCallback?: Function = undefined;
-    _finishCallCtx: any = undefined;
+    private _finishCallback?: Function = undefined;
+    // 是否完成
+    private _isFinish = false;
+
+    // 进度显示文本前缀
+    public progressPrefix: string = "";
+
+    
+    public isFinish() {
+        return this._isFinish;
+    }
 
     // 当前进度
     private _percent: number = 0;
     public get percent() : number {
         return this._percent;
     }
-    public set percent(v) {
-        this._percent = v;
-        this.updateProgress(0);
-    }
     
     protected onLoad(): void {
-        this.percent = 0.0;
+        this._percent = 0.0;
         this.autoDismiss = false;
         this.enableDrag = false;
         this.openActType = ActionType.NoAction;
         this.closeActType = ActionType.NoAction;
+        this.progressBar.progress = 0;
+
+        this.updateProgress(0, false);
     }
 
     /**
@@ -43,22 +51,42 @@ export class LoadProgress extends UIDelegate {
     /**
      * 进度更新
      */
-    private updateProgress(percent) {
+    public updateProgress(percent, isFinish = false) {
+        if(isFinish) {
+            percent = 1;
+        }
+        if(!this._isFinish) {
+            this._isFinish = isFinish;
+        }
+
+        // 进度文本更新
         let value = percent * 100;
-        this.progressLabel.string = value.toFixed(2) + "%";
-        this.progressBar.progress = percent;
+        if(this.progressPrefix === "") {
+            this.progressLabel.string = value.toFixed(1) + "%";
+        }
+        else {
+            this.progressLabel.string = this.progressPrefix + "(" + value.toFixed(1) + "%)";
+        }
+        
+        // 进度保存
+        if(percent <= this._percent) {
+            this.progressBar.progress = percent;
+        }
+        this._percent = percent;
     }
 
     protected lateUpdate(dt: number): void {
         let curPercent = this.progressBar.progress;
-        if(curPercent < this.percent) {
+        if(curPercent < this._percent) {
             curPercent = curPercent + dt * 4;
-            curPercent = Math.min(curPercent, this.percent);
-            this.updateProgress(curPercent)
+            curPercent = Math.min(curPercent, this._percent);
+            this.progressBar.progress = curPercent;
         }
 
-        if(curPercent >= 1.0 && this._finishCallback) {
-            this._finishCallback();
+        if(curPercent >= 1.0 && this._isFinish) {
+            this._isFinish = false;
+            this._finishCallback && this._finishCallback();
+            this._finishCallback = undefined;
         }
     }		
 };

@@ -5,11 +5,14 @@
 	"hotfix_archives_dir": "./archives/",
 	"hotfix_out_dir": "./hotfix/",
 	"asset_out_dir": "../../frontend/build/jsb-link/",
+	"remote_manifest_url": "http://1.14.65.70:8100/game/coc/hotfix/hotfix.json",
+	"package_url": "http://1.14.65.70:8100/game/coc/hotfix/",
 
 	"platform": "android",
 
 	"android_sdk_build_tools": "C:/Users/test/AppData/Local/Android/Sdk/build-tools/29.0.2",
 	"android_app_output_path": "app/build/outputs/apk/release/game-release.apk",
+	"apk_out_path": "./game.apk",
 	"key_alias": "public_alias",
 	"key_password": "147852369",
 	"key_store_pwd": "147852369",
@@ -22,6 +25,9 @@
 	"ignores": [
 	],
 	"files": [
+		"assets/*",
+		"jsb-adapter/*",
+		"src/*",
 		"main.js",
 		"project.json"
 	]

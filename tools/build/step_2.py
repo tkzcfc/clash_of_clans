@@ -187,11 +187,13 @@ def main():
     # 8. 热更差异文件清单
     hotfixManifest = {
         "version": manifest["version"],
+        "remote_manifest_url": config.getRemoteManifestUrl(),
+        "package_url": config.getPackageUrl(),
         "files":[]
     }
     for zipFile in zipList:
         hotfixManifest["files"].append({
-            "name": zipFile[len(outHotfixZipDir):],
+            "name": zipFile[len(outHotfixZipDir):].lstrip("/\\"),
             "bytes": utils.fileSize(zipFile),
             "md5": utils.md5File(zipFile)
             })
@@ -203,8 +205,8 @@ def main():
     toDirName = utils.joinPath(curVerDir, hotfixDirPrefix + str(curVer))
     utils.writeDataToFile(utils.joinPath(toDirName, manifestFileName), manifestStr)
 
-    manifest.pop("files")
-    manifestStr = json.dumps(manifest, indent = 4)
+    hotfixManifest.pop("files")
+    manifestStr = json.dumps(hotfixManifest, indent = 4)
     toDirName = utils.joinPath(cacheDir, "assets")
     utils.writeDataToFile(utils.joinPath(toDirName, manifestFileName), manifestStr)
 

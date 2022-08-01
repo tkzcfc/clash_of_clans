@@ -1,7 +1,7 @@
 /*
  * Created: 2022-03-22 13:36:05
  * Author : fc
- * Description: 
+ * Description: 游戏场景
  */
 
 import { core } from "../core/InitCore";
@@ -34,7 +34,7 @@ export default class GameView extends View {
         this.addResource("prefab/game/gameLayer", cc.Prefab);
         this.addResource(mgr.getMgr(GameDataMgr).getBGM(), cc.AudioClip);
 
-        core.ui.current().pushUI(Const.UIs.LoadProgress, undefined, (node: cc.Node)=>{
+        core.ui.current().pushUI(Const.UIs.LoadProgress).then(node=> {
             this.loadProgress = node.getComponent(LoadProgress);
             this.loadProgress.setFinishCallback(()=>{
                 this.loadComplete();
@@ -59,7 +59,7 @@ export default class GameView extends View {
      */
     protected startLoad() {
         if(this.refResources.length <= 0) {
-            this.loadProgress.percent = 1.0;
+            this.loadProgress.updateProgress(1.0, true);
             return;
         }
 
@@ -87,7 +87,7 @@ export default class GameView extends View {
 
                 // 加载完成
                 if(curCount >= this.refResources.length) {
-                    this.loadProgress.percent = 1.0;
+                    this.loadProgress.updateProgress(1.0, true);
                 }
                 else {
                     this.updatePercent();
@@ -133,7 +133,7 @@ export default class GameView extends View {
             cur += value.percent;
         })
 
-        this.loadProgress.percent = cur / total;
+        this.loadProgress.updateProgress(cur / total);
     }
 
     /**

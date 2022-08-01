@@ -8,6 +8,7 @@ import Root from "./core/Root"
 import { Const } from "./common/Const";
 import { core } from "./core/InitCore";
 import { View } from "./core/view_manager/View";
+import HotfixView from "./views/HotfixView";
 const {ccclass, property} = cc._decorator;
 
 @ccclass()
@@ -25,7 +26,12 @@ export default class Entry extends Root {
     }
 
     protected start(): void {
-        core.viewManager.runEmptyView(View);
-        core.ui.current().pushUI(Const.UIs.Login);
+        if(cc.sys.platform === cc.sys.ANDROID || cc.sys.platform === cc.sys.IPHONE || cc.sys.platform === cc.sys.IPAD) {
+            core.viewManager.runEmptyView(HotfixView);
+        }
+        else {
+            core.viewManager.runEmptyView(View);
+            core.ui.current().pushUI(Const.UIs.Login);
+        }
     }
 }

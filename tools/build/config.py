@@ -13,10 +13,13 @@ def initWithFile(cfgfile):
         return False
 
 
-    data["root_dir"]            = os.path.abspath(data["root_dir"])
-    data["project_dir"]         = os.path.abspath(data["project_dir"])
-    data["hotfix_out_dir"]      = os.path.abspath(data["hotfix_out_dir"])
-    data["hotfix_archives_dir"] = os.path.abspath(data["hotfix_archives_dir"])
+    data["root_dir"]                = os.path.abspath(data["root_dir"])
+    data["project_dir"]             = os.path.abspath(data["project_dir"])
+    data["hotfix_out_dir"]          = os.path.abspath(data["hotfix_out_dir"])
+    data["hotfix_archives_dir"]     = os.path.abspath(data["hotfix_archives_dir"])
+    data["apk_out_path"]            = os.path.abspath(data["apk_out_path"])
+
+
 
     if not data["asset_out_dir"] == "":
         data["asset_out_dir"]         = os.path.abspath(data["asset_out_dir"])
@@ -28,12 +31,13 @@ def initWithFile(cfgfile):
     ignoreFiles = utils.getFilesByCfgList(getRootDir(), data.get("ignores", []))
 
     print("============================================")
-    print("stronger_ver         :" + str(data["stronger_ver"]))
-    print("root_dir             :" + data["root_dir"])
-    print("project_dir          :" + data["project_dir"])
-    print("hotfix_out_dir       :" + data["hotfix_out_dir"])
-    print("hotfix_archives_dir  :" + data["hotfix_archives_dir"])
-    print("asset_out_dir        :" + data["asset_out_dir"])
+    print("stronger_ver             :" + str(data["stronger_ver"]))
+    print("root_dir                 :" + data["root_dir"])
+    print("project_dir              :" + data["project_dir"])
+    print("hotfix_out_dir           :" + data["hotfix_out_dir"])
+    print("hotfix_archives_dir      :" + data["hotfix_archives_dir"])
+    print("asset_out_dir            :" + data["asset_out_dir"])
+    print("apk_out_path             :" + data["apk_out_path"])
 
     for file in ignoreFiles:
         print("ignore           :" + file)
@@ -77,6 +81,9 @@ def isIgnore(fileName):
             return True
     return False
 
+
+##################### 热更相关 #####################
+
 # 获取热更文件列表
 def getHotfixFileList():
     return data["files"]
@@ -89,7 +96,11 @@ def getStrongerVer():
 def getAssetOutDir():
     return data["asset_out_dir"]
 
+def getRemoteManifestUrl():
+    return data["remote_manifest_url"]
 
+def getPackageUrl():
+    return data["package_url"]
 
 ##################### android签名相关 #####################
 def getKeyAlias():
@@ -104,8 +115,14 @@ def getKeyStorePwd():
 def getKeyStore():
     return data["key_store"]
 
+# sdk
 def getAndroidSdkBuildTools():
     return data["android_sdk_build_tools"]
 
+# android studio编译完成后apk的路径
 def getAndroidAppOutputPath():
     return data["android_app_output_path"]
+
+# 编译完成后apk输出路径
+def getApkOutPath():
+    return data["apk_out_path"]
