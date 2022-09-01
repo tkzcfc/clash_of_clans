@@ -1,7 +1,7 @@
 import { DataFactory } from "../models/DataFactory";
 import { Player } from "../models/Player";
 import { DBService } from "../service/db/DBService";
-import { CryptoUtils } from "../utils/CryptoUtils";
+import { RandomUtils } from "../utils/RandomUtils";
 import { IManager } from "./IManager";
 
 
@@ -26,7 +26,7 @@ export class PlayerManager implements IManager {
 
     newPlayer() {
         while(true) {
-            let pid = CryptoUtils.generateUUID();
+            let pid = RandomUtils.uuid();
             if(!this.playerMap.get(pid)) {
                 return this.newPlayerEx(pid);
             }

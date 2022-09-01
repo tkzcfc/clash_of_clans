@@ -32,4 +32,8 @@ export async function ApiRegister(call: ApiCall<ReqRegister, ResRegister>) {
     info.players.push(player.dbData.pid);
 
     GRpcService.accountMng.newAccount(info);
+
+    call.succ({
+        err: 0
+    });
 }

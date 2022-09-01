@@ -58,8 +58,8 @@ export class HomeControl extends BaseControl
         this.gameLayer.builds.forEach((build: GameBuild)=>{
             items.push({
                 uuid: build.unitUUID,
-                x: build.unit.transform.x,
-                y: build.unit.transform.y,     
+                x: build.unit.x,
+                y: build.unit.y,     
             });
         });
 
@@ -74,8 +74,8 @@ export class HomeControl extends BaseControl
             units.push({
                 uuid: build.unitUUID,
                 id: build.cfgId,
-                x: build.unit.transform.x,
-                y: build.unit.transform.y,
+                x: build.unit.x,
+                y: build.unit.y,
                 lv: 1
             });
         });

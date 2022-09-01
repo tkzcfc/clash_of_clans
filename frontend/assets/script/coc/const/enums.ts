@@ -1,34 +1,29 @@
 
-
-// 物品类型
-export enum UnitType {
-    // 空地
-    None = 0,
-    // 建筑物
-    buildings = 1 << 1,
-    // // 障碍物
-    // obstacles = 1 << 2,
-    // // 装饰
-    // decos = 1 << 3,
-    // 角色
-    Role = 1 << 4,
-};
-
 // 建筑类型
 export enum BuildType {
+}
 
+// 
+export enum UnitType {
+    None = 0,
+    // 建筑
+    Buildings,
+    // 人物
+    Role,
 }
 
 // 逻辑格子类型
 export enum LogicTileType {
-    // 空格子
     None = 0,
-    // 有建筑物
-    buildings = 1 << 1,
+
+    // 建筑
+    Buildings = 1 << 0,
     // 可以行走的
-    walkable = 1 << 2,
-    // 此处放置了建筑物且此处可以行走(为建筑物的空地)
-    buildings_and_walkable = buildings | walkable,
+    Walkable = 1 << 1,
+    
+    // 10+
+    // 角色
+    Role = 1 << 10,
 }
 
 // 物品类型
@@ -76,8 +71,6 @@ export enum DrawTileMode {
     None,
     // 绘制逻辑格子
     ShowLogicTile,
-    // 绘制渲染格子
-    ShowRenderTile
 }
 
 // 绘制地面类型

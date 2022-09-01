@@ -4,6 +4,7 @@ import { FightMgr } from "../../manager/FightMgr";
 import { mgr } from "../../manager/mgr";
 import { UIUtils } from "../UIUtils";
 import GameView from "../../views/GameView";
+import { GameContext } from "../../coc/misc/GameContext";
 
 const {ccclass, property} = cc._decorator;
 
@@ -25,5 +26,10 @@ export class FightMain extends UIDelegate {
     */
      public onUIWillClose(): boolean {
         return false;
+    }
+
+    
+    onClickDebug() {
+        GameContext.getInstance().gameLayer.enableDebugDraw = !GameContext.getInstance().gameLayer.enableDebugDraw;
     }
 };

@@ -7,13 +7,17 @@ import shutil
 import hashlib
 import zipfile
 import platform
-
+import re
 
 def error(msg):
     print(msg, file = sys.stderr)
     sys.exit(1)
 
 def zipFiles(zipFileName, files, startDirName, showPercent):
+    dir_, file_ = os.path.split(zipFileName)
+    if dir_ and not os.path.exists(dir_):
+        os.makedirs(dir_)
+    
     baseName = os.path.basename(zipFileName)
 
     # 创建 zip 文件
@@ -36,7 +40,7 @@ def zipFiles(zipFileName, files, startDirName, showPercent):
         myzip.close()
         showProgressFinish()
 
-def zipDir(zipFileName, dirs, startDirName, showPercent):
+def zipDir(zipFileName, dirs, startDirName, showPercent = True):
     files = []
     for d in dirs:
         for root, dirName, flist in os.walk(d):
@@ -47,8 +51,8 @@ def zipDir(zipFileName, dirs, startDirName, showPercent):
     return True
 
 
-def md5File(file_path):
-    with open(file_path, 'rb') as f:
+def md5File(filePath):
+    with open(filePath, 'rb') as f:
         md5obj = hashlib.md5()
         md5obj.update(f.read())
         md5 = md5obj.hexdigest()
@@ -60,20 +64,20 @@ def md5Str(str):
     md5 = md5obj.hexdigest()
     return md5
 
-def readJsonFromFile(file_path):
-    if not os.path.isfile(file_path):
-        print("Invalid file: " + file_path)
+def readJsonFromFile(filePath):
+    if not os.path.isfile(filePath):
+        print("Invalid file: " + filePath)
         return None
 
-    fp = open(file_path, "rt")
+    fp = open(filePath, "rt")
     if not fp:
-        print("Open failed: " + file_path)
+        print("Open failed: " + filePath)
         return None
 
     data = fp.read()
     fp.close()
     if not data:
-        print("Cannt read: " + file_path)
+        print("Cannt read: " + filePath)
         return None
 
     # print(data)
@@ -84,42 +88,89 @@ def readJsonFromFile(file_path):
 
     return cfg
 
-def readDataFromFile(file_path):
-    if not os.path.isfile(file_path):
-        print("Invalid file: " + file_path)
+def readDataFromFile(filePath, mode = "rt"):
+    if not os.path.isfile(filePath):
+        print("Invalid file: " + filePath)
         return None
 
-    fp = open(file_path, "rt")
+    fp = open(filePath, mode)
     if not fp:
-        print("Open failed: " + file_path)
+        print("Open failed: " + filePath)
         return None
 
     data = fp.read()
     fp.close()
     if not data:
-        print("Cannt read: " + file_path)
-        return None
+        print("Cannt read: " + filePath)
         
     return data
 
-def writeDataToFile(file_path, data):
-    dir_, file_ = os.path.split(file_path)
+def writeDataToFile(filePath, data):
+    dir_, file_ = os.path.split(filePath)
     if dir_ and not os.path.exists(dir_):
         os.makedirs(dir_)
-    fp = open(file_path, "w")
+    fp = open(filePath, "w")
     if not fp:
-        print("open file : %s failed" % file_path)
+        print("open file : %s failed" % filePath)
         return None
     fp.write(data)
     fp.close()
     return True
+
+
+def reReplaceFile(pattern, repl, file):
+    content = readDataFromFile(file)
+    content = re.sub(pattern, repl, content)
+    return writeDataToFile(file, content)
+
+def appendToFile(file, appdendStr):
+    content = readDataFromFile(file)
+    content = content + appdendStr
+    return writeDataToFile(file, content)
+
+backupFileList = []
+def pushFile(fileName):
+    global backupFileList
+
+    if backupFileList.count(fileName) > 0:
+        return
+
+    # 存在备份文件，表明上次操作中断了未恢复
+    # 先恢复备份文件内容
+    _recoveryFile(fileName)
+
+    # 生成备份文件
+    copyFile(fileName, _getBackupFileName(fileName))
+    backupFileList.append(fileName)
+
+def _getBackupFileName(fileName):
+    return joinPath(os.getcwd(), md5Str(fileName) + ".backup")
+
+def _recoveryFile(fileName):
+    backupFileName = _getBackupFileName(fileName)
+    if os.path.isfile(backupFileName):
+        copyFile(backupFileName, fileName)
+        removeFile(backupFileName)
+        return True
+    return False
+
+def popFile(fileName = None):
+    global backupFileList
+
+    if fileName == None:
+        for f in backupFileList:            
+            _recoveryFile(f)
+        backupFileList.clear()
+    else:
+        if backupFileList.count(fileName) > 0:
+            backupFileList.remove(fileName)
+        _recoveryFile(fileName)
 
 def copyFile(src, dst):
     dir_, file_ = os.path.split(dst)
     if dir_ and not os.path.exists(dir_):
         os.makedirs(dir_)
     return shutil.copyfile(src, dst)
-
 
 def copyFiles(srcDir, files, dstDir, showPercent):
     count = 0
@@ -171,7 +222,8 @@ def fileSize(filePath):
 # suffix 文件后缀
 # recursion 是否递归文件夹
 # outList 输出列表
-def walkFiles(dir, suffix, recursion, outList):
+# ignoreDirList 忽略文件夹列表
+def walkFiles(dir, suffix, recursion, outList, ignoreDirList = None):
     if not os.path.isdir(dir):
         return
 
@@ -182,7 +234,10 @@ def walkFiles(dir, suffix, recursion, outList):
             if suffix == "" or suffix == "." or file.endswith(suffix):
                 outList.append(fullPath)
         elif recursion and os.path.isdir(fullPath):
-            dirs.append(fullPath)
+            if ignoreDirList and file in ignoreDirList:
+                pass
+            else:
+                dirs.append(fullPath)
 
     for dname in dirs:
         walkFiles(dname, suffix, recursion, outList)

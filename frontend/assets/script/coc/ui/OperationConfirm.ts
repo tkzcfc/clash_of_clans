@@ -38,8 +38,8 @@ export class OperationConfirm extends cc.Component {
 
         let result = await mgr.getMgr(RpcMgr).callApi("ptl/BuyAndPlaceToMap", {
             id: build.cfgId,
-            x: build.unit.transform.x,
-            y: build.unit.transform.y,
+            x: build.unit.x,
+            y: build.unit.y,
         });
 
         this.requestSN = Invalid_SN;

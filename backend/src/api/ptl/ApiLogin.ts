@@ -1,5 +1,5 @@
 import { ApiCall } from "tsrpc";
-import { CryptoUtils } from "../../coc/utils/CryptoUtils";
+import { RandomUtils } from "../../coc/utils/RandomUtils";
 import { ReqLogin, ResLogin } from "../../shared/protocols/ptl/PtlLogin";
 import { RpcErrCode } from "../../shared/RpcErr";
 
@@ -14,7 +14,7 @@ export async function ApiLogin(call: ApiCall<ReqLogin, ResLogin>) {
 
     let players = GRpcService.accountMng.getPlayers(call.req.account);
     let ids: string[] = [];
-    let token: string = CryptoUtils.generateUUID();
+    let token: string = RandomUtils.uuid();
 
     players.forEach((player)=>{
         player.logout(RpcErrCode.Offline_CHANGE_TOKEN);

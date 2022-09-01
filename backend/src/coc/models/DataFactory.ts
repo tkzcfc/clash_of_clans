@@ -1,4 +1,4 @@
-import { CryptoUtils } from "../utils/CryptoUtils";
+import { RandomUtils } from "../utils/RandomUtils";
 import { DBBagData } from "../../shared/db_structure/Bag";
 import { DBMapData } from "../../shared/db_structure/Map";
 import { DBPlayerInfo } from "../../shared/db_structure/Player";
@@ -27,7 +27,7 @@ export namespace DataFactory {
             // pid
             pid: pid,
             // 昵称
-            name: CryptoUtils.generateUUID(),
+            name: RandomUtils.nickname(),
             // 等级
             lv: 0,
             // 经验

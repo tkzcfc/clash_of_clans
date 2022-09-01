@@ -6,7 +6,7 @@
 
 import { EventEmitter } from "../core/common/event/EventEmitter";
 import { ZoomView } from "./ui/ZoomView";
-import { BuildComeFrom, DrawTileMode, GameMode, GameZIndex, UnitType } from "./const/enums";
+import { BuildComeFrom, DrawTileMode, GameMode, GameZIndex, LogicTileType, UnitType } from "./const/enums";
 import { UnitSort } from "./algorithm/UnitSort";
 import { GameBuild } from "./unit/GameBuild";
 import { GameContext } from "./misc/GameContext";
@@ -22,6 +22,7 @@ import { PlayerMap, PlayerMapUnit, PlayerSimpleMap } from "../shared/protocols/b
 import { Pathfinding } from "./misc/Pathfinding";
 import { ObserveControl } from "./control/ObserveControl";
 import { GameDataMgr } from "../manager/GameDataMgr";
+import { GameDefine } from "./const/GameDefine";
 
 const {ccclass, property} = cc._decorator;
 
@@ -61,6 +62,11 @@ export class GameLayer extends cc.Component {
     // 是否启用调试绘制
     set enableDebugDraw(value) {
         this._enableDebugDraw = value;
+        if(!value) {
+            this.layers.forEach((layer: cc.Node)=>{
+                layer.opacity = 255;
+            });
+        }
         this.updateDebugDraw();
     }
     get enableDebugDraw() {
@@ -102,8 +108,8 @@ export class GameLayer extends cc.Component {
         Pathfinding.reset();
         this.eventEmitter = GameContext.getInstance().eventEmitter;
 
-        let mapw = GameContext.getInstance().TILE_WIDTH * GameContext.getInstance().X_COUNT;
-        let maph = GameContext.getInstance().TILE_HEIGHT * GameContext.getInstance().Y_COUNT;
+        let mapw = GameDefine.TILE_WIDTH * GameDefine.X_COUNT;
+        let maph = GameDefine.TILE_HEIGHT * GameDefine.Y_COUNT;
 
         // 实例化地图
         let mapRenderNode = cc.instantiate(this.mapPrefab);
@@ -203,14 +209,13 @@ export class GameLayer extends cc.Component {
         build.initWithBuildData(data, comeFrom);
         this.builds.push(build);
         
-        this.units.push(node.getComponent(GameUnit));
-
-        GameContext.getInstance().addBuild(build);
+        this.units.push(build.unit);
+        GameContext.getInstance().addUnit(build.unit);
         return node;
     }
 
-    delBuild(build: GameBuild) {
-        GameContext.getInstance().delBuild(build);
+    delUnit(build: GameBuild) {
+        GameContext.getInstance().delUnit(build.unit);
 
         for(let i = 0, j = this.builds.length; i < j; ++i) {
             if(this.builds[i] === build) {
@@ -278,7 +283,6 @@ export class GameLayer extends cc.Component {
     }
     
     onTouchStart(event) {
-        cc.log("onTouchStart begin");
         if(this._touchStartID !== Number.MAX_SAFE_INTEGER) {
             return;
         }
@@ -311,7 +315,6 @@ export class GameLayer extends cc.Component {
     }
 
     onTouchMove(event) {
-        cc.log("onTouchMove ====>");
         if(this._zoomView.touchNum() > 1 || this._touchStartID !== event.touch.getID()) {
             return;
         }
@@ -328,7 +331,6 @@ export class GameLayer extends cc.Component {
     }
 
     onTouchEnd(event) {
-        cc.log("onTouchMove ====>");
         if(this._touchStartID !== event.touch.getID()) {
             return;
         }
@@ -359,7 +361,7 @@ export class GameLayer extends cc.Component {
             return;
         }
 
-        if(unit.type == UnitType.buildings) {                
+        if(unit.type == UnitType.Buildings) {                
             if(this._focusUnit) {
                 if(!this._focusUnit.getComponent(GameBuild).canUnFocusOnClickOtherUnit(unit)) {
                     return;
@@ -376,7 +378,7 @@ export class GameLayer extends cc.Component {
             return;
         }
         
-        if(unit.type == UnitType.buildings) {
+        if(unit.type == UnitType.Buildings) {
             if(!this._focusUnit && this._zoomView.touchNum() <= 1)
                 this.eventEmitter.emit(GameEvent.DO_FOCUS_UNIT, unit);
         }
@@ -421,8 +423,8 @@ export class GameLayer extends cc.Component {
     }
 
     onDoDelUnit(unitNode: cc.Node) {
-        if(unitNode.getComponent(GameUnit).type === UnitType.buildings) {
-            this.delBuild(unitNode.getComponent(GameBuild));
+        if(unitNode.getComponent(GameUnit).type === UnitType.Buildings) {
+            this.delUnit(unitNode.getComponent(GameBuild));
         }
         else{
             console.assert(false);
@@ -433,9 +435,6 @@ export class GameLayer extends cc.Component {
         this.drawTiled.active = this.enableDebugDraw;
 
         if(!this.enableDebugDraw) {
-            this.layers.forEach((layer: cc.Node)=>{
-                layer.opacity = 255;
-            });
             return;
         }
 
@@ -444,7 +443,7 @@ export class GameLayer extends cc.Component {
         });
 
         let g = this.drawTiled.getComponent(cc.Graphics);
-        GameContext.getInstance().drawMapTile(g, DrawTileMode.ShowRenderTile);
+        GameContext.getInstance().drawMapTile(g, DrawTileMode.ShowLogicTile);
     }
 
 

@@ -6,6 +6,7 @@
 #include "platform/CCFileUtils.h"
 #include "platform/CCApplication.h"
 #include "unzip/unzip.h"
+#include "extensions/assets-manager/CCAsyncTaskPool.h"
 
 
 #define BUFFER_SIZE    8192
@@ -45,9 +46,10 @@ static bool decompressZip(const std::string& zip, const std::string outDir, std:
 		rootPath.push_back('/');
 	}
 
+	auto fileUtils = cocos2d::FileUtils::getInstance();
 
 	// Open the zip file
-	unzFile zipfile = cocos2d::unzOpen(cocos2d::FileUtils::getInstance()->getSuitableFOpen(zip).c_str());
+	unzFile zipfile = cocos2d::unzOpen(fileUtils->getSuitableFOpen(zip).c_str());
 	if (!zipfile)
 	{
 		errorStr = cocos2d::StringUtils::format("can not open downloaded zip file %s\n", zip.c_str());
@@ -93,7 +95,8 @@ static bool decompressZip(const std::string& zip, const std::string outDir, std:
 		{
 			//There are not directory entry in some case.
 			//So we need to create directory when decompressing file entry
-			if (!cocos2d::FileUtils::getInstance()->createDirectory(getBasename(fullPath)))
+			std::string dir = getBasename(fullPath);
+			if (!fileUtils->isDirectoryExist(dir) && !fileUtils->createDirectory(dir))
 			{
 				// Failed to create directory
 				errorStr = cocos2d::StringUtils::format("can not create directory %s\n", fullPath.c_str());
@@ -105,13 +108,11 @@ static bool decompressZip(const std::string& zip, const std::string outDir, std:
 		{
 			// Create all directories in advance to avoid issue
 			std::string dir = getBasename(fullPath);
-			if (!cocos2d::FileUtils::getInstance()->isDirectoryExist(dir)) {
-				if (!cocos2d::FileUtils::getInstance()->createDirectory(dir)) {
-					// Failed to create directory
-					errorStr = cocos2d::StringUtils::format("can not create directory %s\n", fullPath.c_str());
-					cocos2d::unzClose(zipfile);
-					return false;
-				}
+			if (!fileUtils->isDirectoryExist(dir) && !fileUtils->createDirectory(dir)) {
+				// Failed to create directory
+				errorStr = cocos2d::StringUtils::format("can not create directory %s\n", fullPath.c_str());
+				cocos2d::unzClose(zipfile);
+				return false;
 			}
 			// Entry is a file, so extract it.
 			// Open current file.
@@ -122,8 +123,13 @@ static bool decompressZip(const std::string& zip, const std::string outDir, std:
 				return false;
 			}
 
+			if (fileUtils->isFileExist(fileUtils->getSuitableFOpen(fullPath)))
+			{
+				fileUtils->removeFile(fileUtils->getSuitableFOpen(fullPath));
+			}
+
 			// Create a file to store current file.
-			FILE* out = fopen(cocos2d::FileUtils::getInstance()->getSuitableFOpen(fullPath).c_str(), "wb");
+			FILE* out = fopen(fileUtils->getSuitableFOpen(fullPath).c_str(), "wb");
 			if (!out)
 			{
 				errorStr = cocos2d::StringUtils::format("can not create decompress destination file %s (errno: %d)\n", fullPath.c_str(), errno);
@@ -193,15 +199,35 @@ namespace ccex
 			bool removeFile;
 		};
 
-		AsyncData* asyncData = new AsyncData();
+		AsyncData* asyncData = new AsyncData;
 		asyncData->zipFile = zipFile;
 		asyncData->outDir = outDir;
 		asyncData->succeed = false;
-		asyncData->resultCall = result;
-		asyncData->percentCall = percent;
+		asyncData->resultCall = std::move(result);
+		asyncData->percentCall = std::move(percent);
 		asyncData->removeFile = removeFile;
 
-		std::thread([asyncData]() {
+
+		std::function<void(void*)> decompressFinished = [](void* param) {
+			auto dataInner = reinterpret_cast<AsyncData*>(param);
+			if (dataInner->succeed)
+			{
+				if (dataInner->resultCall)
+				{
+					dataInner->resultCall(true, "");
+				}
+			}
+			else
+			{
+				if (dataInner->resultCall)
+				{
+					dataInner->resultCall(false, dataInner->error);
+				}
+			}
+			delete dataInner;
+		};
+
+		cocos2d::AsyncTaskPool::getInstance()->enqueue(cocos2d::AsyncTaskPool::TaskType::TASK_OTHER, decompressFinished, (void*)asyncData, [asyncData]() {
 			void(*zipPercent)(int, int, void*) = NULL;
 			if (asyncData->percentCall != nullptr)
 			{
@@ -217,27 +243,12 @@ namespace ccex
 			{
 				asyncData->succeed = true;
 				if (asyncData->removeFile)
-				{
+				{	
 					auto fileUtils = cocos2d::FileUtils::getInstance();
 					fileUtils->removeFile(asyncData->zipFile);
 				}
 			}
-
-			if (asyncData->resultCall)
-			{
-				if (asyncData->succeed)
-				{
-					asyncData->resultCall(true, "");
-				}
-				else
-				{
-					asyncData->resultCall(false, asyncData->error);
-				}
-			}			
-
-			std::this_thread::sleep_for(std::chrono::seconds(2));
-			delete asyncData;
-		}).detach();
+		});
 
 		return true;
     }

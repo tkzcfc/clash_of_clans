@@ -14,8 +14,6 @@ def main(cfgfile):
     # 工程构建
     step_1.main()
     # 资源处理
-    step_2.main()
-    # 编译
-    step_3.main()
+    step_2.main(False)
 
 main("./config.json")

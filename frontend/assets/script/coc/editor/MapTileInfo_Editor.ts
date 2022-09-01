@@ -4,6 +4,8 @@
  * Description: 设置/绘制地图中的格子数据
  */
 
+import { TileAlgorithm } from "../algorithm/TileAlgorithm";
+import { GameDefine } from "../const/GameDefine";
 import { GameContext } from "../misc/GameContext";
 const {ccclass, property, executeInEditMode, requireComponent} = cc._decorator;
 
@@ -129,7 +131,11 @@ export default class MapTileInfo_Editor extends cc.Component {
         // 更新算法
         if(this._tileAlgorithmDirty){
             this._tileAlgorithmDirty = false;
-            GameContext.getInstance().reset(this.xCount, this.yCount, this.tileWidth, this.tileHeight);
+            GameDefine.X_COUNT = this.xCount;
+            GameDefine.Y_COUNT = this.yCount;
+            GameDefine.TILE_WIDTH = this.tileWidth;
+            GameDefine.TILE_HEIGHT = this.tileHeight;
+            GameContext.getInstance().resetAlgorithm();
         }
         
         if(this._labelRootNode)
@@ -143,7 +149,7 @@ export default class MapTileInfo_Editor extends cc.Component {
         if(!this.enableDrawGrid)
             return;
 
-        let algorithm = GameContext.getInstance().tileAlgorithm;
+        let algorithm = new TileAlgorithm(GameDefine.TILE_WIDTH, GameDefine.TILE_HEIGHT, GameDefine.X_COUNT, GameDefine.Y_COUNT);
         algorithm.drawTile(g, 0, 0, algorithm.X_COUNT, algorithm.Y_COUNT, (logicx: number, logicy: number, renderPos: cc.Vec2)=>{
             if(this.enableDrawTileText) {
                 this.addText(`(${logicx},${logicy})`, new cc.Vec3(renderPos.x, renderPos.y, 0.0));

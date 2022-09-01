@@ -4,7 +4,7 @@
  * Description: 斜45度地图中元素排序
  */
 
-import { GameUnit, UnitTransform } from "../unit/GameUnit";
+import { GameUnit } from "../unit/GameUnit";
 
 const remove = cc.js.array.remove;
 
@@ -51,7 +51,7 @@ export namespace UnitSort {
         let exceptList = new Map<GameUnit, boolean>();
         exceptList.set(maxZItem, true);
         do{
-            let item = filter(maxZItem.logicTransform, exceptList, itemSet);
+            let item = filter(maxZItem, exceptList, itemSet);
             if(!item) {
                 break;
             }
@@ -67,17 +67,17 @@ export namespace UnitSort {
      */
      function getMaxZItem(list: GameUnit[]): GameUnit {
         let minItem = list[0];
-        let minY = minItem.logicTransform.getMinY();
+        let minY = minItem.getMinY();
 
-        let curTransform: UnitTransform;
+        let curUnit: GameUnit;
         for(let i = 1, j = list.length; i < j; ++i) {
-            curTransform = list[i].logicTransform;
-            if(curTransform.getMinY() < minY) {
+            curUnit = list[i];
+            if(curUnit.getMinY() < minY) {
                 minItem = list[i];
-                minY = curTransform.getMinY();
+                minY = curUnit.getMinY();
             }
-            else if(curTransform.getMinY() == minY) {
-                if(curTransform.getMinX() < minItem.logicTransform.getMinX()) {
+            else if(curUnit.getMinY() == minY) {
+                if(curUnit.getMinX() < minItem.getMinX()) {
                     minItem = list[i];
                 }
             }
@@ -93,14 +93,14 @@ export namespace UnitSort {
      * @param exceptList 排除元素列表
      * @param itemSet 所有元素合集
      */
-     function filter(curItem: UnitTransform, exceptList: Map<GameUnit, boolean>, itemSet: GameUnit[]) {
+     function filter(curItem: GameUnit, exceptList: Map<GameUnit, boolean>, itemSet: GameUnit[]) {
         let list: GameUnit[] = [];
 
-        let v: UnitTransform;
+        let v: GameUnit;
 
         itemSet.forEach((unit: GameUnit)=>{
             if(!exceptList.get(unit)) {
-                v = unit.logicTransform;
+                v = unit;
 
                 if(v.getMaxY() < curItem.getMinY() || curItem.getMaxY() < v.getMinY()) {
                     // Y轴不相交 pass

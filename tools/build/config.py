@@ -25,7 +25,7 @@ def initWithFile(cfgfile):
         data["asset_out_dir"]         = os.path.abspath(data["asset_out_dir"])
 
     data["key_store"]           = os.path.abspath(data["key_store"])
-
+    data["env"] = {}
 
     # 计算需要忽略的文件列表
     ignoreFiles = utils.getFilesByCfgList(getRootDir(), data.get("ignores", []))
@@ -126,3 +126,11 @@ def getAndroidAppOutputPath():
 # 编译完成后apk输出路径
 def getApkOutPath():
     return data["apk_out_path"]
+
+
+def saveEnv(key, value):
+    data["env"][key] = value
+
+def readEnv(key):
+    return data["env"][key]
+

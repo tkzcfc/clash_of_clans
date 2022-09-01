@@ -12,14 +12,21 @@ import { GameUtils } from "../misc/GameUtils";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { Pathfinding } from "../misc/Pathfinding";
-import { UnitType } from "../const/enums";
+import { LogicTileType, UnitType } from "../const/enums";
+import { CheckResultType } from "../algorithm/AStar";
 
 const {ccclass, property} = cc._decorator;
 
 @ccclass
 export class GameRole extends cc.Component {
+    
+    //////////////////////////////////////////////////////////
+    /// 对其他组件的引用
+    // GameUnit
+    unit: GameUnit;
     // 动画
     dynamicClip: GameRoleDynamicClip;
+
 
     ///////////////// 寻路相关 /////////////////
     // 移动点合集
@@ -32,10 +39,13 @@ export class GameRole extends cc.Component {
     // 逻辑坐标
     position: cc.Vec2 = new cc.Vec2();
     
+    // 本次寻路目标单元
+    targetUnit: GameUnit;
+
 
     protected onLoad(): void {
-        let unit = this.addComponent(GameUnit)
-        unit.type = UnitType.Role;
+        this.unit = this.addComponent(GameUnit)
+        this.unit.type = UnitType.Role;
 
         this.addComponent(GameRoleDynamicClip);
 
@@ -69,8 +79,8 @@ export class GameRole extends cc.Component {
         this.position.x = x;
         this.position.y = y;
 
-        this.getComponent(GameUnit).logicTransform.x = x;
-        this.getComponent(GameUnit).logicTransform.y = y;
+        this.unit.x = x;
+        this.unit.y = y;
         GameContext.getInstance().eventEmitter.emit(GameEvent.DO_UPDATE_SORT);
 
         if(!noSyncRender) {
@@ -84,47 +94,72 @@ export class GameRole extends cc.Component {
     }
 
     gotoRandomBuild() {
-        const builds = GameContext.getInstance().gameLayer.builds;
-        const build = builds[GameUtils.randomRangeInt(0, builds.length - 1)];
+        let builds = [];
+        GameContext.getInstance().gameLayer.builds.forEach((build)=>{
+            if(build.unit !== this.targetUnit) {
+                builds.push(build);
+            }
+        });
 
-        if(build) {
-            this.goto(build.getComponent(GameUnit));
-        }
-        else {
-            cc.tween(this.node)
-            .delay(1)
-            .call(this.gotoRandomBuild, this)
-            .start();
-        }
+        do {
+            if(builds.length <= 0)
+                break;
+            
+            const build = builds[GameUtils.randomRangeInt(0, builds.length - 1)];
+            if(build) {
+                this.goto(build.getComponent(GameUnit));
+                return;
+            }
+        } while(false)
+
+        cc.tween(this.node)
+        .delay(1)
+        .call(this.gotoRandomBuild, this)
+        .start();
     }
+
+    _isPrint = false;
 
     async goto(unit: GameUnit) {
         // 重置寻路相关参数
         Pathfinding.cancel(this);
+        this.walkIndex = 0;
+        this.walkPosArray = [];
+        this.targetUnit = unit;
         if(this.moveTween) {
             this.moveTween.stop();
         }
 
-        const selfTransform = this.getComponent(GameUnit).logicTransform;
-        const targetTransform = unit.logicTransform;
+        const from = new cc.Vec2(this.unit.x, this.unit.y);
+        const to = new cc.Vec2(unit.x, unit.y);
 
-        const from = new cc.Vec2(selfTransform.x, selfTransform.y);
-        const to = new cc.Vec2(targetTransform.x, targetTransform.y);
+        // cc.log(`\n\n\nstart: (${from.x},${from.y}) => (${to.x},${to.y})`);
 
         this.walkPosArray = await Pathfinding.runAsync(from, to, (x: number, y: number)=>{
-            if(unit.containLogicPosEx(unit.logicTransform, x, y)) {
-                return true;
+            if(GameContext.getInstance().canWalk(x, y)) {
+                return CheckResultType.CONTINUE;
             }
-            return GameContext.getInstance().canWalk(x, y);
+            
+            // 找到目标
+            if(this.targetUnit.containLogicPosEx(x, y)) {
+                // cc.log(`focus complete: (${x},${y})`);
+                return CheckResultType.COMPLETE;
+            }
+
+            // cc.log(`fail: (${x},${y})`);
+            return CheckResultType.FAIL;
         }, this);
+
+        // cc.log(`this.walkPosArray [${this.walkPosArray.length}] = ${this.walkPosArray}`);
 
         // 寻路被中断
         if(!this.walkPosArray) {
             return;
         }
 
-        // 寻路失败，无法到达目标点
-        if(this.walkPosArray.length <= 0) {
+        // length == 0 寻路失败，无法到达目标点
+        // length == 1 起点就是目标点，不需要移动
+        if(this.walkPosArray.length <= 1) {
             this.dynamicClip.actName = "stand";
             this.dynamicClip.updatePlay();
             this.moveTween = cc.tween(this.node)
@@ -161,7 +196,7 @@ export class GameRole extends cc.Component {
         
         if(false == doWalk) {
             let pos = this.walkPosArray[this.walkPosArray.length - 1];
-            this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(GameUnit).logicTransform, pos);
+            this.dynamicClip.direction = GameUtils.getRoleDirection(this.unit, pos);
             this.dynamicClip.actName = "attack1";
             this.dynamicClip.updatePlay();
             this.moveTween = cc.tween(this.node)
@@ -173,7 +208,7 @@ export class GameRole extends cc.Component {
 
     stepWalk(to: cc.Vec2) {
         // 更新角色朝向
-        this.dynamicClip.direction = GameUtils.getRoleDirection(this.getComponent(GameUnit).logicTransform, to);
+        this.dynamicClip.direction = GameUtils.getRoleDirection(this.unit, to);
         this.dynamicClip.actName = "run";
         this.dynamicClip.updatePlay();
 

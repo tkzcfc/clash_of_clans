@@ -7,8 +7,8 @@ import { serviceProto } from '../../src/shared/protocols/serviceProto';
 
 describe('ApiSend', function () {
     let client = new WsClient(serviceProto, {
-        server: 'ws://127.0.0.1:3000',
-        json: true,
+        server: 'ws://127.0.0.1:8205',
+        json: false,
         logger: console
     });
 
@@ -17,22 +17,28 @@ describe('ApiSend', function () {
         assert.strictEqual(res.isSucc, true, 'Failed to connect to server, have you executed `npm run dev` already?');
     })
 
-    it('Success', async function () {
-        let ret = await client.callApi('Send', {
-            content: 'Test'
-        });
-        assert.ok(ret.isSucc)
+    it('Test', async function() {
+        for (let index = 0; index < 10; index++) {
+            await client.callApi('ptl/Test', {});            
+        }
     });
 
-    it('Check content is empty', async function () {
-        let ret = await client.callApi('Send', {
-            content: ''
-        });
-        assert.deepStrictEqual(ret, {
-            isSucc: false,
-            err: new TsrpcError('Content is empty')
-        });
-    })
+    // it('Success', async function () {
+    //     let ret = await client.callApi('Send', {
+    //         content: 'Test'
+    //     });
+    //     assert.ok(ret.isSucc)
+    // });
+
+    // it('Check content is empty', async function () {
+    //     let ret = await client.callApi('Send', {
+    //         content: ''
+    //     });
+    //     assert.deepStrictEqual(ret, {
+    //         isSucc: false,
+    //         err: new TsrpcError('Content is empty')
+    //     });
+    // })
 
     after(async function () {
         await client.disconnect();

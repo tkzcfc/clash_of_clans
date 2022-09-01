@@ -8,6 +8,8 @@
 
 import { GameContext } from "../misc/GameContext";
 import { DrawTileMode, LogicTileType, DrawTileGroundType } from "../const/enums";
+import { GameDefine } from "../const/GameDefine";
+import { TileAlgorithm } from "../algorithm/TileAlgorithm";
 
 const {ccclass, property, executeInEditMode, requireComponent} = cc._decorator;
 
@@ -104,12 +106,12 @@ export class BuildInfo_Editor extends cc.Component {
     updateDraw() {
         // 更新/填充逻辑格子类型
         if(CC_EDITOR) {
-            let newLen = this.xCount * this.yCount * GameContext.getInstance().LOGIC_SCALE * GameContext.getInstance().LOGIC_SCALE;
+            let newLen = this.xCount * this.yCount * GameDefine.LOGIC_SCALE * GameDefine.LOGIC_SCALE;
             if(this.logicTileTypeArr.length !== newLen){
                 this.logicTileTypeArr.length = newLen;
                 for(let i = 0; i < this.logicTileTypeArr.length; ++i){
                     if(this.logicTileTypeArr[i] == undefined){
-                        this.logicTileTypeArr[i] = LogicTileType.buildings;
+                        this.logicTileTypeArr[i] = LogicTileType.Buildings;
                     }
                 }
             }
@@ -141,7 +143,7 @@ export class BuildInfo_Editor extends cc.Component {
             }
             case DrawTileMode.ShowLogicTile: {
                 let algorithm = GameContext.getInstance().logicTileAlgorithm;
-                let LOGIC_SCALE = GameContext.getInstance().LOGIC_SCALE
+                let LOGIC_SCALE = GameDefine.LOGIC_SCALE
 
                 let fillColor = g.fillColor;
                 let strokeColor = g.strokeColor;
@@ -151,12 +153,12 @@ export class BuildInfo_Editor extends cc.Component {
                     let index = logicx + logicy * this.yCount * LOGIC_SCALE;
                     let type = this.logicTileTypeArr[index];
 
-                    if(type & LogicTileType.walkable) {
+                    if(type & LogicTileType.Walkable) {
                         g.fillColor = cc.Color.GREEN.clone();
                         g.strokeColor = cc.Color.GREEN.clone();
                         g.fillColor.a = 100;                        
                     }
-                    else if(type & LogicTileType.buildings) {
+                    else if(type & LogicTileType.Buildings) {
                         g.fillColor = cc.Color.RED.clone();
                         g.strokeColor = cc.Color.RED.clone();
                         g.fillColor.a = 100;
@@ -172,7 +174,7 @@ export class BuildInfo_Editor extends cc.Component {
                 break;
             }
             case DrawTileMode.ShowRenderTile: {
-                let algorithm = GameContext.getInstance().tileAlgorithm;
+                let algorithm = new TileAlgorithm(GameDefine.TILE_WIDTH, GameDefine.TILE_HEIGHT, GameDefine.X_COUNT, GameDefine.Y_COUNT);
                 algorithm.setDrawTileOffset(this.xCount * algorithm.TILE_WIDTH_HALF, 0.0);
                 algorithm.drawTile(g, 0, 0, this.xCount, this.yCount, null);
                 break;
@@ -197,7 +199,7 @@ export class BuildInfo_Editor extends cc.Component {
             tag = "no_";
         }
 
-        const algorithm = GameContext.getInstance().tileAlgorithm;
+        const algorithm = new TileAlgorithm(GameDefine.TILE_WIDTH, GameDefine.TILE_HEIGHT, GameDefine.X_COUNT, GameDefine.Y_COUNT);
         build_ground.setPosition(this.xCount * algorithm.TILE_WIDTH_HALF, this.yCount * algorithm.TILE_HEIGHT_HALF);
 
         let url = `build_${this.xCount}_${this.yCount}_${tag}hd`;            

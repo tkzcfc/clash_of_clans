@@ -7,7 +7,7 @@
 
 
 import { GameContext } from "../misc/GameContext";
-import { UnitType, DrawTileGroundType, BuildComeFrom, GameZIndex } from "../const/enums";
+import { LogicTileType, DrawTileGroundType, BuildComeFrom, GameZIndex, UnitType } from "../const/enums";
 import { GameEvent } from "../misc/GameEvent";
 import { GameUnit } from "./GameUnit";
 import GameBuildRender from "./GameBuildRender";
@@ -16,7 +16,8 @@ import { UnitFollow } from "../ui/UnitFollow";
 import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { PlayerMapUnit } from "../../shared/protocols/base";
-import { RpcMgr } from "../../manager/RpcMgr";
+import { GameDefine } from "../const/GameDefine";
+import { BuildingItem } from "../../imports/config/Cfg_Building";
 
 const {ccclass, property} = cc._decorator;
 
@@ -35,8 +36,6 @@ export class GameBuild extends cc.Component {
     buildGround: cc.Node = null;
     //////////////////////////////////////////////////////////
 
-    // 建筑类型
-    unitType : UnitType = UnitType.buildings;
     // 地面绘制类型
     drawTileGroundType : DrawTileGroundType = DrawTileGroundType.Normal;
 
@@ -47,7 +46,7 @@ export class GameBuild extends cc.Component {
     // 建筑配置id
     cfgId: number = 0;
     // 建筑配置
-    buildCfg: any;
+    buildCfg: BuildingItem;
     // 当前等级
     lv: number = 0;
     // unitUUID
@@ -62,7 +61,7 @@ export class GameBuild extends cc.Component {
     
     protected onLoad(): void {
         this.unit = this.addComponent(GameUnit);
-        this.unit.type = UnitType.buildings;
+        this.unit.type = UnitType.Buildings;
 
         this.render = this.addComponent(GameBuildRender)
 
@@ -90,22 +89,29 @@ export class GameBuild extends cc.Component {
         this.comeFrom = comeFrom;
         this.buildCfg  = mgr.getMgr(GameCfgMgr).getData("Building", this.cfgId);
 
-        this.unit.transform.x = data.x;
-        this.unit.transform.y = data.y;
-        this.unit.transform.xCount = this.buildCfg.XCount;
-        this.unit.transform.yCount = this.buildCfg.YCount;
-        this.unit.transform.subdivide(this.unit.logicTransform);
+        this.unit.x = data.x;
+        this.unit.y = data.y;
+        this.unit.xCount = this.buildCfg.XCount;
+        this.unit.yCount = this.buildCfg.YCount;
+        this.unit.flags.length = this.unit.xCount * this.unit.yCount;
+
+        for(let y = 0; y < this.unit.yCount; ++y){
+            for(let x = 0; x < this.unit.xCount; ++x){
+                this.unit.flags[x + y * this.unit.xCount] = this.buildCfg.Flags[y][x];
+            }
+        }
 
         this.syncData();
     }
 
     syncData() {
+        this.unit.updateFlags();
         // 渲染更新
         this.render.updateRender();
         
         // 节点偏移设置
-        const algorithm = GameContext.getInstance().tileAlgorithm;
-        let pos = algorithm.calculateMapTilePos(this.unit.transform.x, this.unit.transform.y);
+        const algorithm = GameContext.getInstance().logicTileAlgorithm;
+        let pos = algorithm.calculateMapTilePos(this.unit.x, this.unit.y);
         this.node.setPosition(pos.x - algorithm.TILE_WIDTH_HALF * this.buildCfg.XCount, pos.y - algorithm.TILE_HEIGHT_HALF);
 
         this.updateBuildingGround();
@@ -119,7 +125,7 @@ export class GameBuild extends cc.Component {
      */
     updateTileGroundValid() {
         let type = DrawTileGroundType.Invalid;
-        if(GameContext.getInstance().canPlace(this.unit.transform))
+        if(GameContext.getInstance().canPlace(this.unit))
             type = DrawTileGroundType.Effective;
         else
             type = DrawTileGroundType.Invalid;
@@ -133,8 +139,8 @@ export class GameBuild extends cc.Component {
 
 
     touchTest(pos: cc.Vec2) {
-        let logicPos = GameContext.getInstance().tileAlgorithm.calculateLogicPos(pos.x, pos.y);
-        return this.unit.containLogicPos(this.unit.transform, logicPos);
+        let logicPos = GameContext.getInstance().logicTileAlgorithm.calculateLogicPos(pos.x, pos.y);
+        return this.unit.containLogicPos(logicPos);
     }
 
     /**
@@ -159,10 +165,10 @@ export class GameBuild extends cc.Component {
             return;
         }
         
-        this.lastLogicPos.x = this.unit.transform.x;
-        this.lastLogicPos.y = this.unit.transform.y;
+        this.lastLogicPos.x = this.unit.x;
+        this.lastLogicPos.y = this.unit.y;
 
-        GameContext.getInstance().delBuild(this);
+        GameContext.getInstance().delUnit(this.unit);
         
         this.render.runFocusAction();
     }
@@ -183,7 +189,7 @@ export class GameBuild extends cc.Component {
         GameContext.getInstance().eventEmitter.emit(GameEvent.ON_NTF_SET_ZINDEX_NODE, null);
 
         // 如果该位置无法放置，则强制放弃修改
-        if(!GameContext.getInstance().canPlace(this.unit.transform)) {
+        if(!GameContext.getInstance().canPlace(this.unit)) {
             discardModify = true;
             cc.warn("此位置无法放置，强制取消");
         }
@@ -194,14 +200,13 @@ export class GameBuild extends cc.Component {
                 // 放弃此次修改
                 if(discardModify) {
                     // 还原坐标
-                    this.unit.transform.x = this.lastLogicPos.x;
-                    this.unit.transform.y = this.lastLogicPos.y;
-                    this.unit.transform.subdivide(this.unit.logicTransform);
+                    this.unit.x = this.lastLogicPos.x;
+                    this.unit.y = this.lastLogicPos.y;
                 }
 
                 this.drawTileGroundType = DrawTileGroundType.Normal;
                 this.syncData();
-                GameContext.getInstance().addBuild(this);
+                GameContext.getInstance().addUnit(this.unit);
                 GameContext.getInstance().eventEmitter.emit(GameEvent.DO_SAVA_MAP);
                 break;
             }
@@ -224,7 +229,7 @@ export class GameBuild extends cc.Component {
                     this.comeFrom = BuildComeFrom.MAP;
                     this.drawTileGroundType = DrawTileGroundType.Normal;
                     this.syncData();
-                    GameContext.getInstance().addBuild(this);
+                    GameContext.getInstance().addUnit(this.unit);
                     GameContext.getInstance().eventEmitter.emit(GameEvent.DO_SAVA_MAP);
                 }
                 break;
@@ -239,33 +244,39 @@ export class GameBuild extends cc.Component {
             return;
         }
         
-        this.dragStartLogicPos.x = this.unit.transform.x;
-        this.dragStartLogicPos.y = this.unit.transform.y;
+        this.dragStartLogicPos.x = this.unit.x;
+        this.dragStartLogicPos.y = this.unit.y;
     }
 
     onEventDragUnit(unit: GameUnit, distance: cc.Vec2) {
         if(!this.isSelfUnit(unit)){
             return;
         }
+
+        // 计算出逻辑移动偏移
+        let logicOffset = GameContext.getInstance().logicTileAlgorithm.calculateLogicPos(distance.x, distance.y);
+        logicOffset.x = Math.floor(logicOffset.x / GameDefine.LOGIC_SCALE) * GameDefine.LOGIC_SCALE;
+        logicOffset.y = Math.floor(logicOffset.y / GameDefine.LOGIC_SCALE) * GameDefine.LOGIC_SCALE;
+        if(logicOffset.x == 0 && logicOffset.y == 0) {
+            return;
+        }
         
-        let transform = this.unit.transform;
-        let oldx = transform.x;
-        let oldy = transform.y;
+        const oldx = this.unit.x;
+        const oldy = this.unit.y;
+        const maxX = GameDefine.LOGIC_X_COUNT - this.unit.xCount;
+        const maxY = GameDefine.LOGIC_Y_COUNT - this.unit.yCount;
 
-        let logicOffset = GameContext.getInstance().tileAlgorithm.calculateLogicPos(distance.x, distance.y);
-        transform.x = this.dragStartLogicPos.x - logicOffset.x;
-        transform.y = this.dragStartLogicPos.y - logicOffset.y;
+        this.unit.x = this.dragStartLogicPos.x - logicOffset.x;
+        this.unit.y = this.dragStartLogicPos.y - logicOffset.y;
 
-        let maxX = GameContext.getInstance().X_COUNT - transform.xCount;
-        let maxY = GameContext.getInstance().Y_COUNT - transform.yCount;
+        // 范围限制,防止跑出地图
+        this.unit.x = Math.max(this.unit.x, 0);
+        this.unit.y = Math.max(this.unit.y, 0);
+        this.unit.x = Math.min(this.unit.x, maxX);
+        this.unit.y = Math.min(this.unit.y, maxY);
 
-        transform.x = Math.max(transform.x, 0);
-        transform.y = Math.max(transform.y, 0);
-        transform.x = Math.min(transform.x, maxX);
-        transform.y = Math.min(transform.y, maxY);
-
-        if(oldx !== transform.x || oldy !== transform.y) {
-            transform.subdivide(this.unit.logicTransform);
+        // 数据同步
+        if(oldx !== this.unit.x || oldy !== this.unit.y) {
             this.syncData();
             this.updateTileGroundValid();
         }
@@ -297,15 +308,18 @@ export class GameBuild extends cc.Component {
             tag = "no_";
         }
 
-        const algorithm = GameContext.getInstance().tileAlgorithm;
-        const transform = this.unit.transform;
-
-        let newPos = new cc.Vec2(transform.xCount * algorithm.TILE_WIDTH_HALF, transform.yCount * algorithm.TILE_HEIGHT_HALF);
-        this.buildGround.getComponent(UnitFollow).followDistance = newPos;
+        const algorithm = GameContext.getInstance().logicTileAlgorithm;
         
-        let url = `build_${transform.xCount}_${transform.yCount}_${tag}hd`;            
+        // 渲染格子要比逻辑格子大一些
+        const renderCountX = Math.floor(this.unit.xCount / GameDefine.LOGIC_SCALE);
+        const renderCountY = Math.floor(this.unit.yCount / GameDefine.LOGIC_SCALE);
+
+        let url = `build_${renderCountX}_${renderCountY}_${tag}hd`;            
         cc.resources.load("common/build_num_num_hd", cc.SpriteAtlas, (err: any, atlas : cc.SpriteAtlas) => {
             this.buildGround.getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame(url);
         });
+        
+        let distance = new cc.Vec2(this.unit.xCount * algorithm.TILE_WIDTH / GameDefine.LOGIC_SCALE, this.unit.yCount * algorithm.TILE_HEIGHT / GameDefine.LOGIC_SCALE);
+        this.buildGround.getComponent(UnitFollow).followDistance = distance;
     }
 }

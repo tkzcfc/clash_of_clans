@@ -1,7 +1,7 @@
 import { DataFactory } from "../models/DataFactory";
 import { GameMap } from "../models/GameMap";
 import { DBService } from "../service/db/DBService";
-import { CryptoUtils } from "../utils/CryptoUtils";
+import { RandomUtils } from "../utils/RandomUtils";
 import { IManager } from "./IManager";
 
 
@@ -33,7 +33,7 @@ export class MapManager implements IManager {
 
     newMap() {
         while(true) {
-            let uuid = CryptoUtils.generateUUID();
+            let uuid = RandomUtils.uuid();
             if(!this.get(uuid)) {
                 return this.newMapEx(uuid);
             }

@@ -56,10 +56,21 @@ class Node {
     }
 }
 
-function defaultCheckFunc(x: number, y: number) {
-    return true;
+function defaultCheckFunc(x: number, y: number): CheckResultType {
+    return CheckResultType.CONTINUE;
 }
 
+
+export enum CheckResultType {
+    // 寻路失败
+    FAIL,
+    // 继续寻路
+    CONTINUE,
+    // 寻路完成
+    COMPLETE,
+}
+
+export type CheckFuncType = (x: number, y: number) => CheckResultType;
 
 export class AStar {
     // 节点缓存
@@ -76,7 +87,9 @@ export class AStar {
     // 目标点
     toPos: cc.Vec2 = null;
     // 自定义检测函数
-    check_func: Function = defaultCheckFunc;
+    check_func: CheckFuncType = defaultCheckFunc;
+
+    finish:boolean = false;
 
     /**
      * 
@@ -87,13 +100,14 @@ export class AStar {
      * @param check_func 自定义检测函数
      * @returns 路径点列表,为空则表示目标点不可达
      */
-    run(mapw: number, maph: number, from: cc.Vec2, to: cc.Vec2, check_func: Function): cc.Vec2[] {
+    run(mapw: number, maph: number, from: cc.Vec2, to: cc.Vec2, check_func: CheckFuncType): cc.Vec2[] {
         this.reset();
 
         this.mapw = mapw;
         this.maph = maph;
         this.toPos = to;
         this.check_func = check_func;
+        this.finish = false;
 
         this.openset.push(this.allocNode(from.x, from.y, null));
         while(this.openset.length > 0) {
@@ -185,7 +199,7 @@ export class AStar {
      /**
       * 检测点是否合法
       */
-    check(x: number, y:number) {
+    check(x: number, y:number): boolean {
         // 超出地图边界，不合法
         if(x < 0 || x >= this.mapw || y < 0 || y >= this.maph) {
             return false;
@@ -197,11 +211,20 @@ export class AStar {
         }
 
         // 自定义检测函数
-        return this.check_func(x, y);
+        let result = this.check_func(x, y);
+
+        // 只有check函数返回结果才往openset表里push所以这块逻辑不用出现在checkEx里面
+        if(result === CheckResultType.COMPLETE && !this.finish) {
+            this.toPos.x = x;
+            this.toPos.y = y;
+            this.finish = true;
+        }
+
+        return result !== CheckResultType.FAIL
     }
 
     // 检测点是否合法,不检查点是否在open表中
-    checkEx(x: number, y: number) {
+    checkEx(x: number, y: number): boolean {
         // 超出地图边界，不合法
         if(x < 0 || x >= this.mapw || y < 0 || y >= this.maph) {
             return false;
@@ -213,7 +236,7 @@ export class AStar {
         }
 
         // 自定义检测函数
-        return this.check_func(x, y);
+        return this.check_func(x, y) !== CheckResultType.FAIL;
     }
 
     // 检测点是否包含在列表中

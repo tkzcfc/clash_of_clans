@@ -4,7 +4,7 @@ import { PlayerInfo, PlayerSimpleInfo } from "../../shared/protocols/base";
 import { ServiceType } from "../../shared/protocols/serviceProto";
 import { RpcErrCode } from "../../shared/RpcErr";
 import { DBService } from "../service/db/DBService";
-import { CryptoUtils } from "../utils/CryptoUtils";
+import { RandomUtils } from "../utils/RandomUtils";
 import { GameMap } from "./GameMap";
 
 
@@ -54,7 +54,7 @@ export class Player {
         this.conn = conn;
         // 重置cookie
         if(!isReunion) {
-            this.cookie = CryptoUtils.generateUUID();
+            this.cookie = RandomUtils.uuid();
         }
         //发送登录需要推送的消息
         //...
@@ -109,7 +109,7 @@ export class Player {
      */
     resetToken(token?: string) {
         if(token === undefined) {
-            this.token = CryptoUtils.generateUUID();
+            this.token = RandomUtils.uuid();
         }
         else {
             this.token = token;

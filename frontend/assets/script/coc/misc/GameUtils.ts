@@ -2,25 +2,30 @@ import { RoleDirection } from "../const/enums";
 
 export namespace GameUtils {
 
-    export function bitGet(b, flag) {
+    export function bitGet(b: number, flag: number): number {
         return b & flag;
     }
     
-    export function bitSet(b, flag) {
+    export function bitSet(b: number, flag: number): number {
         return b | flag;
     }
 
-    export function bitDel(b, flag) {
+    export function bitDel(b: number, flag: number): number {
        return b & (~flag); 
     }
 
-    
-    export function randomRange(min, max) {
-        return Math.random() * (max - min) + min;
+    export function bitHas(b: number, flag: number): boolean {
+        return (b & flag) == flag;
     }
 
-    export function randomRangeInt(min, max) {
-        return Math.floor(randomRange(min, max));
+    /**
+     * 
+     * @param min 
+     * @param max 
+     * @returns int([min, max])
+     */
+    export function randomRangeInt(min: number, max: number) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     /**

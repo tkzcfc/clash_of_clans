@@ -4,15 +4,14 @@
  * Description: 寻路管理
  */
 
-import { AStar } from "../algorithm/AStar";
+import { AStar, CheckFuncType } from "../algorithm/AStar";
 import { GameContext } from "./GameContext";
 
 let astar: AStar = new AStar();
 let tasks = [];
 
 export namespace Pathfinding {
-
-    export async function runAsync(from: cc.Vec2, to: cc.Vec2, check_func: Function, target: any): Promise<cc.Vec2[]> {
+    export async function runAsync(from: cc.Vec2, to: cc.Vec2, check_func: CheckFuncType, target: any): Promise<cc.Vec2[]> {
         return new Promise(function(resolve, reject){
             tasks.push({
                 from : from,

@@ -90,7 +90,7 @@ def getDifferenceDirName(oldManifest, newManifest):
 
 
 
-def main():
+def main(isBuildApk):
     # 临时缓存目录
     cacheDir = utils.joinPath(os.path.dirname(os.path.realpath(__file__)), "step_2_cache/")
     # 热更文件输出目录
@@ -213,6 +213,11 @@ def main():
 
     # 10. 将处理好的资源拷贝至目标输出目录
     if config.getAssetOutDir() == "":
+        utils.removeFile(cacheDir)
+        return
+        
+    if not isBuildApk:
+        utils.removeFile(cacheDir)
         return
     files = []
     utils.walkFiles(cacheDir, "", True, files)

@@ -9,6 +9,7 @@ import { ReqLogin, ResLogin } from './ptl/PtlLogin';
 import { ReqLoginGame, ResLoginGame } from './ptl/PtlLoginGame';
 import { ReqRegister, ResRegister } from './ptl/PtlRegister';
 import { ReqSaveMapUnits, ResSaveMapUnits } from './ptl/PtlSaveMapUnits';
+import { ReqTest, ResTest } from './ptl/PtlTest';
 
 export interface ServiceType {
     api: {
@@ -43,6 +44,10 @@ export interface ServiceType {
         "ptl/SaveMapUnits": {
             req: ReqSaveMapUnits,
             res: ResSaveMapUnits
+        },
+        "ptl/Test": {
+            req: ReqTest,
+            res: ResTest
         }
     },
     msg: {
@@ -52,7 +57,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 21,
+    "version": 24,
     "services": [
         {
             "id": 14,
@@ -112,6 +117,14 @@ export const serviceProto: ServiceProto<ServiceType> = {
             "id": 13,
             "name": "ptl/SaveMapUnits",
             "type": "api"
+        },
+        {
+            "id": 19,
+            "name": "ptl/Test",
+            "type": "api",
+            "conf": {
+                "anonymous": true
+            }
         }
     ],
     "types": {
@@ -687,6 +700,21 @@ export const serviceProto: ServiceProto<ServiceType> = {
         },
         "ptl/PtlSaveMapUnits/ResSaveMapUnits": {
             "type": "Interface"
+        },
+        "ptl/PtlTest/ReqTest": {
+            "type": "Interface"
+        },
+        "ptl/PtlTest/ResTest": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "result",
+                    "type": {
+                        "type": "String"
+                    }
+                }
+            ]
         }
     }
 };

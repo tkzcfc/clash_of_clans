@@ -1,7 +1,7 @@
 import { DBMapData } from "../../shared/db_structure/Map";
 import { PlayerMap, PlayerSimpleMap } from "../../shared/protocols/base";
 import { DBService } from "../service/db/DBService";
-import { CryptoUtils } from "../utils/CryptoUtils";
+import { RandomUtils } from "../utils/RandomUtils";
 
 
 
@@ -28,9 +28,9 @@ export class GameMap {
      * @param y 
      */
     addUnit(id: number, x: number, y: number) {
-        let uuid = CryptoUtils.generateUUID();
+        let uuid = RandomUtils.uuid();
         while(this.getUnit(uuid)) {
-            uuid = CryptoUtils.generateUUID();            
+            uuid = RandomUtils.uuid();            
         }
 
         this.dbData.units.push({
