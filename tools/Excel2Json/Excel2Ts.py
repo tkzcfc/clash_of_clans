@@ -11,6 +11,7 @@ import shutil
 import datetime
 import re
 import traceback
+import hashlib
 
 # 是否支持shell命令，用于删除文件到回收站
 # 如果不支持则直接删除文件
@@ -478,13 +479,35 @@ def main(argv):
 
     if not exportDir(workDir, tmpDir):
         return
+
+    backupDir = os.path.join(os.getcwd(), "backup")
+    if not os.path.isdir(backupDir):
+        os.makedirs(backupDir)
+
     log('\n\n')
     for arg in export:
+
+        # 备份meta文件
+        metaFileList = []
+        if os.path.exists(arg):
+            for path, d, filelist in os.walk(arg):
+                for filename in filelist:
+                    fullPath = os.path.join(path, filename)
+                    if fullPath.endswith(".meta"):
+                        metaFileList.append(fullPath)
+                        shutil.copyfile(fullPath, os.path.join(backupDir, hashlib.md5(fullPath.encode()).hexdigest()))
+
         if copy_path(tmpDir, arg):
             log('copy to ' + arg + ' succeeded')
         else:
             log('copy to ' + arg + ' failed')
 
+        # 还原meta文件
+        for fullPath in metaFileList:
+            shutil.copyfile(os.path.join(backupDir, hashlib.md5(fullPath.encode()).hexdigest()), fullPath)
+
+
+    delDir(backupDir)
     delDir(tmpDir)
 
 if __name__ == '__main__':

@@ -252,7 +252,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20002": {
     Id: 20002,
@@ -266,7 +266,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20003": {
     Id: 20003,
@@ -280,7 +280,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20004": {
     Id: 20004,
@@ -294,7 +294,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20005": {
     Id: 20005,
@@ -308,7 +308,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20006": {
     Id: 20006,
@@ -322,7 +322,7 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   },
   "20007": {
     Id: 20007,
@@ -336,6 +336,6 @@ export const UnitData = {
     ScaleX: 1.0,
     ScaleY: 1.0,
     Flags: [[1024]],
-    RealRange: [0,1,0,1]
+    RealRange: [0,0,0,0]
   }
 }

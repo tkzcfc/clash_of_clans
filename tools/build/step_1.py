@@ -41,6 +41,23 @@ def main():
     else:
         print("build success")
 
+
+
     fileMainJs = utils.joinPath(config.getRootDir(), "main.js")
     data = utils.readDataFromFile(fileMainJs)
     utils.writeDataToFile(fileMainJs, injectScript + data)
+
+
+
+    fileAppDelegate = utils.joinPath(config.getRootDir(), "frameworks/runtime-src/Classes/AppDelegate.cpp")
+    data = utils.readDataFromFile(fileAppDelegate)
+
+    flag = 'jsb_register_all_modules();'
+    injectCode = '''
+
+    cocos2d::FileUtils::getInstance()->addSearchPath(cocos2d::FileUtils::getInstance()->getWritablePath() + "hotfix/", true);
+'''
+    if data.find(injectCode) < 0:
+        pos = data.find(flag) + len(flag)
+        data= data[:pos] + injectCode + data[pos:]
+        utils.writeDataToFile(fileAppDelegate, data)
