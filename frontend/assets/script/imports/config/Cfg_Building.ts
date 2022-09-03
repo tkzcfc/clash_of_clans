@@ -3,224 +3,88 @@
 export interface BuildingItem {
   Id: number,
   Type: number,
-  MaxLv: number,
-  XCount: number,
-  YCount: number,
-  OffsetX: number,
-  OffsetY: number,
-  ScaleX: number,
-  ScaleY: number,
-  Offsets: number[],
-  Flags: number[][]
+  Offsets: number[]
 }
 
 export const BuildingData = {
   "10001": {
     Id: 10001,
     Type: 6,
-    MaxLv: 2,
-    XCount: 8,
-    YCount: 8,
-    OffsetX: 123.662,
-    OffsetY: 93.266,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3,3,3],[3,3,3,3,3,3,3,3],[3,3,1,1,1,1,3,3],[3,3,1,1,1,1,3,3],[3,3,1,1,1,1,3,3],[3,3,1,1,1,1,3,3],[3,3,3,3,3,3,3,3],[3,3,3,3,3,3,3,3]]
+    Offsets: []
   },
   "10002": {
     Id: 10002,
     Type: 3,
-    MaxLv: 6,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 92.618,
-    OffsetY: 67.676,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10003": {
     Id: 10003,
     Type: 2,
-    MaxLv: 7,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 94.829,
-    OffsetY: 52.565,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,3,3,3,3,3],[3,3,1,1,3,3],[3,3,1,1,3,3],[3,3,3,3,3,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10004": {
     Id: 10004,
     Type: 1,
-    MaxLv: 6,
-    XCount: 2,
-    YCount: 2,
-    OffsetX: 0.0,
-    OffsetY: 0.0,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[1,1],[1,1]]
+    Offsets: []
   },
   "10005": {
     Id: 10005,
     Type: 2,
-    MaxLv: 1,
-    XCount: 4,
-    YCount: 4,
-    OffsetX: 66.818,
-    OffsetY: 55.882,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3],[3,1,1,3],[3,1,1,3],[3,3,3,3]]
+    Offsets: []
   },
   "10006": {
     Id: 10006,
     Type: 4,
-    MaxLv: 10,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 103.306,
-    OffsetY: 93.476,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,3,1,1,1,3],[3,3,1,1,1,3],[3,3,1,1,1,3],[3,3,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10007": {
     Id: 10007,
     Type: 5,
-    MaxLv: 10,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 96.672,
-    OffsetY: 60.305,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10008": {
     Id: 10008,
     Type: 2,
-    MaxLv: 7,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 92.249,
-    OffsetY: 78.365,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10009": {
     Id: 10009,
     Type: 2,
-    MaxLv: 6,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 85.615,
-    OffsetY: 71.362,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10010": {
     Id: 10010,
     Type: 5,
-    MaxLv: 10,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 96.303,
-    OffsetY: 65.833,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10011": {
     Id: 10011,
     Type: 4,
-    MaxLv: 10,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 101.094,
-    OffsetY: 66.57,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[1,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10012": {
     Id: 10012,
     Type: 4,
-    MaxLv: 6,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 106.623,
-    OffsetY: 80.944,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,1],[3,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,1,1],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10013": {
     Id: 10013,
     Type: 4,
-    MaxLv: 6,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 102.656,
-    OffsetY: 102.807,
-    ScaleX: 0.8,
-    ScaleY: 0.8,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,1,1,1,1,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10014": {
     Id: 10014,
     Type: 2,
-    MaxLv: 7,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 96.022,
-    OffsetY: 88.064,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,3,3,3,3,3],[3,3,1,1,3,3],[3,3,1,1,3,3],[3,3,3,3,3,3],[3,3,3,3,3,3]]
+    Offsets: []
   },
   "10015": {
     Id: 10015,
     Type: 0,
-    MaxLv: 6,
-    XCount: 8,
-    YCount: 8,
-    OffsetX: 132.88,
-    OffsetY: 110.914,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [[131.014, 89.549], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657]],
-    Flags: [[3,3,3,3,3,3,3,3],[3,3,3,3,3,3,3,3],[3,1,1,1,1,1,1,1],[3,1,1,1,1,1,1,1],[3,1,1,1,1,1,1,1],[3,1,1,1,1,1,1,1],[3,1,1,1,1,1,1,1],[3,3,3,3,3,3,3,3]]
+    Offsets: [[131.014, 89.549], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657], [133.962, 97.657]]
   },
   "10016": {
     Id: 10016,
     Type: 6,
-    MaxLv: 1,
-    XCount: 6,
-    YCount: 6,
-    OffsetX: 105.974,
-    OffsetY: 59.683,
-    ScaleX: 1.0,
-    ScaleY: 1.0,
-    Offsets: [],
-    Flags: [[3,3,3,3,3,3],[3,3,1,1,1,3],[3,3,1,1,1,3],[3,3,1,1,1,3],[3,3,3,3,3,3],[3,3,3,3,3,3]]
+    Offsets: []
   }
 }

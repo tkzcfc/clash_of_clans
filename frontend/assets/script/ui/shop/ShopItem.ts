@@ -2,7 +2,6 @@
 
 import TableView from "../../core/ui/TableView";
 import TableViewItem from "../../core/ui/TableViewItem";
-import { GameCfgHelper } from "../../common/config/GameCfgHelper";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { mgr } from "../../manager/mgr";
 
@@ -23,12 +22,12 @@ export class ShopItem extends TableViewItem {
      * 需要刷新item时调用此函数
      */
      onUpdateItem(datas: any, tableView: TableView) {  
-        let data = datas[this.itemIndex];
-        let cfg = mgr.getMgr(GameCfgMgr).getData("Items", data);
+        const data = datas[this.itemIndex];
+        const cfg = mgr.getMgr(GameCfgMgr).getData("Items", data);
 
         this.iconName.string = cfg.Name;
 
-        let imgURL = GameCfgHelper.getItemImage(cfg);
+        let imgURL = cfg.Resource;
         if(this.imgURL !== imgURL) {
             this.imgURL = imgURL;
             this.iconSpr.node.active = false;

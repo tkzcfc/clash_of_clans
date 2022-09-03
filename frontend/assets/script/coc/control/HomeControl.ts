@@ -73,7 +73,7 @@ export class HomeControl extends BaseControl
         this.gameLayer.builds.forEach((build: GameBuild)=>{
             units.push({
                 uuid: build.unitUUID,
-                id: build.cfgId,
+                id: build.unit.config.Id,
                 x: build.unit.x,
                 y: build.unit.y,
                 lv: 1

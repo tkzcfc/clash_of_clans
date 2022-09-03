@@ -1,7 +1,9 @@
-import { ItemType, LogicTileType } from "../../coc/const/enums";
+import { ItemType, LogicTileType, UnitType } from "../../coc/const/enums";
 import { GameUtils } from "../../coc/misc/GameUtils";
 import { BuildingItem } from "../../imports/config/Cfg_Building";
 import { ItemsItem } from "../../imports/config/Cfg_Items";
+import { GameCfgMgr } from "../../manager/GameCfgMgr";
+import { mgr } from "../../manager/mgr";
 
 class RealRange {
     minx: number;
@@ -18,57 +20,25 @@ class RealRange {
 
 export class GameCfgHelper {
 
-    static getItemImage(cfg: ItemsItem, lv?: number):string {
-        switch(cfg.Type) {
-            case ItemType.buildings:{
-                if(lv === undefined)
-                    lv = 1;
-
-                if(cfg.Id == 10004)
-                    return `building/${cfg.Resource}_lvl${lv}_00_hd`;
-                else
-                    return `building/${cfg.Resource}_lvl${lv}_hd`;
-            }
-            default:
-                console.assert(false);
-        }
+    static getItemImage(cfgId: number):string {
+        const cfg = mgr.getMgr(GameCfgMgr).getData("Items", cfgId);
+        return cfg.Resource;
     }
 
+    static getUnitImage(cfgId: number, lv: number): string {
+        const cfg = mgr.getMgr(GameCfgMgr).getData("Unit", cfgId);
 
-    /**
-     * 获取建筑实际占地范围
-     * @param cfg 
-     */
-    static getBuildRealRange(cfg: BuildingItem): RealRange {
-        if(this.realRangeCacheMap.has(cfg.Id)) {
-            return this.realRangeCacheMap.get(cfg.Id);
+        if(cfg.Type == UnitType.Buildings) {
+            if(cfg.Id == 10004)
+                return `building/${cfg.Resource}_lvl${lv}_00_hd`;
+            else
+                return `building/${cfg.Resource}_lvl${lv}_hd`;
+        }
+        else if(cfg.Type == UnitType.Role) {
         }
         
-        const flags = cfg.Flags;
-        const xCount = flags[0].length;
-        const yCount = flags.length;
-
-        let minX = xCount;
-        let maxX = 0;
-        let minY = yCount;
-        let maxY = 0;
-    
-        for(let y = 0; y < yCount; ++y) {
-            for(let x = 0; x < xCount; ++x) {
-                const flag = flags[y][x];
-                if(!GameUtils.bitHas(flag, LogicTileType.Walkable)) {
-                    maxX = Math.max(x, maxX);
-                    minX = Math.min(x, minX);
-                    maxY = Math.max(y, maxY);
-                    minY = Math.min(y, minY);
-                }
-            }
-        }
-
-        let range = new RealRange(minX, maxX, minY, maxY);
-        this.realRangeCacheMap.set(cfg.Id, range);
-        return range;
+        console.assert(false);
+        return "";
     }
-    static realRangeCacheMap = new Map<number, RealRange>();
 }
 

@@ -95,6 +95,10 @@ export class TileAlgorithm {
      * @param callback 每一个格子的回调函数
      */
     drawTile(g: cc.Graphics, x: number, y: number, w: number, h: number, callback: (logicx: number, logicy: number, renderPos: cc.Vec2)=>void) {
+
+        let fillColor = g.fillColor;
+        let strokeColor = g.strokeColor;
+
         for(let i = x; i < w; ++i){
             for(let j = y; j < h; ++j){
                 let vertexs : cc.Vec2[] = [
@@ -109,6 +113,10 @@ export class TileAlgorithm {
                     vertexs[k].addSelf(pos);
                 }
                 
+                
+                g.fillColor = fillColor;
+                g.strokeColor = strokeColor;
+
                 if(callback){
                     callback(i, j, pos);
                 }
@@ -123,6 +131,9 @@ export class TileAlgorithm {
                 g.fill();
             }
         }
+        
+        g.fillColor = fillColor;
+        g.strokeColor = strokeColor;
 
         // 每次绘制完毕请空偏移值
         this.setDrawTileOffset(0, 0);

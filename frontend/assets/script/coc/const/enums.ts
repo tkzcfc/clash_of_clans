@@ -1,9 +1,13 @@
 
-// 建筑类型
+/**
+ * 建筑类型
+ */
 export enum BuildType {
 }
 
-// 
+/**
+ * 单元类型
+ */
 export enum UnitType {
     None = 0,
     // 建筑
@@ -12,7 +16,9 @@ export enum UnitType {
     Role,
 }
 
-// 逻辑格子类型
+/**
+ * 逻辑格子类型
+ */
 export enum LogicTileType {
     None = 0,
 
@@ -26,7 +32,9 @@ export enum LogicTileType {
     Role = 1 << 10,
 }
 
-// 物品类型
+/**
+ * 物品类型
+ */
 export enum ItemType {
     // 建筑
     buildings = 1,
@@ -34,7 +42,9 @@ export enum ItemType {
     currency = 2,
 }
 
-// 游戏模式
+/**
+ * 游戏模式
+ */
 export enum GameMode {
     // 普通模式
     Normal,
@@ -44,7 +54,9 @@ export enum GameMode {
     Observe,
 }
 
-// 建筑来源
+/**
+ * 建筑来源
+ */
 export enum BuildComeFrom {
     // 地图上面的
     MAP,
@@ -55,7 +67,9 @@ export enum BuildComeFrom {
 }
 
 
-// 角色朝向定义
+/**
+ * 角色朝向定义
+ */
 export enum RoleDirection {
     Left,
     LeftBottom,
@@ -65,15 +79,27 @@ export enum RoleDirection {
     RightTop,
 }
 
-// 格子绘制模式
+export enum GameMapDebugDrawMode {
+    None,
+    DrawBuildRealRange,
+    DrawBuildSortRange,
+}
+
+/**
+ * 格子绘制模式
+ */
 export enum DrawTileMode {
     // 都不绘制
     None,
     // 绘制逻辑格子
     ShowLogicTile,
+    // 绘制渲染格子
+    ShowRenderTile,
 }
 
-// 绘制地面类型
+/**
+ * 绘制地面类型
+ */
 export enum DrawTileGroundType {
     // 普通状态（绘制草坪）
     Normal,
@@ -85,7 +111,9 @@ export enum DrawTileGroundType {
     None
 }
 
-// 游戏层级
+/**
+ * 游戏层级
+ */
 export enum GameZIndex {
     // 背景层
     BackgroundLayer = 0,

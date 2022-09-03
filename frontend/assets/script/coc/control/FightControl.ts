@@ -10,6 +10,8 @@ import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 import { BaseControl } from "./BaseControl";
 import { GameUtils } from "../misc/GameUtils";
+import { mgr } from "../../manager/mgr";
+import { GameCfgMgr } from "../../manager/GameCfgMgr";
 
 
 export class FightControl extends BaseControl
@@ -40,13 +42,12 @@ export class FightControl extends BaseControl
         pos = algorithm.calculateLogicPos(pos.x, pos.y);
         if(algorithm.contain(pos.x, pos.y)) {
 
-            let ids = [
-                10001,
-                20001,
-                30001,
-                40001,
-                50001,
-            ]
+            let ids = [];
+            mgr.getMgr(GameCfgMgr).walkData("Role", (data)=>{
+                ids.push(data.Id);
+                return false;
+            });
+            
             let id = ids[GameUtils.randomRangeInt(0, ids.length - 1)];
             this.gameLayer.newRole(id, 1, pos.x, pos.y);
         }

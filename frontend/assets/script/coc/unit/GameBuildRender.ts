@@ -35,8 +35,9 @@ export default class GameBuildRender extends cc.Component {
     updateRender() {
         const lv = this.buildInfo.lv;
         const buildCfg = this.buildInfo.buildCfg;
-        const itemCfg = mgr.getMgr(GameCfgMgr).getData("Items", this.buildInfo.cfgId);
-        const url = GameCfgHelper.getItemImage(itemCfg, lv);
+        const unitCfg = this.buildInfo.unit.config;
+
+        const url = GameCfgHelper.getUnitImage(unitCfg.Id, lv);
 
         // 更新建筑物资源
         if(this.cacheBuildResource !== url) {
@@ -48,10 +49,10 @@ export default class GameBuildRender extends cc.Component {
                 this.buildSpr.node.setPosition(offsets[0], offsets[1]);
             }
             else {
-                this.buildSpr.node.setPosition(buildCfg.OffsetX, buildCfg.OffsetY);
+                this.buildSpr.node.setPosition(unitCfg.OffsetX, unitCfg.OffsetY);
             }
             // 建筑缩放
-            this.buildSpr.node.setScale(buildCfg.ScaleX, buildCfg.ScaleY, 1.0);
+            this.buildSpr.node.setScale(unitCfg.ScaleX, unitCfg.ScaleY, 1.0);
             this.buildSpr.node.active = false;
             
             cc.resources.load(this.cacheBuildResource, cc.SpriteFrame, (err, sprFrame: cc.SpriteFrame)=>{

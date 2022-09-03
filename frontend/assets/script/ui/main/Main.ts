@@ -1,7 +1,6 @@
 import { core } from "../../core/InitCore";
 import { UIDelegate } from "../../core/ui_manager/UIDelegate";
 import { Const } from "../../common/Const";
-import { GameContext } from "../../coc/misc/GameContext";
 
 const {ccclass, property} = cc._decorator;
 
@@ -18,7 +17,7 @@ export class Main extends UIDelegate {
     }
 
     onClickDebug() {
-        GameContext.getInstance().gameLayer.enableDebugDraw = !GameContext.getInstance().gameLayer.enableDebugDraw;
+        core.ui.current().pushUI(Const.UIs.DebugGamePanel);
     }
 
     

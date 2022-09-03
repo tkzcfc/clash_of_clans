@@ -9,7 +9,6 @@ import { GameUnit } from "./GameUnit";
 import { GameContext } from "../misc/GameContext";
 import { GameEvent } from "../misc/GameEvent";
 import { GameUtils } from "../misc/GameUtils";
-import { mgr } from "../../manager/mgr";
 import { GameCfgMgr } from "../../manager/GameCfgMgr";
 import { Pathfinding } from "../misc/Pathfinding";
 import { LogicTileType, UnitType } from "../const/enums";
@@ -55,11 +54,13 @@ export class GameRole extends cc.Component {
     }
 
     initRole(id: number, lv: number, x: number, y: number) {
-        let cfg = mgr.getMgr(GameCfgMgr).getData("Role", id.toString());
+        // 初始化GameUnitBase
+        this.unit.initWithConfigId(id, x, y);
         
+        // 帧动画
         this.dynamicClip = this.getComponent(GameRoleDynamicClip);
         this.dynamicClip.actName = "stand";
-        this.dynamicClip.loadClip(`${cfg.Resource}_lv${lv}`, [
+        this.dynamicClip.loadClip(`${this.unit.config.Resource}_lv${lv}`, [
             "attack1",
             "run",
             "stand",

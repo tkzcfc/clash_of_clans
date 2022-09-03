@@ -7,12 +7,13 @@
 import { TileAlgorithm } from "../algorithm/TileAlgorithm";
 import { EventEmitter } from "../../core/common/event/EventEmitter";
 import { GameEvent } from "./GameEvent";
-import { DrawTileMode, LogicTileType } from "../const/enums";
+import { GameMapDebugDrawMode, LogicTileType, UnitType } from "../const/enums";
 import { GameUtils } from "./GameUtils";
 import { GameLayer } from "../GameLayer";
 import { GameDefine } from "../const/GameDefine";
 import { GameUnit } from "../unit/GameUnit";
 import { GameUnitBase } from "../unit/GameUnitBase";
+import { GameBuild } from "../unit/GameBuild";
 
 
 export class GameContext {
@@ -110,10 +111,10 @@ export class GameContext {
     }
 
     canPlace(unit: GameUnitBase) {
-        const px = unit.x;
-        const py = unit.y;
-        const xCount = unit.xCount;
-        const yCount = unit.yCount;
+        return this.canPlaceEx(unit.x, unit.y, unit.xCount, unit.yCount);
+    }
+
+    canPlaceEx(px: number, py: number, xCount: number, yCount: number) {
         const unitType = LogicTileType.Buildings;
 
         if(px < 0 || py < 0 || px > GameDefine.LOGIC_X_COUNT - xCount || py > GameDefine.LOGIC_Y_COUNT - yCount) {
@@ -136,46 +137,33 @@ export class GameContext {
 
     getPlacePos(xCount: number, yCount: number) {
         let outPos = new cc.Vec2(-1, -1);
-
-        let unit : GameUnitBase = new GameUnitBase();
-        unit.x = 0;
-        unit.x = 0;
-        unit.xCount = xCount;
-        unit.yCount = yCount;
-
         for(let i = 0, j = this.autoPlacePosArr.length; i < j; ++i) {
             const tmp = this.autoPlacePosArr[i];
-            unit.x = tmp.x;
-            unit.y = tmp.y;
-
-            if(this.canPlace(unit)) {
+            if(this.canPlaceEx(tmp.x, tmp.y, xCount, yCount)) {
                 outPos.set(tmp);
                 break;
-            }            
+            }
         }
         return outPos;
     }
 
-    drawMapTile(g: cc.Graphics, drawTileMode: DrawTileMode) {
+    drawMapTile(g: cc.Graphics, drawTileMode: GameMapDebugDrawMode) {
         g.clear();
 
         switch(drawTileMode)
         {
-            case DrawTileMode.None: {
+            case GameMapDebugDrawMode.None: {
                 break;
             }
-            case DrawTileMode.ShowLogicTile: {
+            case GameMapDebugDrawMode.DrawBuildRealRange: {
                 let algorithm = this.logicTileAlgorithm;
                 let LOGIC_SCALE = GameDefine.LOGIC_SCALE
-
-                let fillColor = g.fillColor;
-                let strokeColor = g.strokeColor;
 
                 algorithm.setDrawTileOffset(GameDefine.X_COUNT * algorithm.TILE_WIDTH_HALF * LOGIC_SCALE, 0.0);
                 algorithm.drawTile(g, 0, 0, GameDefine.X_COUNT * LOGIC_SCALE, GameDefine.Y_COUNT * LOGIC_SCALE, (logicx: number, logicy: number, renderPos: cc.Vec2) =>{
                     let index = logicx + logicy * GameDefine.Y_COUNT * LOGIC_SCALE;
                     let type = this.logicTileTypeArr[index];
-
+                    
                     if(type & LogicTileType.Walkable) {
                         g.fillColor = cc.Color.GREEN.clone();
                         g.strokeColor = cc.Color.GREEN.clone();
@@ -189,19 +177,54 @@ export class GameContext {
                     else if(type & LogicTileType.Buildings) {
                         g.fillColor = cc.Color.RED.clone();
                         g.strokeColor = cc.Color.RED.clone();
-                        g.fillColor.a = 100;
-                    }
-                    else{
-                        g.fillColor = fillColor;
-                        g.strokeColor = strokeColor;                        
                     }
                 });
+                break;
+            }
+            case GameMapDebugDrawMode.DrawBuildSortRange: {
+                let algorithm = this.logicTileAlgorithm;
+                let LOGIC_SCALE = GameDefine.LOGIC_SCALE
 
-                g.fillColor = fillColor;
-                g.strokeColor = strokeColor;
+                algorithm.setDrawTileOffset(GameDefine.X_COUNT * algorithm.TILE_WIDTH_HALF * LOGIC_SCALE, 0.0);
+                algorithm.drawTile(g, 0, 0, GameDefine.X_COUNT * LOGIC_SCALE, GameDefine.Y_COUNT * LOGIC_SCALE, (logicx: number, logicy: number, renderPos: cc.Vec2) =>{
+                    let index = logicx + logicy * GameDefine.Y_COUNT * LOGIC_SCALE;
+                    let type = this.logicTileTypeArr[index];
+                    
+                    if(type & LogicTileType.Role) {
+                        g.fillColor = cc.Color.BLUE.clone();
+                        g.strokeColor = cc.Color.BLUE.clone();
+                        g.fillColor.a = 100;
+                    }
+                    else if(type & LogicTileType.Buildings) {
+                        const unit = this.getUnit(logicx, logicy, UnitType.Buildings);
+                        if(unit && logicx >= unit.getMinX() && logicx <= unit.getMaxX() && logicy >= unit.getMinY() && logicy <= unit.getMaxY()) {
+                            g.fillColor = cc.Color.RED.clone();
+                            g.strokeColor = cc.Color.RED.clone();
+                        }
+                        else {
+                            g.fillColor = cc.Color.GREEN.clone();
+                            g.strokeColor = cc.Color.GREEN.clone();
+                            g.fillColor.a = 100;
+                        }
+                    }
+                });
                 break;
             }
         };
+    }
+
+    getUnit(x: number, y: number, type: UnitType = UnitType.None) {
+        for(let i = 0,j = this.gameLayer.units.length; i < j; ++i) {
+            const unit = this.gameLayer.units[i];
+            if(type == UnitType.None) {
+                if(unit.containLogicPosEx(x, y))
+                    return unit;
+            }
+            else {
+                if(unit.type === type && unit.containLogicPosEx(x, y))
+                    return unit;
+            }
+        }
     }
 
     canWalk(x: number, y:number): boolean {

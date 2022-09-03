@@ -6,7 +6,7 @@
 
 import { EventEmitter } from "../core/common/event/EventEmitter";
 import { ZoomView } from "./ui/ZoomView";
-import { BuildComeFrom, DrawTileMode, GameMode, GameZIndex, LogicTileType, UnitType } from "./const/enums";
+import { BuildComeFrom, GameMapDebugDrawMode, GameMode, GameZIndex, LogicTileType, UnitType } from "./const/enums";
 import { UnitSort } from "./algorithm/UnitSort";
 import { GameBuild } from "./unit/GameBuild";
 import { GameContext } from "./misc/GameContext";
@@ -60,19 +60,25 @@ export class GameLayer extends cc.Component {
     control: BaseControl;
 
     // 是否启用调试绘制
-    set enableDebugDraw(value) {
-        this._enableDebugDraw = value;
-        if(!value) {
+    set debugDrawMode(value) {
+        this._debugDrawMode = value;
+
+        if(value == GameMapDebugDrawMode.None) {
             this.layers.forEach((layer: cc.Node)=>{
                 layer.opacity = 255;
             });
         }
+        else {
+            this.layers.forEach((layer: cc.Node)=>{
+                layer.opacity = 100;
+            });
+        }
         this.updateDebugDraw();
     }
-    get enableDebugDraw() {
-        return this._enableDebugDraw;
-    }
-    _enableDebugDraw: boolean = false;
+    public get debugDrawMode() : GameMapDebugDrawMode {
+        return this._debugDrawMode;
+    }    
+    private _debugDrawMode: GameMapDebugDrawMode = GameMapDebugDrawMode.None;
 
 
     // 地图中的所有单位
@@ -185,14 +191,11 @@ export class GameLayer extends cc.Component {
 
         GameContext.getInstance().clearTileData();
 
-        this.enableDebugDraw = false;
-
-        
         mapData.units.forEach((data)=>{
             this.newBuild(data, BuildComeFrom.MAP);
         });
 
-        // this.enableDebugDraw = true;
+        this.debugDrawMode = GameMapDebugDrawMode.None;
 
         this._sortDirty = true;
     }
@@ -432,18 +435,14 @@ export class GameLayer extends cc.Component {
     }
 
     updateDebugDraw() {
-        this.drawTiled.active = this.enableDebugDraw;
+        this.drawTiled.active = this.debugDrawMode !== GameMapDebugDrawMode.None;
 
-        if(!this.enableDebugDraw) {
+        if(this.debugDrawMode === GameMapDebugDrawMode.None) {
             return;
         }
 
-        this.layers.forEach((layer: cc.Node)=>{
-            layer.opacity = 100;
-        });
-
         let g = this.drawTiled.getComponent(cc.Graphics);
-        GameContext.getInstance().drawMapTile(g, DrawTileMode.ShowLogicTile);
+        GameContext.getInstance().drawMapTile(g, this.debugDrawMode);
     }
 
 

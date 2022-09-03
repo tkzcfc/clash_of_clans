@@ -61,7 +61,7 @@ export class RpcMgr extends BaseMgr
      */
     async connect() {
         if(!core.ui.current().contain(Const.UIs.NetLoading)) {
-            core.ui.current().pushUI(Const.UIs.NetLoading, null, null, 10);
+            core.ui.current().pushUI(Const.UIs.NetLoading, null, 10);
         }
 
         this.isConnect = false;
@@ -87,11 +87,10 @@ export class RpcMgr extends BaseMgr
             mgr.getMgr(LoginMgr).loginGame();
         }
         else{
-            core.ui.current().pushUI(Const.UIs.MessageBox, null, (node: cc.Node)=>{
-                node.getComponent(MessageBox).showOne("服务器连接失败，请稍后再试", ()=>{
-                    this.connect();
-                });
-            }, 10);
+            let node = await core.ui.current().pushUI(Const.UIs.MessageBox, null, 10);
+            node.getComponent(MessageBox).showOne("服务器连接失败，请稍后再试", ()=>{
+                this.connect();
+            });
         }
     }
 

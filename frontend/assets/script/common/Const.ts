@@ -25,6 +25,7 @@ export namespace Const {
         static NetLoading = "prefab/ui/net/netLoading";
         static Fight_PlayerList = "prefab/ui/fight/playerList";
         static Fight_Main = "prefab/ui/fight/fightMain";
+        static DebugGamePanel = "prefab/ui/fight/debugGamePanel";
     }
 }
 

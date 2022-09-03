@@ -2,60 +2,36 @@
 
 export interface RoleItem {
   Id: number,
-  Type: number,
-  Name: string,
-  Resource: string,
-  MaxLv: number
+  Type: number
 }
 
 export const RoleData = {
-  "10001": {
-    Id: 10001,
-    Type: 1,
-    Name: "",
-    Resource: "character_big_strong",
-    MaxLv: 3
-  },
   "20001": {
     Id: 20001,
-    Type: 1,
-    Name: "",
-    Resource: "character_bomberman",
-    MaxLv: 3
+    Type: 1
   },
-  "30001": {
-    Id: 30001,
-    Type: 1,
-    Name: "",
-    Resource: "character_mach_warriors",
-    MaxLv: 3
+  "20002": {
+    Id: 20002,
+    Type: 1
   },
-  "40001": {
-    Id: 40001,
-    Type: 1,
-    Name: "",
-    Resource: "character_musketeer",
-    MaxLv: 3
+  "20003": {
+    Id: 20003,
+    Type: 1
   },
-  "50001": {
-    Id: 50001,
-    Type: 1,
-    Name: "",
-    Resource: "character_theif",
-    MaxLv: 2
+  "20004": {
+    Id: 20004,
+    Type: 1
   },
-  "60001": {
-    Id: 60001,
-    Type: 2,
-    Name: "",
-    Resource: "character_woman",
-    MaxLv: 1
+  "20005": {
+    Id: 20005,
+    Type: 1
   },
-  "70001": {
-    Id: 70001,
-    Type: 2,
-    Name: "",
-    Resource: "character_worker",
-    MaxLv: 1
+  "20006": {
+    Id: 20006,
+    Type: 2
+  },
+  "20007": {
+    Id: 20007,
+    Type: 2
   }
 }

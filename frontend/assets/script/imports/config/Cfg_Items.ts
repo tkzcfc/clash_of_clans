@@ -4,7 +4,8 @@ export interface ItemsItem {
   Id: number,
   Type: number,
   Name: string,
-  Resource: string
+  Resource: string,
+  OutputId: number[]
 }
 
 export const ItemsData = {
@@ -12,114 +13,133 @@ export const ItemsData = {
     Id: 10001,
     Type: 1,
     Name: "联盟城堡",
-    Resource: "build_alliance_castle"
+    Resource: "building/build_alliance_castle_lvl1_hd",
+    OutputId: [10001]
   },
   "10002": {
     Id: 10002,
     Type: 1,
     Name: "军营",
-    Resource: "build_barracks"
+    Resource: "building/build_barracks_lvl1_hd",
+    OutputId: [10002]
   },
   "10003": {
     Id: 10003,
     Type: 1,
     Name: "基本炮塔",
-    Resource: "build_basic_turret"
+    Resource: "building/build_basic_turret_lvl1_hd",
+    OutputId: [10003]
   },
   "10004": {
     Id: 10004,
     Type: 1,
     Name: "防御墙",
-    Resource: "build_defense_wall"
+    Resource: "building/build_defense_wall_lvl1_00_hd",
+    OutputId: [10004]
   },
   "10005": {
     Id: 10005,
     Type: 1,
     Name: "地雷",
-    Resource: "build_dilei"
+    Resource: "building/build_dilei_lvl1_hd",
+    OutputId: [10005]
   },
   "10006": {
     Id: 10006,
     Type: 1,
     Name: "圣水收集器",
-    Resource: "build_elixir_pump"
+    Resource: "building/build_elixir_pump_lvl1_hd",
+    OutputId: [10006]
   },
   "10007": {
     Id: 10007,
     Type: 1,
     Name: "圣水储藏室",
-    Resource: "build_elixir_storage"
+    Resource: "building/build_elixir_storage_lvl1_hd",
+    OutputId: [10007]
   },
   "10008": {
     Id: 10008,
     Type: 1,
     Name: "魔法塔",
-    Resource: "build_fireplace"
+    Resource: "building/build_fireplace_lvl1_hd",
+    OutputId: [10008]
   },
   "10009": {
     Id: 10009,
     Type: 1,
     Name: "火箭塔",
-    Resource: "build_fireworks_tower"
+    Resource: "building/build_fireworks_tower_lvl1_hd",
+    OutputId: [10009]
   },
   "10010": {
     Id: 10010,
     Type: 1,
     Name: "储金罐",
-    Resource: "build_gold_storage"
+    Resource: "building/build_gold_storage_lvl1_hd",
+    OutputId: [10010]
   },
   "10011": {
     Id: 10011,
     Type: 1,
     Name: "金矿",
-    Resource: "build_goldmine"
+    Resource: "building/build_goldmine_lvl1_hd",
+    OutputId: [10011]
   },
   "10012": {
     Id: 10012,
     Type: 1,
     Name: "炼药厂",
-    Resource: "build_laboratory"
+    Resource: "building/build_laboratory_lvl1_hd",
+    OutputId: [10012]
   },
   "10013": {
     Id: 10013,
     Type: 1,
     Name: "符咒工厂",
-    Resource: "build_spell_factory"
+    Resource: "building/build_spell_factory_lvl1_hd",
+    OutputId: [10013]
   },
   "10014": {
     Id: 10014,
     Type: 1,
     Name: "箭塔",
-    Resource: "build_tower_turret"
+    Resource: "building/build_tower_turret_lvl1_hd",
+    OutputId: [10014]
   },
   "10015": {
     Id: 10015,
     Type: 1,
     Name: "主城",
-    Resource: "build_town_hall"
+    Resource: "building/build_town_hall_lvl1_hd",
+    OutputId: [10015]
   },
   "10016": {
     Id: 10016,
     Type: 1,
     Name: "建筑工人小屋",
-    Resource: "build_worker_building"
+    Resource: "building/build_worker_building_lvl1_hd",
+    OutputId: [10016]
   },
-  "20001": {
-    Id: 20001,
-    Type: 2,
+  "50001": {
+    Id: 50001,
+    Type: 5,
     Name: "金币",
-    Resource: ""
+    Resource: "",
+    OutputId: []
   },
-  "20002": {
-    Id: 20002,
-    Type: 2,
+  "50002": {
+    Id: 50002,
+    Type: 5,
     Name: "圣水",
-    Resource: ""
+    Resource: "",
+    OutputId: []
   },
-  "20003": {
-    Id: 20003,
-    Type: 2,
+  "50003": {
+    Id: 50003,
+    Type: 5,
     Name: "钻石",
-    Resource: ""
+    Resource: "",
+    OutputId: []
   }
 }

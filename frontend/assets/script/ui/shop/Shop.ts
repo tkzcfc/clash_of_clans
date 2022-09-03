@@ -27,8 +27,8 @@ export class Shop extends UIDelegate {
                 let cfg = mgr.getMgr(GameCfgMgr).getData("Items", itemId);
 
                 if(cfg.Type === ItemType.buildings) {
-                    let buildCfg = mgr.getMgr(GameCfgMgr).getData("Building", itemId);
-                    let placePos = GameContext.getInstance().getPlacePos(buildCfg.XCount, buildCfg.YCount);
+                    let unitCfg = mgr.getMgr(GameCfgMgr).getData("Unit", cfg.OutputId[0]);
+                    let placePos = GameContext.getInstance().getPlacePos(unitCfg.XCount, unitCfg.YCount);
 
                     if(placePos.x < 0) {
                         UIUtils.showMsgBoxOne("放不下啦!!!");

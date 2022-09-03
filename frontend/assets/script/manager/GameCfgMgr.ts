@@ -8,16 +8,7 @@ import { BaseMgr } from "./BaseMgr";
 import { ConfigItemType, ConfigData } from "../imports/config/GameCfgInit";
 
 export class GameCfgMgr extends BaseMgr
-{    
-    // /**
-    //  * 获取某个文件的配置数据
-    //  * @param name 
-    //  * @returns 
-    //  */
-    //  getCfg<K1 extends keyof ConfigItemType>(cfgName: K1) {
-    //     return ConfigData[cfgName];
-    // }
-
+{
     /**
      * 获取某个文件的配置数据数量
      * @param name 
@@ -32,6 +23,15 @@ export class GameCfgMgr extends BaseMgr
             }
         }
         return count;
+    }
+
+    walkData<K1 extends keyof ConfigItemType>(cfgName: K1, callback: (data: Readonly<ConfigItemType[K1]>, key: string)=>boolean) {
+        const cfg = ConfigData[cfgName];
+        for (const key in cfg) {
+            if(callback(cfg[key] as any, key)) {
+                break;
+            }
+        }        
     }
     
     /**

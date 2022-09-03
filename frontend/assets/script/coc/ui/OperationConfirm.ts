@@ -37,7 +37,7 @@ export class OperationConfirm extends cc.Component {
         let build = followTarget.getComponent(GameBuild);
 
         let result = await mgr.getMgr(RpcMgr).callApi("ptl/BuyAndPlaceToMap", {
-            id: build.cfgId,
+            id: build.unit.config.Id,
             x: build.unit.x,
             y: build.unit.y,
         });

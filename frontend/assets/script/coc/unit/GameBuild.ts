@@ -43,8 +43,6 @@ export class GameBuild extends cc.Component {
     lastLogicPos: cc.Vec2 = new cc.Vec2();
     // 拖拽开始时的逻辑坐标
     dragStartLogicPos: cc.Vec2 = new cc.Vec2(0, 0);
-    // 建筑配置id
-    cfgId: number = 0;
     // 建筑配置
     buildCfg: BuildingItem;
     // 当前等级
@@ -83,36 +81,24 @@ export class GameBuild extends cc.Component {
     }
 
     initWithBuildData(data: PlayerMapUnit, comeFrom: BuildComeFrom) {
-        this.cfgId = data.id;
         this.unitUUID = data.uuid;
         this.lv = data.lv;
         this.comeFrom = comeFrom;
-        this.buildCfg  = mgr.getMgr(GameCfgMgr).getData("Building", this.cfgId);
+        this.buildCfg  = mgr.getMgr(GameCfgMgr).getData("Building", data.id);
 
-        this.unit.x = data.x;
-        this.unit.y = data.y;
-        this.unit.xCount = this.buildCfg.XCount;
-        this.unit.yCount = this.buildCfg.YCount;
-        this.unit.flags.length = this.unit.xCount * this.unit.yCount;
-
-        for(let y = 0; y < this.unit.yCount; ++y){
-            for(let x = 0; x < this.unit.xCount; ++x){
-                this.unit.flags[x + y * this.unit.xCount] = this.buildCfg.Flags[y][x];
-            }
-        }
+        this.unit.initWithConfigId(data.id, data.x, data.y);
 
         this.syncData();
     }
 
     syncData() {
-        this.unit.updateFlags();
         // 渲染更新
         this.render.updateRender();
         
         // 节点偏移设置
         const algorithm = GameContext.getInstance().logicTileAlgorithm;
         let pos = algorithm.calculateMapTilePos(this.unit.x, this.unit.y);
-        this.node.setPosition(pos.x - algorithm.TILE_WIDTH_HALF * this.buildCfg.XCount, pos.y - algorithm.TILE_HEIGHT_HALF);
+        this.node.setPosition(pos.x - algorithm.TILE_WIDTH_HALF * this.unit.xCount, pos.y - algorithm.TILE_HEIGHT_HALF);
 
         this.updateBuildingGround();
 

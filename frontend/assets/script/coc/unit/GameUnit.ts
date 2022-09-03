@@ -24,11 +24,6 @@ export class GameUnit extends GameUnitBase {
     // 触发了长按
     _triggerLongTouch: boolean = false;
     
-    protected onLoad(): void {
-        super.onLoad();
-        
-    }
-
     touchTest(event) {
         if(this.type == UnitType.Buildings) {
             let pos = this.node.parent.convertToNodeSpaceAR(event.touch.getLocation());
