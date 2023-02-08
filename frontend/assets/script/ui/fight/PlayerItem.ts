@@ -1,6 +1,6 @@
 import { core } from "../../core/InitCore";
-import TableView from "../../core/ui/TableView";
-import TableViewItem from "../../core/ui/TableViewItem";
+import TableView from "../../core/extensions/tableview/TableView";
+import TableViewItem from "../../core/extensions/tableview/TableViewItem";
 import { PvpListItem } from "../../shared/protocols/ptl/PtlGetPvpList";
 import { FightMgr } from "../../manager/FightMgr";
 import { mgr } from "../../manager/mgr";

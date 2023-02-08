@@ -1,4 +1,4 @@
-import TableViewDelegate from "../../core/ui/TableViewDelegate";
+import TableViewDelegate from "../../core/extensions/tableview/TableViewDelegate";
 
 const {ccclass, property} = cc._decorator;
 

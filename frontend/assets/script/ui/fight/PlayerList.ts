@@ -1,4 +1,4 @@
-import TableView from "../../core/ui/TableView";
+import TableView from "../../core/extensions/tableview/TableView";
 import { UIDelegate } from "../../core/ui_manager/UIDelegate";
 import { mgr } from "../../manager/mgr";
 import { RpcMgr } from "../../manager/RpcMgr";

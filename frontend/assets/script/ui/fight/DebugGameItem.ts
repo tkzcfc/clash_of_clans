@@ -1,5 +1,5 @@
-import TableView from "../../core/ui/TableView";
-import TableViewItem from "../../core/ui/TableViewItem";
+import TableView from "../../core/extensions/tableview/TableView";
+import TableViewItem from "../../core/extensions/tableview/TableViewItem";
 
 
 

@@ -1,6 +1,6 @@
 import { UIDelegate } from "../../core/ui_manager/UIDelegate";
-import TableView from "../../core/ui/TableView";
-import TableViewDelegate from "../../core/ui/TableViewDelegate";
+import TableView from "../../core/extensions/tableview/TableView";
+import TableViewDelegate from "../../core/extensions/tableview/TableViewDelegate";
 import { ShopItem } from "./ShopItem";
 import { BuildComeFrom, ItemType } from "../../coc/const/enums";
 import { UIUtils } from "../UIUtils";
