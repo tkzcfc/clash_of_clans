@@ -38,7 +38,7 @@ export class TileAlgorithm {
         this.drawOffsetPos = new cc.Vec2(0, 0);
     }
 
-    /** 将逻辑坐标转换为渲染坐标(平行西变形中心点)
+    /** 将逻辑坐标转换为渲染坐标(平行四边形中心点)
     @param M 逻辑X坐标
     @param N 逻辑Y坐标
     */
