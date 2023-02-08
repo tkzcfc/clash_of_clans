@@ -50,7 +50,6 @@ class UIInfo {
 
 
 @ccclass()
-@menu("core/ui/UIContext")
 export class UIContext extends cc.Component {
 
     @property(cc.Node)
@@ -396,6 +395,10 @@ export class UIContext extends cc.Component {
         }
     }
 
+    /**
+     * 刷新view的显示/隐藏状态，如果显示了全屏类型的UI则隐藏下方所有的UI和view
+     * @param willCloseInfo 
+     */
     private _refreshViewVisible(willCloseInfo?: UIInfo) {
         let show = true;
         this._uiPanels.forEach((info: UIInfo)=>{

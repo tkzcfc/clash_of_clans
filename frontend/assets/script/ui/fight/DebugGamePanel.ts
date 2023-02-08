@@ -62,7 +62,7 @@ export class DebugGamePanel extends UIDelegate {
             this.datas[i].isSelect = this.curSelectIndex == i;
         }
 
-        this.playerListTableView.getDelegate().itemNumber = this.datas.length;
+        this.playerListTableView.delegate.itemNumber = this.datas.length;
         this.playerListTableView.reload(this.datas, true);
     }
 

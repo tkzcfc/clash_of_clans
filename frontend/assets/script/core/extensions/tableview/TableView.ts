@@ -123,6 +123,10 @@ export default class TableView extends cc.Component {
     @property({type: cc.Enum(ShowMode), tooltip: "显示模式"})
     showMode: ShowMode = ShowMode.Normal;   
 
+    
+    @property({type: TableViewDelegate, tooltip: "TableViewDelegate"})
+    delegate: TableViewDelegate = null;   
+
 
     // 四周留白
     private _margin: Margin = new Margin(0, 0, 0, 0);
@@ -134,8 +138,6 @@ export default class TableView extends cc.Component {
     private _totalItemNum: number = 0;
     // scrollView组件
     private _scrollView: cc.ScrollView = null;
-    // TableViewDelegate组件
-    private _delegate: TableViewDelegate = null;
     // 实际内容大小
     private _realContentSize: cc.Size;
     // 节点缓存池
@@ -160,7 +162,29 @@ export default class TableView extends cc.Component {
             this._nodePools[i] = new cc.NodePool();
 
         this._scrollView = this.getComponent(cc.ScrollView);
-        this._delegate = this.getComponent(TableViewDelegate);
+
+        // 将裁减节点设置为和scrollView一样大
+        let view = this._scrollView.node.getChildByName("view");
+        if(view && !view.getComponent(cc.Widget)) {
+            let widget = view.addComponent(cc.Widget)
+            widget.isAlignTop = true;
+            widget.top = 0;
+            widget.isAlignBottom = true;
+            widget.bottom = 0;
+            widget.isAlignLeft = true;
+            widget.left = 0;
+            widget.isAlignRight = true;
+            widget.right = 0;
+            widget.alignMode = cc.Widget.AlignMode.ON_WINDOW_RESIZE;
+            widget.updateAlignment();       
+        }
+
+        if(!this.delegate) {
+            this.delegate = this.getComponent(TableViewDelegate);
+        }
+        if(!this.delegate) {
+            this.delegate = this.addComponent(TableViewDelegate);
+        }
 
         this._scrollView.node.on("scrolling", function() {
             this._updateView();
@@ -185,8 +209,13 @@ export default class TableView extends cc.Component {
         this._onItemCreateCallback = callback;
     }
 
-    public getDelegate() {
-        return this._delegate;
+    public _onItemUpdateCallback: Function = null;
+    /**
+     * 设置item刷新回调函数
+     * @param callback 
+     */
+    public setOnItemUpdateCallback(callback: Function) {
+        this._onItemUpdateCallback = callback;
     }
 
     ///////////////////////////////////////////////// public /////////////////////////////////////////////////
@@ -224,7 +253,7 @@ export default class TableView extends cc.Component {
         this._showItems.clear();
 
         this._itemArgs = datas;
-        this._totalItemNum = this._delegate.numberOfItem();
+        this._totalItemNum = this.delegate.numberOfItem();
 
         this._margin.left = this.paddingLeft;
         this._margin.right = this.paddingRight;
@@ -552,7 +581,7 @@ export default class TableView extends cc.Component {
      * @returns 
      */
     private _getItemSize(index: number): cc.Size {
-        return this._delegate.getItemSize(index);
+        return this.delegate.getItemSize(index);
     }
 
     /**
@@ -561,7 +590,7 @@ export default class TableView extends cc.Component {
      * @returns 
      */
      private _getItemType(index: number):number {
-        let type = this._delegate.getItemType(index);
+        let type = this.delegate.getItemType(index);
 
         if(type >= this.itemPrefabs.length) {
             cc.error("此类型没有对应的预制体");
@@ -620,6 +649,9 @@ export default class TableView extends cc.Component {
                 }
             }
             item.onUpdateItem(this._itemArgs, this);
+            if(this._onItemUpdateCallback) {
+                this._onItemUpdateCallback(item)
+            }
         }
 
         return node;

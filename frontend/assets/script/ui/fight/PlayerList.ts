@@ -52,7 +52,7 @@ export class PlayerList extends UIDelegate {
             return;
         }
 
-        this.playerListTableView.getDelegate().itemNumber = this.players.length;
+        this.playerListTableView.delegate.itemNumber = this.players.length;
         this.playerListTableView.reload(this.players);
     }
 }

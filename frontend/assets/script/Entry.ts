@@ -31,8 +31,8 @@ export default class Entry extends Root {
         }
         else {
             core.viewManager.runEmptyView(View);
-            core.ui.current().pushUI(Const.UIs.Login);
-            // core.ui.current().pushUI(Const.UIs.Tests);
+            // core.ui.current().pushUI(Const.UIs.Login);
+            core.ui.current().pushUI(Const.UIs.Tests);
         }
     }
 }

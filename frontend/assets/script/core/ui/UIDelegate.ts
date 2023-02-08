@@ -25,7 +25,7 @@ export enum UIType {
 
 
 @ccclass()
-@menu("core/ui/UIDelegate")
+@menu("core/ui/ui")
 export class UIDelegate extends cc.Component {
 
     @property({

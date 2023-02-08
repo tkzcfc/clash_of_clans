@@ -13,7 +13,6 @@ import { CoreEvent } from "../common/event/CoreEvent";
 const {ccclass, property, menu} = cc._decorator;
 
 @ccclass()
-@menu("core/ui/UIPanel")
 export class UIPanel extends cc.Component {    
     // 遮罩节点
     @property(cc.Node)
