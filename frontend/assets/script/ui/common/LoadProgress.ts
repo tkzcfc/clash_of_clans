@@ -1,4 +1,4 @@
-import { ActionType, UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { ActionType, UIDelegate } from "../../core/ui/UIDelegate";
 
 const {ccclass, property} = cc._decorator;
 

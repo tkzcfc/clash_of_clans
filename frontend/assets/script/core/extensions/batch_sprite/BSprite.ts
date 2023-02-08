@@ -1,8 +1,9 @@
 import BatchAssembler2D from "./BatchAssembler2D";
 
-const {ccclass} = cc._decorator;
+const {ccclass, menu} = cc._decorator;
 
 @ccclass
+@menu("core/extensions/BSprite")
 export default class BSprite extends cc.Sprite {
     _curRenderTexImpl: any = undefined;
     _sprIndex: number = 0;

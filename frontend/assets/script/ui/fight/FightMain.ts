@@ -1,5 +1,5 @@
 import { core } from "../../core/InitCore";
-import { UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { UIDelegate } from "../../core/ui/UIDelegate";
 import { FightMgr } from "../../manager/FightMgr";
 import { mgr } from "../../manager/mgr";
 import { UIUtils } from "../UIUtils";

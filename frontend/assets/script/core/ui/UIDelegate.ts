@@ -6,7 +6,7 @@
 
 import { UIContext } from "./UIContext";
 
-const {ccclass, property} = cc._decorator;
+const {ccclass, property, menu} = cc._decorator;
 
 // 入场/退场动画类型
 export enum ActionType {
@@ -25,6 +25,7 @@ export enum UIType {
 
 
 @ccclass()
+@menu("core/ui/UIDelegate")
 export class UIDelegate extends cc.Component {
 
     @property({

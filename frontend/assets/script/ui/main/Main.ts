@@ -1,5 +1,5 @@
 import { core } from "../../core/InitCore";
-import { UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { UIDelegate } from "../../core/ui/UIDelegate";
 import { Const } from "../../common/Const";
 
 const {ccclass, property} = cc._decorator;

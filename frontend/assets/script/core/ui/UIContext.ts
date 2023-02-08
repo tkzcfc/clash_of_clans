@@ -12,7 +12,7 @@ import { UIType } from "./UIDelegate";
 import { CoreEvent } from "../common/event/CoreEvent";
 import { RenderUtil } from "../utils/RenderUtil";
 
-const {ccclass, property} = cc._decorator;
+const {ccclass, property, menu} = cc._decorator;
 
 
 enum UIState
@@ -50,6 +50,7 @@ class UIInfo {
 
 
 @ccclass()
+@menu("core/ui/UIContext")
 export class UIContext extends cc.Component {
 
     @property(cc.Node)

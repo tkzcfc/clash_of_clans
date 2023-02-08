@@ -10,9 +10,10 @@ import { core } from "../InitCore";
 import { UIContext } from "./UIContext";
 import { UIDelegate } from "./UIDelegate";
 import { CoreEvent } from "../common/event/CoreEvent";
-const {ccclass, property} = cc._decorator;
+const {ccclass, property, menu} = cc._decorator;
 
 @ccclass()
+@menu("core/ui/UIPanel")
 export class UIPanel extends cc.Component {    
     // 遮罩节点
     @property(cc.Node)

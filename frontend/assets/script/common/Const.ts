@@ -26,6 +26,7 @@ export namespace Const {
         static Fight_PlayerList = "prefab/ui/fight/playerList";
         static Fight_Main = "prefab/ui/fight/fightMain";
         static DebugGamePanel = "prefab/ui/fight/debugGamePanel";
+        static Tests = "prefab/ui/tests/tests";
     }
 }
 

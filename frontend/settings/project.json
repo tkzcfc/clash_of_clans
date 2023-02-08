@@ -1,9 +1,9 @@
 {
-  "start-scene": "81f67c48-5688-4261-ab38-4276a1eef534",
+  "start-scene": "current",
   "group-list": [
     "default"
   ],
-  "last-module-event-record-time": 1657618350117,
+  "last-module-event-record-time": 1675845047216,
   "collision-matrix": [
     [
       true

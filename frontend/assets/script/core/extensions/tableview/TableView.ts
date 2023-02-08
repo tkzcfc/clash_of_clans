@@ -8,7 +8,7 @@
 import TableViewDelegate from "./TableViewDelegate";
 import TableViewItem from "./TableViewItem";
 
-const {ccclass, property, disallowMultiple, requireComponent} = cc._decorator;
+const {ccclass, property, disallowMultiple, requireComponent, menu} = cc._decorator;
 
 
 /**
@@ -84,6 +84,7 @@ export class ItemInfo {
 @disallowMultiple()
 @requireComponent(cc.ScrollView)
 @requireComponent(TableViewDelegate)
+@menu("core/extensions/TableView")
 export default class TableView extends cc.Component {
 
     @property({tooltip: "是否是垂直排列"})

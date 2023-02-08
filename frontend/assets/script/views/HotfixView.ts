@@ -10,7 +10,7 @@ import { Const } from "../common/Const";
 import { CoreEvent } from "../core/common/event/CoreEvent";
 import { core } from "../core/InitCore";
 import { UpdateCode, Updater, UpdateStatus } from "../core/utils/Updater";
-import { View } from "../core/view_manager/View";
+import { View } from "../core/view/View";
 import { LoadProgress } from "../ui/common/LoadProgress";
 import { UIUtils } from "../ui/UIUtils";
 

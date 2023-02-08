@@ -6,11 +6,12 @@
 
 import TableView from "./TableView";
 
-const {ccclass, property, disallowMultiple} = cc._decorator;
+const {ccclass, property, disallowMultiple, menu} = cc._decorator;
 
 
 @ccclass()
 @disallowMultiple()
+@menu("core/extensions/TableViewItem")
 export default class TableViewItem extends cc.Component {
 
     @property({visible: false})

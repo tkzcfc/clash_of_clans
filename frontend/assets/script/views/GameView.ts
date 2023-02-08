@@ -5,7 +5,7 @@
  */
 
 import { core } from "../core/InitCore";
-import { View } from "../core/view_manager/View";
+import { View } from "../core/view/View";
 import { Const } from "../common/Const";
 import { mgr } from "../manager/mgr";
 import { GameDataMgr } from "../manager/GameDataMgr";

@@ -7,7 +7,7 @@
 import Root from "./core/Root"
 import { Const } from "./common/Const";
 import { core } from "./core/InitCore";
-import { View } from "./core/view_manager/View";
+import { View } from "./core/view/View";
 import HotfixView from "./views/HotfixView";
 const {ccclass, property} = cc._decorator;
 
@@ -32,6 +32,7 @@ export default class Entry extends Root {
         else {
             core.viewManager.runEmptyView(View);
             core.ui.current().pushUI(Const.UIs.Login);
+            // core.ui.current().pushUI(Const.UIs.Tests);
         }
     }
 }

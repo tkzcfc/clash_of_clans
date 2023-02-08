@@ -7,8 +7,8 @@
 
 import { storage as SqlStorage } from "./common/storage/SqlUtil";
 import { EventEmitter } from "./common/event/EventEmitter"
-import { UIManager } from "./ui_manager/UIManager";
-import { ViewManager } from "./view_manager/ViewManager";
+import { UIManager } from "./ui/UIManager";
+import { ViewManager } from "./view/ViewManager";
 
 export class core {
     /** 本地存储 */

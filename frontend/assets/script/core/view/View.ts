@@ -5,8 +5,9 @@
  */
 
 
-const {ccclass, property} = cc._decorator;
+const {ccclass, menu} = cc._decorator;
 
 @ccclass
+@menu("core/view/View")
 export class View extends cc.Component {
 }

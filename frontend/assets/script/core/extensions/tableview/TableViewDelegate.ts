@@ -4,11 +4,12 @@
  * Description: 
  */
 
-const {ccclass, property, disallowMultiple} = cc._decorator;
+const {ccclass, property, disallowMultiple, menu} = cc._decorator;
 
 
 @ccclass()
 @disallowMultiple()
+@menu("core/extensions/TableViewDelegate")
 export default class TableViewDelegate extends cc.Component {
 
     @property({type: cc.Integer, tooltip: "item数量", range:[0, Number.MAX_SAFE_INTEGER, 1]})

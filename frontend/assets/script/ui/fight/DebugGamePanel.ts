@@ -1,6 +1,6 @@
 import { GameContext } from "../../coc/misc/GameContext";
 import TableView from "../../core/extensions/tableview/TableView";
-import { UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { UIDelegate } from "../../core/ui/UIDelegate";
 
 const {ccclass, property} = cc._decorator;
 

@@ -1,5 +1,5 @@
 import TableView from "../../core/extensions/tableview/TableView";
-import { UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { UIDelegate } from "../../core/ui/UIDelegate";
 import { mgr } from "../../manager/mgr";
 import { RpcMgr } from "../../manager/RpcMgr";
 import { PvpListItem } from "../../shared/protocols/ptl/PtlGetPvpList";

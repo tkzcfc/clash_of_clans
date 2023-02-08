@@ -1,7 +1,6 @@
 import { UIDelegate } from "../../core/ui/UIDelegate";
 import TableView from "../../core/extensions/tableview/TableView";
 import TableViewDelegate from "../../core/extensions/tableview/TableViewDelegate";
-import { ShopItem } from "./ShopItem";
 import { BuildComeFrom, ItemType } from "../../coc/const/enums";
 import { UIUtils } from "../UIUtils";
 import { mgr } from "../../manager/mgr";
@@ -12,7 +11,7 @@ import { GameEvent } from "../../coc/misc/GameEvent";
 const {ccclass, property} = cc._decorator;
 
 @ccclass()
-export class Shop extends UIDelegate {
+export class Tests extends UIDelegate {
     @property(TableView)
     tableView: TableView;
     @property(TableViewDelegate)
@@ -46,28 +45,6 @@ export class Shop extends UIDelegate {
                 }
             }, this);
         });
-    }
-
-    /** UI即将打开 */
-    public onUIBeforeOpened() {
-        cc.log("开始打开动画...");
-    }
-
-    /** UI打开完毕 */
-    public onUIAfterOpened() {
-        cc.log("打开完毕...");
-        this.showItems("1");
-    }
-
-    /** UI即将关闭 */
-    public onUIWillClose(): boolean {
-        cc.log("即将关闭...");
-        return true;
-    }
-
-    /** UI关闭完成(即将销毁) */
-    public onUIDismiss() {
-        cc.log("关闭完成...");
     }
 
     public onClickItemType(event, customEventData:string) {

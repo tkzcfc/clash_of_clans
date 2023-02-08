@@ -1,5 +1,5 @@
 import { core } from "../../core/InitCore";
-import { UIDelegate } from "../../core/ui_manager/UIDelegate";
+import { UIDelegate } from "../../core/ui/UIDelegate";
 import { RpcErrCode } from "../../shared/RpcErr";
 import { LoginMgr } from "../../manager/LoginMgr";
 import { mgr } from "../../manager/mgr";
