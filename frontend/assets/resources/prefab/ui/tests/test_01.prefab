@@ -243,8 +243,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        130.702,
-        -108.733,
+        119.29,
+        -56.567,
         0,
         0,
         0,
@@ -278,7 +278,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        "__uuid__": "32e82869-99db-458b-8e50-a7ae130943e4"
       }
     ],
     "_srcBlendFactor": 770,

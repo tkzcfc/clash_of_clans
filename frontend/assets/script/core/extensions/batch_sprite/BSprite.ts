@@ -18,7 +18,7 @@ export default class BSprite extends cc.Sprite {
     }
     
     _updateMaterial () {
-        cc.log("_updateMaterial==============================>>>>>");
+        // cc.log("_updateMaterial==============================>>>>>");
         let texture = null;
 
         if (this.spriteFrame) {
@@ -36,40 +36,23 @@ export default class BSprite extends cc.Sprite {
             if(textureImpl !== this._curRenderTexImpl) {
                 this._curRenderTexImpl = textureImpl;
 
-                if (material.getProperty('texture0', 0) === textureImpl) {
-                    this._sprIndex = 0;
-                    this.setVertsDirty();
+                let ok = false;
+                for (let index = 0; index < 8; index++) {
+                    if (material.getProperty(`texture${index}`, 0) === textureImpl) {
+                        ok = true;
+                        this._sprIndex = index;
+                        this.setVertsDirty();
+                        break;                   
+                    }
                 }
-                else if (material.getProperty('texture1', 0) === textureImpl) {
-                    this._sprIndex = 1;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture2', 0) === textureImpl) {
-                    this._sprIndex = 2;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture3', 0) === textureImpl) {
-                    this._sprIndex = 3;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture4', 0) === textureImpl) {
-                    this._sprIndex = 4;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture5', 0) === textureImpl) {
-                    this._sprIndex = 5;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture6', 0) === textureImpl) {
-                    this._sprIndex = 6;
-                    this.setVertsDirty();
-                }
-                else if (material.getProperty('texture7', 0) === textureImpl) {
-                    this._sprIndex = 7;
-                    this.setVertsDirty();
-                }
-                else {
+
+                if(!ok) {
                     cc.log("BatchSprite: No Texture");
+                    for (let index = 0; index < 8; index++) {
+                        if(!material.getProperty(`texture${index}`, 0)) {
+                            cc.error("Material setting error");
+                        }
+                    }
                 }
             }
         }
