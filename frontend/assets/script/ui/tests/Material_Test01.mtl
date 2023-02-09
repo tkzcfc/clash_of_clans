@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.Material",
+  "_name": "Material_Test01",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "27d8e942-39e7-46e8-827e-2a949c37969a"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {
+        "USE_TEXTURE": true
+      },
+      "props": {
+        "texture0": {
+          "__uuid__": "7b887d72-4b51-4c99-a2ad-cff2f7a168c6"
+        },
+        "texture1": {
+          "__uuid__": "12e2d936-8b60-45de-9f0e-6e79bfa287db"
+        },
+        "texture2": {
+          "__uuid__": "88b8d473-8b06-4a80-8478-1428a7503914"
+        },
+        "texture3": {
+          "__uuid__": "eaa98e52-16f2-414c-b706-f4dd3f17a83a"
+        },
+        "texture4": {
+          "__uuid__": "7114d10a-2038-48a0-97b6-68b1e76a3b9c"
+        },
+        "texture5": {
+          "__uuid__": "2cdd8976-1919-48fe-b1cb-a3caf7b2585d"
+        },
+        "texture6": {
+          "__uuid__": "ff518b30-54bf-4d05-aa5c-15b75e193565"
+        },
+        "texture7": {
+          "__uuid__": "12523ab5-a911-4045-929b-e66a6262e3af"
+        }
+      }
+    }
+  }
+}

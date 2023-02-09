@@ -8,12 +8,6 @@ export default class BSprite extends cc.Sprite {
     _curRenderTexImpl: any = undefined;
     _sprIndex: number = 0;
 
-    start () {
-        cc.resources.load("BatchSprMaterial", cc.Material, (err, assets: cc.Material)=>{
-            this.setMaterial(0, assets);
-        });
-    }
-
     _resetAssembler() {
         let assembler = this._assembler = new BatchAssembler2D();
 
@@ -24,6 +18,7 @@ export default class BSprite extends cc.Sprite {
     }
     
     _updateMaterial () {
+        cc.log("_updateMaterial==============================>>>>>");
         let texture = null;
 
         if (this.spriteFrame) {

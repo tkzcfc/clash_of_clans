@@ -66,7 +66,7 @@ export default class BatchAssembler2D extends GTAutoFitSpriteAssembler2D {
             let dstOffset = floatsPerVert * i + indexOffset;
             verts[dstOffset] = sprIndex;
         }
-        cc.log(`sprIndex = ${sprIndex}`);
+        // cc.log(`sprIndex = ${sprIndex}`);
     }
     
     updateRenderData(comp) {
